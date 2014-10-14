@@ -6,3 +6,9 @@
 *.xcbkptlist
 
 LicensesKitSample-Swift/LicensesKitSample.xcodeproj/xcuserdata/matthewwyskiel.xcuserdatad/xcschemes/xcschememanagement.plist
+
+*.xcuserstate
+
+LicensesKit.xcodeproj/xcuserdata/matthewwyskiel.xcuserdatad/xcschemes/xcschememanagement.plist
+
+LicensesKitSample-Swift/LicensesKitSample.xcodeproj/project.xcworkspace/xcuserdata/matthewwyskiel.xcuserdatad/UserInterfaceState.xcuserstate
