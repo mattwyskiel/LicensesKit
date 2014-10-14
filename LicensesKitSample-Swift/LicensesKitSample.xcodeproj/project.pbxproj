@@ -459,6 +459,7 @@
 				A4A3AE8A19EC803400FF5CBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4A3AE8B19EC803400FF5CBD /* Build configuration list for PBXNativeTarget "LicensesKitSample-SwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -467,6 +468,7 @@
 				A4A3AE8D19EC803400FF5CBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

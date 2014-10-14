@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class LicensesViewController: UIViewController {
+public class LicensesViewController: UIViewController, UIWebViewDelegate {
     
     @IBOutlet public var webView: UIWebView!
     public var navigationTitle: String?
@@ -70,6 +70,8 @@ public class LicensesViewController: UIViewController {
         } else {
             navigationItem.title = "Licenses"
         }
+        
+        webView.delegate = self;
     }
     
     override public func viewDidAppear(animated: Bool) {
@@ -94,6 +96,14 @@ public class LicensesViewController: UIViewController {
 
     required public init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    public func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+        if navigationType == .LinkClicked {
+            let url = request.URL
+            UIApplication.sharedApplication().openURL(url)
+        }
+        return true
     }
 
 }

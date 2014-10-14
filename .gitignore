@@ -1,14 +1,21 @@
-
+# Xcode
+#
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
 *.xccheckout
-
-*.xcsettings
-
-*.xcbkptlist
-
-LicensesKitSample-Swift/LicensesKitSample.xcodeproj/xcuserdata/matthewwyskiel.xcuserdatad/xcschemes/xcschememanagement.plist
-
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
 *.xcuserstate
 
-LicensesKit.xcodeproj/xcuserdata/matthewwyskiel.xcuserdatad/xcschemes/xcschememanagement.plist
-
-LicensesKitSample-Swift/LicensesKitSample.xcodeproj/project.xcworkspace/xcuserdata/matthewwyskiel.xcuserdatad/UserInterfaceState.xcuserstate
+LicensesKit.xcodeproj/project.xcworkspace/xcuserdata/matthewwyskiel.xcuserdatad/UserInterfaceState.xcuserstate
