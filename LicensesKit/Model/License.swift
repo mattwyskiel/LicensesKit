@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc public class License: Hashable {
+@objc public class License: NSObject, Hashable {
     
     /// The name of the license
     public var name: String {
@@ -49,7 +49,7 @@ import UIKit
 
 extension License: Hashable {
     // Hashable
-    public var hashValue: Int {
+    public override var hashValue: Int {
         get {
             return name.hashValue
         }

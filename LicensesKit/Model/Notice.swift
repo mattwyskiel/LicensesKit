@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc public class Notice {
+@objc public class Notice: NSObject {
     
     var name: String
     var url: String
