@@ -10,7 +10,7 @@ import UIKit
 
 @objc public class CustomLicense: License {
     
-    private var privateName: String
+    private var privateName: String = ""
 
     /// The name of the license
     override public var name: String {
@@ -22,7 +22,7 @@ import UIKit
         }
     }
     
-    private var privateSummaryText: String
+    private var privateSummaryText: String = ""
     /// The license summary text
     override public var summaryText: String {
         get {
@@ -33,7 +33,7 @@ import UIKit
         }
     }
     
-    private var privateFullText: String
+    private var privateFullText: String = ""
     /// The license full text
     override public var fullText: String {
         get {
@@ -44,7 +44,7 @@ import UIKit
         }
     }
     
-    private var privateVersion: String
+    private var privateVersion: String = ""
     /// The license version
     override public var version: String {
         get {
@@ -55,7 +55,7 @@ import UIKit
         }
     }
     
-    private var privateURL: String
+    private var privateURL: String = ""
     /// The license URL
     override public var url: String {
         get {
