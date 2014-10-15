@@ -8,24 +8,60 @@
 
 import UIKit
 
-@objc public class CustomLicense: NSObject {
+@objc public class CustomLicense: License {
     
     /// The name of the license
-    public var name: String
+    override public var name: String {
+        get {
+            return "My Awesome, Restrictive, Ownership License"
+        }
+        set {
+            self.name = newValue
+        }
+    }
     
     /// The license summary text
-    public var summaryText: String
+    override public var summaryText: String {
+        get {
+            return "I own this."
+        }
+        set {
+            self.summaryText = newValue
+        }
+    }
     
     /// The license full text
-    public var fullText: String
+    override public var fullText: String {
+        get {
+            return "I own this. Period."
+        }
+        set {
+            self.fullText = newValue
+        }
+    }
     
     /// The license version
-    public var version: String
+    override public var version: String {
+        get {
+            return "1.0"
+        }
+        set {
+            self.version = newValue
+        }
+    }
     
     /// The license URL
-    public var url: String
+    override public var url: String {
+        get {
+            return "http://example.com/license/url"
+        }
+        set {
+            self.url = newValue
+        }
+    }
     
     public init(name: String, summaryText: String, fullText: String, version: String, url: String) {
+        super.init()
         self.name = name
         self.summaryText = summaryText
         self.fullText = fullText
@@ -34,20 +70,3 @@ import UIKit
     }
    
 }
-
-
-
-extension CustomLicense: Hashable {
-    // Hashable
-    public override var hashValue: Int {
-        get {
-            return name.hashValue
-        }
-    }
-}
-
-// Equatable
-public func ==(lhs: CustomLicense, rhs: CustomLicense) -> Bool {
-    return lhs.hashValue == rhs.hashValue
-}
-
