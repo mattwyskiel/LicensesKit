@@ -10,53 +10,58 @@ import UIKit
 
 @objc public class CustomLicense: License {
     
+    private var privateName: String
+
     /// The name of the license
     override public var name: String {
         get {
-            return "My Awesome, Restrictive, Ownership License"
+            return self.privateName
         }
         set {
-            self.name = newValue
+            self.privateName = newValue
         }
     }
     
+    private var privateSummaryText: String
     /// The license summary text
     override public var summaryText: String {
         get {
-            return "I own this."
+            return self.privateSummaryText
         }
         set {
-            self.summaryText = newValue
+            self.privateSummaryText = newValue
         }
     }
     
+    private var privateFullText: String
     /// The license full text
     override public var fullText: String {
         get {
-            return "I own this. Period."
+            return self.privateFullText
         }
         set {
-            self.fullText = newValue
+            self.privateFullText = newValue
         }
     }
     
+    private var privateVersion: String
     /// The license version
     override public var version: String {
         get {
-            return "1.0"
+            return self.privateVersion
         }
         set {
-            self.version = newValue
+            self.privateVersion = newValue
         }
     }
     
+    private var privateURL: String
     /// The license URL
     override public var url: String {
         get {
-            return "http://example.com/license/url"
-        }
+            return self.privateURL
         set {
-            self.url = newValue
+            self.privateURL = newValue
         }
     }
     
