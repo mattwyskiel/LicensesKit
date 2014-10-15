@@ -60,6 +60,7 @@ import UIKit
     override public var url: String {
         get {
             return self.privateURL
+        }
         set {
             self.privateURL = newValue
         }
