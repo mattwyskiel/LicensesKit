@@ -60,7 +60,7 @@ import UIKit
         }
     }
     
-    init(name: String, summaryText: String, fullText: String, version: String, url: String) {
+    public init(name: String, summaryText: String, fullText: String, version: String, url: String) {
         super.init()
         self.name = name
         self.summaryText = summaryText
