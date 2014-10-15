@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Licenseskit : A simple way to list third-party licenses in your iOS apps">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Licenseskit</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/mattwyskiel/LicensesKit">View on GitHub</a>
+
+          <h1 id="project_title">Licenseskit</h1>
+          <h2 id="project_tagline">A simple way to list third-party licenses in your iOS apps</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/mattwyskiel/LicensesKit/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/mattwyskiel/LicensesKit/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="licenseskit" class="anchor" href="#licenseskit"><span class="octicon octicon-link"></span></a>LicensesKit</h1>
+
+<h3>
+<a name="making-giving-credit-where-credit-is-due-much-easier-than-before" class="anchor" href="#making-giving-credit-where-credit-is-due-much-easier-than-before"><span class="octicon octicon-link"></span></a>Making giving credit where credit is due much easier than before.</h3>
+
+<p>If you've ever worked on an app that uses any third-party libraries (which is everyone), then you probably know that it's courteous (and sometomes mandatory, depending on the library) to add the library's license to an "acknowledgements" page in your app. And those pages are often tedious to put together and, especially, update. With LicensesKit, your troubles are over!</p>
+
+<h3>
+<a name="licenseskit-is-flexible" class="anchor" href="#licenseskit-is-flexible"><span class="octicon octicon-link"></span></a>LicensesKit is Flexible.</h3>
+
+<p>A lot of the popular license-diaplaying libraries (namely <a href="https://github.com/vtourraine/VTAcknowledgementsViewController">VTAcknowledgementsViewController</a> and <a href="https://github.com/86/TRZSlideLicenseViewController">TRZSlideLicenseViewController</a>) only have support for if all of your libraries are in CocoaPods. While the automation of aggregating all the licenses is nice, it doesn't help if, say, you use <a href="https://code.google.com/p/google-api-objectivec-client/">Google's API client</a>, which if don't want an <a href="https://github.com/CocoaPods/Specs/blob/master/Specs/Google-API-Client/0.1.1/Google-API-Client.podspec.json">outdated pod</a>, you would just use the SVN from the project site. Also, some third-party libraries may be written in Swift (like this one), which is not supported by CocoaPods yet.</p>
+
+<p>With LicensesKit you can just aggregate your libraries in a JSON file you include in your app bundle (learn more about specifics below), or add them in code if you prefer. This abstracts and simplifies things for you as the developer because you do not need to worry about where the library is coming from, all you need is to just list it.</p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p><em>Because there is not yet <a href="http://cocoapods.org">proper infrastructure</a> for Swift dependency management, nor any easy way to use Swift libraries, using LicensesKit in your project requires the following steps, taken and adapted directly from <a href="https://github.com/Alamofire/Alamofire">Alamofre's Readme</a>:</em></p>
+
+<ol>
+<li>Add LicensesKit as a <a href="http://git-scm.com/docs/git-submodule">submodule</a> by opening the Terminal, <code>cd</code>-ing into your top-level project directory, and entering the command <code>git submodule add https://github.com/mattwyskiel/LicensesKit.git</code>
+
+<ul>
+<li>This is in order to be able to check the library into your repo so that </li>
+</ul>
+</li>
+<li>Open the <code>LicensesKit</code> folder, and drag <code>LicensesKit.xcodeproj</code> into the file navigator of your app project.</li>
+<li>In Xcode, navigate to the target configuration window by clicking on the blue project icon, and selecting the application target under the "Targets" heading in the sidebar.</li>
+<li>Ensure that the deployment target of LicensesKit.framework matches that of the application target.</li>
+<li>In the tab bar at the top of that window, open the "Build Phases" panel.</li>
+<li>Expand the "Link Binary with Libraries" group, and add <code>LicensesKit.framework</code>.</li>
+</ol>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Basic usage of this library involves creating a <code>LicensesViewController</code> object, adding the libraries included in your app, and pushing the view controller </p>
+
+<h3>
+<a name="adding-notices" class="anchor" href="#adding-notices"><span class="octicon octicon-link"></span></a>Adding 'Notices'</h3>
+
+<p>A <strong>notice</strong> is an object containing information about the library being used and its license. Namely:</p>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>The name of the library</td>
+<td><code>"AFNetworking"</code></td>
+</tr>
+<tr>
+<td>url</td>
+<td>The url where the library can be found</td>
+<td><code>"https://github.com/AFNetworking/AFNetworking"</code></td>
+</tr>
+<tr>
+<td>copyright</td>
+<td>The copyright information for the library (usually found paired with the license)</td>
+<td><code>"Copyright (c) 2013-2014 AFNetworking (http://afnetworking.com/)"</code></td>
+</tr>
+<tr>
+<td>license</td>
+<td>The license the library uses</td>
+<td><code>MITLicense()</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>As you can tell from above the <code>license</code> is a property of type <code>License</code>, of which this library includes many subclasses for most of the common licenses, adding more often, including: </p>
+
+<ul>
+<li>Apache Software License 2.0</li>
+<li>BSD 3-Clause License</li>
+<li>Creative Commons Attribution-NoDerivs 3.0 Unported</li>
+<li>GNU General Public License 2.0</li>
+<li>GNU General Public License 3.0</li>
+<li>GNU Lesser General Public License 2.1</li>
+<li>ISC License</li>
+<li>
+<p>MIT License</p>
+
+<p>Of course, you can use the <code>CustomLicense</code> class to build your own license if it is not listed above (for example, if a library has their own custom license).</p>
+</li>
+</ul>
+
+<h3>
+<a name="add-notices-from-json" class="anchor" href="#add-notices-from-json"><span class="octicon octicon-link"></span></a>Add notices from JSON</h3>
+
+<p>To automate the process of aggregating the licenses together for all the libraries used in your app, you can list all of your libraries and their licenses in a json file included in your app bundle, with a format as such:</p>
+
+<div class="highlight highlight-json"><pre><span class="p">{</span>
+    <span class="nt">"notices"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"LicensesKit"</span><span class="p">,</span>
+            <span class="nt">"url"</span><span class="p">:</span> <span class="s2">"https://github.com/mattwyskiel/LicensesKit"</span><span class="p">,</span>
+            <span class="nt">"copyright"</span><span class="p">:</span> <span class="s2">"Copyright (C) 2014 Matthew Wyskiel"</span><span class="p">,</span>
+            <span class="nt">"license"</span><span class="p">:</span> <span class="s2">"Apache Software License 2.0"</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"StringBuilder"</span><span class="p">,</span>
+            <span class="nt">"url"</span><span class="p">:</span> <span class="s2">"https://github.com/mattwyskiel/StringBuilder"</span><span class="p">,</span>
+            <span class="nt">"copyright"</span><span class="p">:</span> <span class="s2">"Copyright (C) 2014 Matthew Wyskiel"</span><span class="p">,</span>
+            <span class="nt">"license"</span><span class="p">:</span> <span class="s2">"Apache Software License 2.0"</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>The <code>license</code> field's value directly correlates to the <strong>name</strong> of a license defined either in the library or a custom license you define. In order for the library to be able to use a license you define yourself (either by subclassing <code>License</code> or making a <code>CustomLicense</code> instance), you need to <em>register</em> the license with the LicensesViewController instance's <strong>licensesResolver</strong> object, like so:</p>
+
+<p><strong>Swift</strong></p>
+
+<div class="highlight highlight-swift"><pre><span class="n">licensesVC</span><span class="p">.</span><span class="n">resolver</span><span class="p">.</span><span class="n">registerLicense</span><span class="p">(</span><span class="n">customLicense</span><span class="p">)</span>
+</pre></div>
+
+<p><strong>Objective-C</strong></p>
+
+<div class="highlight highlight-objective-c"><pre><span class="p">[</span><span class="n">licensesVC</span><span class="p">.</span><span class="n">resolver</span> <span class="nl">registerLicence</span><span class="p">:</span><span class="n">customLicense</span><span class="p">];</span>
+</pre></div>
+
+<p>As soon as you have your JSON file together and registered all the custom licenses you need, just use the <code>setNoticesFromJSONFile(filepath:)</code> method on your LicenseViewController instance:</p>
+
+<p><strong>Swift</strong></p>
+
+<div class="highlight highlight-swift"><pre><span class="n">licensesVC</span><span class="p">.</span><span class="n">setNoticesFromJSONFile</span><span class="p">(</span><span class="n">filepathForJSONFile</span><span class="p">)</span>
+</pre></div>
+
+<p><strong>Objective-C</strong></p>
+
+<div class="highlight highlight-objective-c"><pre><span class="p">[</span><span class="n">licensesVC</span> <span class="nl">setNoticesFromJSONFile</span><span class="p">:</span><span class="n">filepathForJSONFile</span><span class="p">];</span>
+</pre></div>
+
+<p><em>NOTE: If you add notices from JSON, this overrides all the notices currently set in the <code>LicensesViewController</code> instance. If you want to add notices from code (as described below), do so after any calls to <code>setNoticesFromJSONFile(filepath:)</code>.</em></p>
+
+<h3>
+<a name="adding-notices-in-code" class="anchor" href="#adding-notices-in-code"><span class="octicon octicon-link"></span></a>Adding Notices in Code</h3>
+
+<p>To add a notice in code, just make a <code>Notice</code> instance and then call <code>addNotice(notice:)</code> (or <code>addNotices(notices:</code> if you want to add an array of notices at once).</p>
+
+<p><strong>Swift</strong></p>
+
+<div class="highlight highlight-swift"><pre><span class="k">let</span> <span class="n">notice</span> <span class="o">=</span> <span class="n">Notice</span><span class="p">(</span><span class="nl">name</span><span class="p">:</span> <span class="s">"AFNetworking"</span><span class="p">,</span> <span class="nl">url</span><span class="p">:</span> <span class="s">"https://github.com/AFNetworking/AFNetworking"</span><span class="p">,</span> <span class="nl">copyright</span><span class="p">:</span> <span class="s">"Copyright (c) 2013-2014 AFNetworking (http://afnetworking.com/)"</span><span class="p">,</span> <span class="nl">license</span><span class="p">:</span> <span class="n">MITLicense</span><span class="p">())</span>
+<span class="n">licensesVC</span><span class="p">.</span><span class="n">addNotice</span><span class="p">(</span><span class="n">notice</span><span class="p">)</span>
+</pre></div>
+
+<p><strong>Objective-C</strong></p>
+
+<div class="highlight highlight-objective-c"><pre><span class="n">Notice</span> <span class="o">*</span><span class="n">notice</span> <span class="o">=</span> <span class="p">[[</span><span class="n">Notice</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithName</span><span class="p">:</span><span class="s">"AFNetworking"</span> <span class="nl">url</span><span class="p">:</span><span class="s">"https://github.com/AFNetworking/AFNetworking"</span> <span class="nl">copyright</span><span class="p">:</span><span class="s">"Copyright (c) 2013-2014 AFNetworking (http://afnetworking.com/)"</span> <span class="nl">license</span><span class="p">:</span> <span class="p">[[</span><span class="n">MITLicense</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">init</span><span class="p">]];</span>
+<span class="p">[</span><span class="n">licensesVC</span> <span class="nl">addNotice</span><span class="p">:</span><span class="n">notice</span><span class="p">];</span>
+</pre></div>
+
+<h2>
+<a name="documentation" class="anchor" href="#documentation"><span class="octicon octicon-link"></span></a>Documentation</h2>
+
+<p>This library is mostly documented inline (Quick-look any item for more information). Anything not currently documented inline will have been done in future commits.</p>
+
+<h2>
+<a name="thats-it" class="anchor" href="#thats-it"><span class="octicon octicon-link"></span></a>That's it!</h2>
+
+<p>It's that simple! I hope you get much use out of this library as well as enjoy using it.</p>
+
+<p>Please, if you find bugs, tell me about them in the Issues or submit pull requests yourself. That would help a ton!</p>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>Copyright 2014 Matthew Wyskiel</p>
+
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at</p>
+
+<p><a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></p>
+
+<p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Licenseskit maintained by <a href="https://github.com/mattwyskiel">mattwyskiel</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
