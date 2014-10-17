@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A459639119DCD0C2001AC2CA /* LicensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A459639019DCD0C2001AC2CA /* LicensesViewController.swift */; };
+		A4743E9319F1516500799812 /* StringBuilder.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A497720A19DB8F0800A6590F /* StringBuilder.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A497720D19DB8F1700A6590F /* StringBuilder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A497720A19DB8F0800A6590F /* StringBuilder.framework */; };
 		A4A3AE5919E9830700FF5CBD /* LicenseResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3AE5819E9830700FF5CBD /* LicenseResolver.swift */; };
 		A4A3AE5B19E98B6D00FF5CBD /* CustomLicense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3AE5A19E98B6D00FF5CBD /* CustomLicense.swift */; };
@@ -60,6 +61,19 @@
 			remoteInfo = StringBuilderTests;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A4743E9219F1515A00799812 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				A4743E9319F1516500799812 /* StringBuilder.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A459639019DCD0C2001AC2CA /* LicensesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicensesViewController.swift; sourceTree = "<group>"; };
@@ -264,6 +278,7 @@
 				A4D0D25A19DA22AC004F028B /* Frameworks */,
 				A4D0D25B19DA22AC004F028B /* Headers */,
 				A4D0D25C19DA22AC004F028B /* Resources */,
+				A4743E9219F1515A00799812 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -511,7 +526,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = LicensesKit/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INSTALL_PATH = "@rpath";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -528,7 +543,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = LicensesKit/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INSTALL_PATH = "@rpath";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
