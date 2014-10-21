@@ -62,7 +62,7 @@ public func ==(lhs: License, rhs: License) -> Bool {
 }
 
 @objc public class LicenseContentFetcher {
-    public class func getContent(#filename: String, inBundle bundle: NSBundle = NSBundle(identifier: "com.matthewwyskiel.LicensesKit")) -> String! {
+    public class func getContent(#filename: String, inBundle bundle: NSBundle = NSBundle(identifier: "com.matthewwyskiel.LicensesKit")!) -> String! {
         if let path = bundle.pathForResource(filename, ofType: "txt") {
             var errorMaybe: NSError?
             let string = NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding, error: &errorMaybe)

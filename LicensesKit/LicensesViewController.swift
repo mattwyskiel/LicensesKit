@@ -38,27 +38,26 @@ public class LicensesViewController: UIViewController, UIWebViewDelegate {
     }
     
     public func setNoticesFromJSONFile(filepath: String) {
-        let jsonData = NSData(contentsOfFile: filepath)
-        
-        var errorMaybe: NSError?
-        let jsonArray = NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions(0), error: &errorMaybe) as [String: [[String: String]]]
-        if let error = errorMaybe {
-            // error
-        } else {
-            notices = []
-            if let noticesArray = jsonArray["notices"] {
-                for noticeJson in noticesArray {
-                    let libName = noticeJson["name"]!
-                    let libURL = noticeJson["url"]!
-                    let copyright = noticeJson["copyright"]!
-                    let licenseOptional = self.resolver.licenseForName(noticeJson["license"]!)
+        if let jsonData = NSData(contentsOfFile: filepath) {
+            var errorMaybe: NSError?
+            let jsonArray = NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions(0), error: &errorMaybe) as [String: [[String: String]]]
+            if let error = errorMaybe {
+                // error
+            } else {
+                notices = []
+                if let noticesArray = jsonArray["notices"] {
+                    for noticeJson in noticesArray {
+                        let libName = noticeJson["name"]!
+                        let libURL = noticeJson["url"]!
+                        let copyright = noticeJson["copyright"]!
+                        let licenseOptional = self.resolver.licenseForName(noticeJson["license"]!)
                     
-                    if let license = licenseOptional {
-                        notices.append(Notice(name: libName, url: libURL, copyright: copyright, license: license))
+                        if let license = licenseOptional {
+                            notices.append(Notice(name: libName, url: libURL, copyright: copyright, license: license))
+                        }
                     }
                 }
             }
-            
         }
     }
 
@@ -79,10 +78,11 @@ public class LicensesViewController: UIViewController, UIWebViewDelegate {
         htmlBuilder.addNotices(notices)
         
         let path = htmlBuilder.build()
-        let data = NSData(contentsOfFile: path)
-        let dataString = NSString(data: data, encoding: NSUTF8StringEncoding)
-        webView.loadHTMLString(dataString, baseURL: nil)
-        NSLog("%@", NSString(data: data, encoding: NSUTF8StringEncoding))
+        if let data = NSData(contentsOfFile: path) {
+            let dataString = NSString(data: data, encoding: NSUTF8StringEncoding)
+            webView.loadHTMLString(dataString, baseURL: nil)
+            NSLog("%@", NSString(data: data, encoding: NSUTF8StringEncoding)!)
+        }
     }
 
     override public func didReceiveMemoryWarning() {
