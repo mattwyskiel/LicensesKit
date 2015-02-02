@@ -103,7 +103,7 @@ public class LicensesViewController: UIViewController, UIWebViewDelegate {
             let url = request.URL
             UIApplication.sharedApplication().openURL(url)
         }
-        return true
+        return false
     }
 
 }
