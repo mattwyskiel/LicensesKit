@@ -7,7 +7,9 @@
 //
 
 import UIKit
-
+/**
+*  Describes a library's license
+*/
 @objc public class License: NSObject, Hashable {
     
     /// The name of the license
