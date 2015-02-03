@@ -9,15 +9,11 @@ A lot of the popular license-diaplaying libraries (namely [VTAcknowledgementsVie
 With LicensesKit you can just aggregate your libraries in a JSON file you include in your app bundle (learn more about specifics below), or add them in code if you prefer. This abstracts and simplifies things for you as the developer because you do not need to worry about where the library is coming from, all you need is to just list it.
 
 ## Installation
-_Because there is not yet [proper infrastructure](http://cocoapods.org) for Swift dependency management, nor any easy way to use Swift libraries, using LicensesKit in your project requires the following steps, taken and adapted directly from [Alamofre's Readme](https://github.com/Alamofire/Alamofire):_
+Use CocoaPods:
 
-1. Add LicensesKit as a [submodule](http://git-scm.com/docs/git-submodule) by opening the Terminal, `cd`-ing into your top-level project directory, and entering the command `git submodule add https://github.com/mattwyskiel/LicensesKit.git`
-	- This is in order to be able to check the library into your repo so that 
-2. Open the `LicensesKit` folder, and drag `LicensesKit.xcodeproj` into the file navigator of your app project.
-3. In Xcode, navigate to the target configuration window by clicking on the blue project icon, and selecting the application target under the "Targets" heading in the sidebar.
-4. Ensure that the deployment target of LicensesKit.framework matches that of the application target.
-5. In the tab bar at the top of that window, open the "Build Phases" panel.
-6. Expand the "Link Binary with Libraries" group, and add `LicensesKit.framework`.
+```ruby
+pod 'LicensesKit'
+```
 
 ## Usage
 Basic usage of this library involves creating a `LicensesViewController` object, adding the libraries included in your app, and pushing the view controller 
