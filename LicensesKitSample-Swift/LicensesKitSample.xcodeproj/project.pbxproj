@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A46E01091A8114D400585C60 /* StringBuilder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46E01081A8114D400585C60 /* StringBuilder.framework */; };
 		A4A3AE6F19EC803400FF5CBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3AE6E19EC803400FF5CBD /* AppDelegate.swift */; };
 		A4A3AE7119EC803400FF5CBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3AE7019EC803400FF5CBD /* ViewController.swift */; };
 		A4A3AE7419EC803400FF5CBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4A3AE7219EC803400FF5CBD /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A46E01081A8114D400585C60 /* StringBuilder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StringBuilder.framework; path = "..StringBuilder/build/Debug-iphoneos/StringBuilder.framework"; sourceTree = "<group>"; };
 		A4A3AE6919EC803400FF5CBD /* LicensesKitSample-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LicensesKitSample-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4A3AE6D19EC803400FF5CBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4A3AE6E19EC803400FF5CBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A46E01091A8114D400585C60 /* StringBuilder.framework in Frameworks */,
 				A4A3AE9819EC84F500FF5CBD /* LicensesKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,6 +81,7 @@
 		A4A3AE6019EC803400FF5CBD = {
 			isa = PBXGroup;
 			children = (
+				A46E01081A8114D400585C60 /* StringBuilder.framework */,
 				A4A3AE6B19EC803400FF5CBD /* LicensesKitSample-Swift */,
 				A4A3AE8119EC803400FF5CBD /* LicensesKitSample-SwiftTests */,
 				A4A3AE6A19EC803400FF5CBD /* Products */,
@@ -390,6 +394,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/..StringBuilder/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "LicensesKitSample-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -400,6 +408,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/..StringBuilder/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "LicensesKitSample-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
