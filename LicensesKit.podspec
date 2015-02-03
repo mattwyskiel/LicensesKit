@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "LicensesKit"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "A simple way to list third-party licenses in your iOS apps"
   s.description  = <<-DESC
                    ###Making giving credit where credit is due much easier than before.
