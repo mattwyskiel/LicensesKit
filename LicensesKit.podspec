@@ -21,7 +21,7 @@ With LicensesKit you can just aggregate your libraries in a JSON file you includ
   s.source_files  = "LicensesKit/LicensesViewController.swift", "LicensesKit/NoticesHtmlBuilder.swift", "LicensesKit/Model", "LicensesKit/Model/Licenses"
   s.resources = "LicensesKit/LicensesViewController.xib", "LicensesKit/SupportingFiles/Licenses"
   s.framework  = "UIKit"
-  s.dependency 'StringBuilder', '0.0.1'
+  s.dependency 'StringBuilder', '0.0.1.1'
   s.requires_arc = true
 
 end
