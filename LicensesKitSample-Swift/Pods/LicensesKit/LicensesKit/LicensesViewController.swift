@@ -81,7 +81,7 @@ public class LicensesViewController: UIViewController, UIWebViewDelegate {
         if let data = NSData(contentsOfFile: path) {
             let dataString = NSString(data: data, encoding: NSUTF8StringEncoding)
             webView.loadHTMLString(dataString, baseURL: nil)
-            NSLog("%@", NSString(data: data, encoding: NSUTF8StringEncoding)!)
+            NSLog("%@", dataString!)
         }
     }
 
