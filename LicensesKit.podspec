@@ -19,7 +19,9 @@ With LicensesKit you can just aggregate your libraries in a JSON file you includ
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/mattwyskiel/LicensesKit.git", :tag => "#{s.version}" }
   s.source_files  = "LicensesKit/LicensesViewController.swift", "LicensesKit/NoticesHtmlBuilder.swift", "LicensesKit/Model", "LicensesKit/Model/Licenses"
-  s.resources = ["LicensesKit/LicensesViewController.xib", "LicensesKit/Supporting Files/Licenses/*"]
+  s.resource_bundles = {
+    'LicensesKit' => ["LicensesKit/Supporting Files/Licenses/*.txt", "LicensesKit/LicensesViewController.xib"]
+  }
   s.framework  = "UIKit"
   s.dependency 'StringBuilder', '0.0.1.1'
   s.requires_arc = true
