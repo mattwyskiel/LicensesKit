@@ -1,0 +1,6 @@
+framework module StringBuilder {
+  umbrella header "Pods-LicensesKitSample-Swift-StringBuilder-umbrella.h"
+
+  export *
+  module * { export * }
+}
