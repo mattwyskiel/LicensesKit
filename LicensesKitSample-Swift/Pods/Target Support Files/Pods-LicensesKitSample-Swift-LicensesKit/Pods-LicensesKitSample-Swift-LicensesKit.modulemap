@@ -1,0 +1,6 @@
+framework module LicensesKit {
+  umbrella header "Pods-LicensesKitSample-Swift-LicensesKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
