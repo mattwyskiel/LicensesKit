@@ -1,5 +1,5 @@
 PODS:
-  - LicensesKit (0.0.4):
+  - LicensesKit (0.0.5):
     - StringBuilder (= 0.0.1.1)
   - StringBuilder (0.0.1.1)
 
@@ -12,11 +12,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   LicensesKit:
-    :commit: 87765cc7033e6e5bcc5d515335f55eac13739963
+    :commit: af6275c7ebfc3b2fa74ce1d83af5c9a195c473b2
     :git: https://github.com/mattwyskiel/LicensesKit.git
 
 SPEC CHECKSUMS:
-  LicensesKit: 524c510ee21f77f0996dc42ed3887f70741511aa
+  LicensesKit: 43cb3e2bba73286abef989d37225e3d004a718d7
   StringBuilder: fe9ae7bc9bb0d0ec927a0fb58dc2c3f564a957fb
 
 COCOAPODS: 0.36.0.beta.2
