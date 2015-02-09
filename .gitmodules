@@ -1,4 +1,0 @@
-[submodule "StringBuilder"]
-	path = StringBuilder
-	url = git://github.com/mattwyskiel/StringBuilder.git
-	ignore = dirty
