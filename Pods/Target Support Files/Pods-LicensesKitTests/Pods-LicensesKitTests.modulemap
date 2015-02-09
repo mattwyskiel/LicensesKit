@@ -1,0 +1,6 @@
+framework module Pods_LicensesKitTests {
+  umbrella header "Pods-LicensesKitTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
