@@ -90,7 +90,7 @@ public class LicensesViewController: UIViewController, UIWebViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    public override init() {
+    public init() {
         let bundle = NSBundle(forClass: Notice.self)
         super.init(nibName: "LicensesViewController", bundle: bundle)
     }
