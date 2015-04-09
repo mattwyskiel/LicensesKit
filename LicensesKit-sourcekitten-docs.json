@@ -1,0 +1,3516 @@
+[
+  {
+    "key.substructure" : [
+      {
+        "key.substructure" : [
+          {
+            "key.namelength" : 7,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/LicensesViewController.swift",
+            "key.name" : "webView",
+            "key.nameoffset" : 282,
+            "key.typename" : "UIWebView!",
+            "key.usr" : "s:vC11LicensesKit22LicensesViewController7webViewGSQCSo9UIWebView_",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.iboutlet"
+              }
+            ],
+            "key.parsed_declaration" : "@IBOutlet public var webView: UIWebView!",
+            "key.substructure" : [
+
+            ],
+            "key.length" : 7,
+            "key.offset" : 282,
+            "key.related_decls" : [
+              {
+                "key.annotated_decl" : "<RelatedName usr=\"s:FC11LicensesKit22LicensesViewController7webViewFS0_FTCSo9UIWebView26shouldStartLoadWithRequestCSo12NSURLRequest14navigationTypeOSC23UIWebViewNavigationType_Sb\">webView(_:shouldStartLoadWithRequest:navigationType:)<\/RelatedName>"
+              }
+            ],
+            "key.annotated_decl" : "<Declaration>@IBOutlet public var webView: <Type usr=\"c:objc(cs)UIWebView\">UIWebView<\/Type>!<\/Declaration>"
+          },
+          {
+            "key.namelength" : 15,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/LicensesViewController.swift",
+            "key.name" : "navigationTitle",
+            "key.nameoffset" : 317,
+            "key.typename" : "String?",
+            "key.usr" : "s:vC11LicensesKit22LicensesViewController15navigationTitleGSqSS_",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              }
+            ],
+            "key.parsed_declaration" : "public var navigationTitle: String?",
+            "key.substructure" : [
+
+            ],
+            "key.length" : 15,
+            "key.offset" : 317,
+            "key.annotated_decl" : "<Declaration>public var navigationTitle: <Type usr=\"s:SS\">String<\/Type>?<\/Declaration>"
+          },
+          {
+            "key.namelength" : 7,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/LicensesViewController.swift",
+            "key.name" : "notices",
+            "key.nameoffset" : 357,
+            "key.typename" : "[Notice]",
+            "key.usr" : "s:vC11LicensesKit22LicensesViewController7noticesGSaCS_6Notice_",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              }
+            ],
+            "key.parsed_declaration" : "public var notices: [Notice] = []",
+            "key.substructure" : [
+
+            ],
+            "key.length" : 7,
+            "key.offset" : 357,
+            "key.annotated_decl" : "<Declaration>public var notices: [<Type usr=\"s:C11LicensesKit6Notice\">Notice<\/Type>]<\/Declaration>"
+          },
+          {
+            "key.namelength" : 8,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/LicensesViewController.swift",
+            "key.name" : "resolver",
+            "key.nameoffset" : 395,
+            "key.typename" : "LicenseResolver",
+            "key.usr" : "s:vC11LicensesKit22LicensesViewController8resolverCS_15LicenseResolver",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              }
+            ],
+            "key.parsed_declaration" : "public var resolver = LicenseResolver()",
+            "key.substructure" : [
+
+            ],
+            "key.length" : 8,
+            "key.offset" : 395,
+            "key.annotated_decl" : "<Declaration>public var resolver: <Type usr=\"s:C11LicensesKit15LicenseResolver\">LicenseResolver<\/Type><\/Declaration>"
+          },
+          {
+            "key.namelength" : 11,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/LicensesViewController.swift",
+            "key.name" : "htmlBuilder",
+            "key.nameoffset" : 445,
+            "key.typename" : "NoticesHtmlBuilder",
+            "key.usr" : "s:vC11LicensesKit22LicensesViewControllerP33_1B90B28DE023E0A58CC16CF53DED223B11htmlBuilderCS_18NoticesHtmlBuilder",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              }
+            ],
+            "key.parsed_declaration" : "private var htmlBuilder = NoticesHtmlBuilder()",
+            "key.substructure" : [
+
+            ],
+            "key.length" : 11,
+            "key.offset" : 445,
+            "key.annotated_decl" : "<Declaration>private var htmlBuilder: <Type usr=\"s:C11LicensesKit18NoticesHtmlBuilder\">NoticesHtmlBuilder<\/Type><\/Declaration>"
+          },
+          {
+            "key.namelength" : 20,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/LicensesViewController.swift",
+            "key.name" : "showsFullLicenseText",
+            "key.bodylength" : 104,
+            "key.nameoffset" : 500,
+            "key.typename" : "Bool",
+            "key.usr" : "s:vC11LicensesKit22LicensesViewController20showsFullLicenseTextSb",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 536,
+            "key.parsed_declaration" : "public var showsFullLicenseText: Bool = false",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              }
+            ],
+            "key.length" : 20,
+            "key.offset" : 500,
+            "key.annotated_decl" : "<Declaration>public var showsFullLicenseText: <Type usr=\"s:Sb\">Bool<\/Type> { get set }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 8,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/LicensesViewController.swift",
+            "key.name" : "cssStyle",
+            "key.bodylength" : 80,
+            "key.nameoffset" : 662,
+            "key.typename" : "String?",
+            "key.usr" : "s:vC11LicensesKit22LicensesViewController8cssStyleGSqSS_",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 681,
+            "key.parsed_declaration" : "public var cssStyle: String?",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              }
+            ],
+            "key.length" : 8,
+            "key.offset" : 662,
+            "key.annotated_decl" : "<Declaration>public var cssStyle: <Type usr=\"s:SS\">String<\/Type>? { get set }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 25,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/LicensesViewController.swift",
+            "key.name" : "addNotice(_:)",
+            "key.bodylength" : 36,
+            "key.nameoffset" : 784,
+            "key.typename" : "LicensesViewController -> (Notice) -> ()",
+            "key.usr" : "s:FC11LicensesKit22LicensesViewController9addNoticeFS0_FCS_6NoticeT_",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.bodyoffset" : 811,
+            "key.parsed_declaration" : "public func addNotice(notice: Notice)",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              }
+            ],
+            "key.length" : 25,
+            "key.offset" : 784,
+            "key.annotated_decl" : "<Declaration>public func addNotice(notice: <Type usr=\"s:C11LicensesKit6Notice\">Notice<\/Type>)<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 29,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/LicensesViewController.swift",
+            "key.name" : "addNotices(_:)",
+            "key.bodylength" : 37,
+            "key.nameoffset" : 870,
+            "key.typename" : "LicensesViewController -> ([Notice]) -> ()",
+            "key.usr" : "s:FC11LicensesKit22LicensesViewController10addNoticesFS0_FGSaCS_6Notice_T_",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.bodyoffset" : 901,
+            "key.parsed_declaration" : "public func addNotices(notices: [Notice])",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              }
+            ],
+            "key.length" : 29,
+            "key.offset" : 870,
+            "key.annotated_decl" : "<Declaration>public func addNotices(notices: [<Type usr=\"s:C11LicensesKit6Notice\">Notice<\/Type>])<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 40,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/LicensesViewController.swift",
+            "key.name" : "setNoticesFromJSONFile(_:)",
+            "key.bodylength" : 1063,
+            "key.nameoffset" : 961,
+            "key.typename" : "LicensesViewController -> (String) -> ()",
+            "key.usr" : "s:FC11LicensesKit22LicensesViewController22setNoticesFromJSONFileFS0_FSST_",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.bodyoffset" : 1003,
+            "key.parsed_declaration" : "public func setNoticesFromJSONFile(filepath: String)",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              }
+            ],
+            "key.length" : 40,
+            "key.offset" : 961,
+            "key.annotated_decl" : "<Declaration>public func setNoticesFromJSONFile(filepath: <Type usr=\"s:SS\">String<\/Type>)<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 13,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/LicensesViewController.swift",
+            "key.name" : "viewDidLoad()",
+            "key.overrides" : [
+              {
+                "key.usr" : "c:objc(cs)UIViewController(im)viewDidLoad"
+              }
+            ],
+            "key.bodylength" : 231,
+            "key.nameoffset" : 2094,
+            "key.typename" : "LicensesViewController -> () -> ()",
+            "key.usr" : "s:FC11LicensesKit22LicensesViewController11viewDidLoadFS0_FT_T_",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.bodyoffset" : 2109,
+            "key.parsed_declaration" : "override public func viewDidLoad()",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 13,
+            "key.offset" : 2094,
+            "key.annotated_decl" : "<Declaration>override public func viewDidLoad()<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 29,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/LicensesViewController.swift",
+            "key.name" : "viewDidAppear(_:)",
+            "key.overrides" : [
+              {
+                "key.usr" : "c:objc(cs)UIViewController(im)viewDidAppear:"
+              }
+            ],
+            "key.bodylength" : 385,
+            "key.nameoffset" : 2372,
+            "key.typename" : "LicensesViewController -> (Bool) -> ()",
+            "key.usr" : "s:FC11LicensesKit22LicensesViewController13viewDidAppearFS0_FSbT_",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.bodyoffset" : 2403,
+            "key.parsed_declaration" : "override public func viewDidAppear(animated: Bool)",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 29,
+            "key.offset" : 2372,
+            "key.annotated_decl" : "<Declaration>override public func viewDidAppear(animated: <Type usr=\"s:Sb\">Bool<\/Type>)<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 25,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/LicensesViewController.swift",
+            "key.name" : "didReceiveMemoryWarning()",
+            "key.overrides" : [
+              {
+                "key.usr" : "c:objc(cs)UIViewController(im)didReceiveMemoryWarning"
+              }
+            ],
+            "key.bodylength" : 104,
+            "key.nameoffset" : 2816,
+            "key.typename" : "LicensesViewController -> () -> ()",
+            "key.usr" : "s:FC11LicensesKit22LicensesViewController23didReceiveMemoryWarningFS0_FT_T_",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.bodyoffset" : 2843,
+            "key.parsed_declaration" : "override public func didReceiveMemoryWarning()",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 25,
+            "key.offset" : 2816,
+            "key.annotated_decl" : "<Declaration>override public func didReceiveMemoryWarning()<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.substructure" : [
+
+            ],
+            "key.namelength" : 6,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/LicensesViewController.swift",
+            "key.name" : "init()",
+            "key.overrides" : [
+              {
+                "key.usr" : "c:objc(cs)NSObject(im)init"
+              }
+            ],
+            "key.bodylength" : 128,
+            "key.nameoffset" : 2974,
+            "key.typename" : "LicensesViewController.Type -> () -> LicensesViewController",
+            "key.usr" : "s:FC11LicensesKit22LicensesViewControllercFMS0_FT_S0_",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.bodyoffset" : 2982,
+            "key.parsed_declaration" : "public override init()",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              }
+            ],
+            "key.length" : 6,
+            "key.offset" : 2974,
+            "key.related_decls" : [
+              {
+                "key.annotated_decl" : "<RelatedName usr=\"s:FC11LicensesKit22LicensesViewControllercFMS0_FT5coderCSo7NSCoder_S0_\">init(coder:)<\/RelatedName>"
+              }
+            ],
+            "key.annotated_decl" : "<Declaration>public override init()<\/Declaration>"
+          },
+          {
+            "key.substructure" : [
+
+            ],
+            "key.namelength" : 29,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/LicensesViewController.swift",
+            "key.name" : "init(coder:)",
+            "key.overrides" : [
+              {
+                "key.usr" : "c:objc(pl)NSCoding(im)initWithCoder:"
+              }
+            ],
+            "key.bodylength" : 65,
+            "key.nameoffset" : 3133,
+            "key.typename" : "LicensesViewController.Type -> (coder: NSCoder) -> LicensesViewController",
+            "key.usr" : "s:FC11LicensesKit22LicensesViewControllercFMS0_FT5coderCSo7NSCoder_S0_",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.bodyoffset" : 3164,
+            "key.parsed_declaration" : "required public init(coder aDecoder: NSCoder)",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.required"
+              }
+            ],
+            "key.length" : 29,
+            "key.offset" : 3133,
+            "key.related_decls" : [
+              {
+                "key.annotated_decl" : "<RelatedName usr=\"s:FC11LicensesKit22LicensesViewControllercFMS0_FT_S0_\">init()<\/RelatedName>"
+              }
+            ],
+            "key.annotated_decl" : "<Declaration>required public init(coder aDecoder: <Type usr=\"c:objc(cs)NSCoder\">NSCoder<\/Type>)<\/Declaration>"
+          },
+          {
+            "key.substructure" : [
+
+            ],
+            "key.namelength" : 118,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/LicensesViewController.swift",
+            "key.name" : "webView(_:shouldStartLoadWithRequest:navigationType:)",
+            "key.overrides" : [
+              {
+                "key.usr" : "c:objc(pl)UIWebViewDelegate(im)webView:shouldStartLoadWithRequest:navigationType:"
+              }
+            ],
+            "key.bodylength" : 174,
+            "key.nameoffset" : 3252,
+            "key.typename" : "LicensesViewController -> (UIWebView, shouldStartLoadWithRequest: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool",
+            "key.usr" : "s:FC11LicensesKit22LicensesViewController7webViewFS0_FTCSo9UIWebView26shouldStartLoadWithRequestCSo12NSURLRequest14navigationTypeOSC23UIWebViewNavigationType_Sb",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.bodyoffset" : 3380,
+            "key.parsed_declaration" : "public func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              }
+            ],
+            "key.length" : 118,
+            "key.offset" : 3252,
+            "key.related_decls" : [
+              {
+                "key.annotated_decl" : "<RelatedName usr=\"s:vC11LicensesKit22LicensesViewController7webViewGSQCSo9UIWebView_\">webView<\/RelatedName>"
+              }
+            ],
+            "key.annotated_decl" : "<Declaration>public func webView(webView: <Type usr=\"c:objc(cs)UIWebView\">UIWebView<\/Type>, shouldStartLoadWithRequest request: <Type usr=\"c:objc(cs)NSURLRequest\">NSURLRequest<\/Type>, navigationType: <Type usr=\"c:@E@UIWebViewNavigationType\">UIWebViewNavigationType<\/Type>) -&gt; <Type usr=\"s:Sb\">Bool<\/Type><\/Declaration>"
+          }
+        ],
+        "key.namelength" : 22,
+        "key.runtime_name" : "_TtC8__main__22LicensesViewController",
+        "key.name" : "LicensesViewController",
+        "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/LicensesViewController.swift",
+        "key.bodylength" : 3306,
+        "key.nameoffset" : 190,
+        "key.typename" : "LicensesViewController.Type",
+        "key.usr" : "s:C11LicensesKit22LicensesViewController",
+        "key.kind" : "source.lang.swift.decl.class",
+        "key.bodyoffset" : 251,
+        "key.parsed_declaration" : "public class LicensesViewController: UIViewController, UIWebViewDelegate",
+        "key.attributes" : [
+          {
+            "key.attribute" : "source.decl.attribute.private"
+          }
+        ],
+        "key.length" : 22,
+        "key.offset" : 190,
+        "key.inheritedtypes" : [
+          {
+            "key.name" : "UIViewController"
+          },
+          {
+            "key.name" : "UIWebViewDelegate"
+          }
+        ],
+        "key.annotated_decl" : "<Declaration>public class LicensesViewController : <Type usr=\"c:objc(cs)UIViewController\">UIViewController<\/Type>, <Type usr=\"c:objc(pl)UIWebViewDelegate\">UIWebViewDelegate<\/Type><\/Declaration>"
+      }
+    ],
+    "key.offset" : 0,
+    "key.diagnostics" : [
+      {
+        "key.column" : 134,
+        "key.severity" : "source.diagnostic.severity.error",
+        "key.description" : "expected type after 'as'",
+        "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
+        "key.line" : 43
+      },
+      {
+        "key.column" : 49,
+        "key.severity" : "source.diagnostic.severity.error",
+        "key.description" : "expected type after 'as'",
+        "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
+        "key.line" : 83
+      },
+      {
+        "key.column" : 49,
+        "key.severity" : "source.diagnostic.severity.error",
+        "key.description" : "expected ',' separator",
+        "key.fixits" : [
+          {
+            "key.length" : 0,
+            "key.sourcetext" : ",",
+            "key.offset" : 2713
+          }
+        ],
+        "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
+        "key.line" : 83
+      },
+      {
+        "key.column" : 49,
+        "key.severity" : "source.diagnostic.severity.error",
+        "key.description" : "expected expression in list of expressions",
+        "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
+        "key.line" : 83
+      },
+      {
+        "key.column" : 49,
+        "key.severity" : "source.diagnostic.severity.error",
+        "key.description" : "expected ',' separator",
+        "key.fixits" : [
+          {
+            "key.length" : 0,
+            "key.sourcetext" : ",",
+            "key.offset" : 2713
+          }
+        ],
+        "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
+        "key.line" : 83
+      }
+    ],
+    "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
+    "key.length" : 3559
+  },
+  {
+    "key.substructure" : [
+      {
+        "key.substructure" : [
+          {
+            "key.namelength" : 4,
+            "key.doc.full_as_xml" : "<Other file=\"\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Notice.swift\" line=\"17\" column=\"9\"><Name>name<\/Name><USR>s:vC11LicensesKit6Notice4nameSS<\/USR><Declaration>var name: String<\/Declaration><Abstract><Para>The name of the library<\/Para><\/Abstract><\/Other>",
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Notice.swift",
+            "key.name" : "name",
+            "key.nameoffset" : 452,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit6Notice4nameSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.__raw_doc_comment"
+              }
+            ],
+            "key.parsed_declaration" : "var name: String",
+            "key.substructure" : [
+
+            ],
+            "key.length" : 4,
+            "key.offset" : 452,
+            "key.annotated_decl" : "<Declaration>var name: <Type usr=\"s:SS\">String<\/Type><\/Declaration>"
+          },
+          {
+            "key.namelength" : 3,
+            "key.doc.full_as_xml" : "<Other file=\"\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Notice.swift\" line=\"19\" column=\"9\"><Name>url<\/Name><USR>s:vC11LicensesKit6Notice3urlSS<\/USR><Declaration>var url: String<\/Declaration><Abstract><Para>The library url. Usually a github url but in some cases another url is more useful (like a library website url)<\/Para><\/Abstract><\/Other>",
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Notice.swift",
+            "key.name" : "url",
+            "key.nameoffset" : 593,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit6Notice3urlSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.__raw_doc_comment"
+              }
+            ],
+            "key.parsed_declaration" : "var url: String",
+            "key.substructure" : [
+
+            ],
+            "key.length" : 3,
+            "key.offset" : 593,
+            "key.annotated_decl" : "<Declaration>var url: <Type usr=\"s:SS\">String<\/Type><\/Declaration>"
+          },
+          {
+            "key.namelength" : 9,
+            "key.doc.full_as_xml" : "<Other file=\"\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Notice.swift\" line=\"21\" column=\"9\"><Name>copyright<\/Name><USR>s:vC11LicensesKit6Notice9copyrightSS<\/USR><Declaration>var copyright: String<\/Declaration><Abstract><Para>The copyright (usually in format &quot;Copyright (c) [YEAR] [NAME]&quot;)<\/Para><\/Abstract><\/Other>",
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Notice.swift",
+            "key.name" : "copyright",
+            "key.nameoffset" : 685,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit6Notice9copyrightSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.__raw_doc_comment"
+              }
+            ],
+            "key.parsed_declaration" : "var copyright: String",
+            "key.substructure" : [
+
+            ],
+            "key.length" : 9,
+            "key.offset" : 685,
+            "key.annotated_decl" : "<Declaration>var copyright: <Type usr=\"s:SS\">String<\/Type><\/Declaration>"
+          },
+          {
+            "key.namelength" : 7,
+            "key.doc.full_as_xml" : "<Other file=\"\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Notice.swift\" line=\"23\" column=\"9\"><Name>license<\/Name><USR>s:vC11LicensesKit6Notice7licenseGSqCS_7License_<\/USR><Declaration>var license: License?<\/Declaration><Abstract><Para>The license of the library. Either use a standard license or create a CustomLicense instance<\/Para><\/Abstract><\/Other>",
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Notice.swift",
+            "key.name" : "license",
+            "key.nameoffset" : 812,
+            "key.typename" : "License?",
+            "key.usr" : "s:vC11LicensesKit6Notice7licenseGSqCS_7License_",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.__raw_doc_comment"
+              }
+            ],
+            "key.parsed_declaration" : "var license: License?",
+            "key.substructure" : [
+
+            ],
+            "key.length" : 7,
+            "key.offset" : 812,
+            "key.annotated_decl" : "<Declaration>var license: <Type usr=\"s:C11LicensesKit7License\">License<\/Type>?<\/Declaration>"
+          },
+          {
+            "key.namelength" : 68,
+            "key.doc.full_as_xml" : "<Function file=\"\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Notice.swift\" line=\"35\" column=\"12\"><Name>init(name:url:copyright:license:)<\/Name><USR>s:FC11LicensesKit6NoticecFMS0_FT4nameSS3urlSS9copyrightSS7licenseCS_7License_S0_<\/USR><Declaration>public init(name: String, url: String, copyright: String, license: License)<\/Declaration><Abstract><Para>The designated initializer for the Notice object<\/Para><\/Abstract><Parameters><Parameter><Name>name<\/Name><Direction isExplicit=\"0\">in<\/Direction><Discussion><Para>The name of the library<\/Para><\/Discussion><\/Parameter><Parameter><Name>url<\/Name><Direction isExplicit=\"0\">in<\/Direction><Discussion><Para>The library url<\/Para><\/Discussion><\/Parameter><Parameter><Name>copyright<\/Name><Direction isExplicit=\"0\">in<\/Direction><Discussion><Para>The copyright info for the library. (See the &quot;copyright&quot; property<\/Para><\/Discussion><\/Parameter><Parameter><Name>license<\/Name><Direction isExplicit=\"0\">in<\/Direction><Discussion><Para>The license of the library. Either use a standard license or create a CustomLicense instance<\/Para><\/Discussion><\/Parameter><\/Parameters><ResultDiscussion><Para>An instance of the Notice object<\/Para><\/ResultDiscussion><\/Function>",
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Notice.swift",
+            "key.name" : "init(name:url:copyright:license:)",
+            "key.bodylength" : 119,
+            "key.nameoffset" : 1258,
+            "key.typename" : "Notice.Type -> (name: String, url: String, copyright: String, license: License) -> Notice",
+            "key.usr" : "s:FC11LicensesKit6NoticecFMS0_FT4nameSS3urlSS9copyrightSS7licenseCS_7License_S0_",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.bodyoffset" : 1328,
+            "key.parsed_declaration" : "public init(name: String, url: String, copyright: String, license: License)",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.__raw_doc_comment"
+              }
+            ],
+            "key.length" : 68,
+            "key.offset" : 1258,
+            "key.annotated_decl" : "<Declaration>public init(name: <Type usr=\"s:SS\">String<\/Type>, url: <Type usr=\"s:SS\">String<\/Type>, copyright: <Type usr=\"s:SS\">String<\/Type>, license: <Type usr=\"s:C11LicensesKit7License\">License<\/Type>)<\/Declaration>",
+            "key.substructure" : [
+              {
+                "key.length" : 4,
+                "key.typename" : "String",
+                "key.usr" : "s:vFC11LicensesKit6NoticecFMS0_FT4nameSS3urlSS9copyrightSS7licenseCS_7License_S0_L_4nameSS",
+                "key.parsed_declaration" : "public init(name: String, url: String, copyright: String, license: License)",
+                "key.kind" : "source.lang.swift.decl.var.local",
+                "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Notice.swift",
+                "key.related_decls" : [
+                  {
+                    "key.annotated_decl" : "<RelatedName usr=\"s:vC11LicensesKit6Notice4nameSS\">name<\/RelatedName>"
+                  }
+                ],
+                "key.name" : "name",
+                "key.annotated_decl" : "<Declaration>let name: <Type usr=\"s:SS\">String<\/Type><\/Declaration>",
+                "key.offset" : 1263
+              }
+            ]
+          }
+        ],
+        "key.namelength" : 6,
+        "key.doc.full_as_xml" : "<Class file=\"\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Notice.swift\" line=\"14\" column=\"20\"><Name>Notice<\/Name><USR>s:C11LicensesKit6Notice<\/USR><Declaration>@objc public class Notice : NSObject<\/Declaration><Discussion><Para><rawHTML><![CDATA[<ul>]]><\/rawHTML><rawHTML><![CDATA[<li>]]><\/rawHTML>The Notice object is made up of the library name, url, copyright, and license. You pass instances to this object to the LicensesViewController for display (or just list the notices in a json file).<rawHTML><![CDATA[<\/li>]]><\/rawHTML><rawHTML><![CDATA[<\/ul>]]><\/rawHTML><\/Para><\/Discussion><\/Class>",
+        "key.runtime_name" : "_TtC8__main__6Notice",
+        "key.name" : "Notice",
+        "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Notice.swift",
+        "key.bodylength" : 1047,
+        "key.nameoffset" : 388,
+        "key.typename" : "Notice.Type",
+        "key.usr" : "s:C11LicensesKit6Notice",
+        "key.kind" : "source.lang.swift.decl.class",
+        "key.bodyoffset" : 406,
+        "key.parsed_declaration" : "@objc public class Notice: NSObject",
+        "key.attributes" : [
+          {
+            "key.attribute" : "source.decl.attribute.private"
+          },
+          {
+            "key.attribute" : "source.decl.attribute.objc"
+          },
+          {
+            "key.attribute" : "source.decl.attribute.__raw_doc_comment"
+          }
+        ],
+        "key.length" : 6,
+        "key.offset" : 388,
+        "key.inheritedtypes" : [
+          {
+            "key.name" : "NSObject"
+          }
+        ],
+        "key.annotated_decl" : "<Declaration>@objc public class Notice : <Type usr=\"c:objc(cs)NSObject\">NSObject<\/Type><\/Declaration>"
+      }
+    ],
+    "key.offset" : 0,
+    "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
+    "key.length" : 1455
+  },
+  {
+    "key.substructure" : [
+      {
+        "key.substructure" : [
+          {
+            "key.namelength" : 4,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/GnuGeneralPublicLicense30.swift",
+            "key.name" : "name",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License4nameSS"
+              }
+            ],
+            "key.bodylength" : 81,
+            "key.nameoffset" : 265,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit25GnuGeneralPublicLicense304nameSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 279,
+            "key.parsed_declaration" : "override public var name: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 4,
+            "key.offset" : 265,
+            "key.annotated_decl" : "<Declaration>override public var name: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 11,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/GnuGeneralPublicLicense30.swift",
+            "key.name" : "summaryText",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License11summaryTextSS"
+              }
+            ],
+            "key.bodylength" : 109,
+            "key.nameoffset" : 391,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit25GnuGeneralPublicLicense3011summaryTextSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 412,
+            "key.parsed_declaration" : "override public var summaryText: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 11,
+            "key.offset" : 391,
+            "key.annotated_decl" : "<Declaration>override public var summaryText: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 8,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/GnuGeneralPublicLicense30.swift",
+            "key.name" : "fullText",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License8fullTextSS"
+              }
+            ],
+            "key.bodylength" : 106,
+            "key.nameoffset" : 552,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit25GnuGeneralPublicLicense308fullTextSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 570,
+            "key.parsed_declaration" : "override public var fullText: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 8,
+            "key.offset" : 552,
+            "key.annotated_decl" : "<Declaration>override public var fullText: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 7,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/GnuGeneralPublicLicense30.swift",
+            "key.name" : "version",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License7versionSS"
+              }
+            ],
+            "key.bodylength" : 54,
+            "key.nameoffset" : 707,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit25GnuGeneralPublicLicense307versionSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 724,
+            "key.parsed_declaration" : "override public var version: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 7,
+            "key.offset" : 707,
+            "key.annotated_decl" : "<Declaration>override public var version: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 3,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/GnuGeneralPublicLicense30.swift",
+            "key.name" : "url",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License3urlSS"
+              }
+            ],
+            "key.bodylength" : 79,
+            "key.nameoffset" : 809,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit25GnuGeneralPublicLicense303urlSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 822,
+            "key.parsed_declaration" : "override public var url: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 3,
+            "key.offset" : 809,
+            "key.annotated_decl" : "<Declaration>override public var url: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          }
+        ],
+        "key.namelength" : 25,
+        "key.runtime_name" : "_TtC8__main__25GnuGeneralPublicLicense30",
+        "key.name" : "GnuGeneralPublicLicense30",
+        "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/GnuGeneralPublicLicense30.swift",
+        "key.bodylength" : 673,
+        "key.nameoffset" : 199,
+        "key.typename" : "GnuGeneralPublicLicense30.Type",
+        "key.usr" : "s:C11LicensesKit25GnuGeneralPublicLicense30",
+        "key.kind" : "source.lang.swift.decl.class",
+        "key.bodyoffset" : 235,
+        "key.parsed_declaration" : "@objc public class GnuGeneralPublicLicense30: License",
+        "key.attributes" : [
+          {
+            "key.attribute" : "source.decl.attribute.private"
+          },
+          {
+            "key.attribute" : "source.decl.attribute.objc"
+          }
+        ],
+        "key.length" : 25,
+        "key.offset" : 199,
+        "key.inheritedtypes" : [
+          {
+            "key.name" : "License"
+          }
+        ],
+        "key.annotated_decl" : "<Declaration>@objc public class GnuGeneralPublicLicense30 : <Type usr=\"s:C11LicensesKit7License\">License<\/Type><\/Declaration>"
+      }
+    ],
+    "key.offset" : 0,
+    "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
+    "key.length" : 910
+  },
+  {
+    "key.substructure" : [
+      {
+        "key.namelength" : 15,
+        "key.runtime_name" : "_TtC8__main__15LicenseResolver",
+        "key.name" : "LicenseResolver",
+        "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/LicenseResolver.swift",
+        "key.bodylength" : 807,
+        "key.nameoffset" : 190,
+        "key.typename" : "LicenseResolver.Type",
+        "key.usr" : "s:C11LicensesKit15LicenseResolver",
+        "key.kind" : "source.lang.swift.decl.class",
+        "key.bodyoffset" : 207,
+        "key.parsed_declaration" : "@objc public class LicenseResolver",
+        "key.attributes" : [
+          {
+            "key.attribute" : "source.decl.attribute.private"
+          },
+          {
+            "key.attribute" : "source.decl.attribute.objc"
+          }
+        ],
+        "key.length" : 15,
+        "key.offset" : 190,
+        "key.annotated_decl" : "<Declaration>@objc public class LicenseResolver<\/Declaration>",
+        "key.substructure" : [
+          {
+            "key.namelength" : 8,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/LicenseResolver.swift",
+            "key.name" : "licenses",
+            "key.nameoffset" : 221,
+            "key.typename" : "[String : License]",
+            "key.usr" : "s:vC11LicensesKit15LicenseResolver8licensesGVSs10DictionarySSCS_7License_",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.parsed_declaration" : "var licenses: [String : License] = [:]",
+            "key.substructure" : [
+
+            ],
+            "key.length" : 8,
+            "key.offset" : 221,
+            "key.annotated_decl" : "<Declaration>var licenses: [<Type usr=\"s:SS\">String<\/Type> : <Type usr=\"s:C11LicensesKit7License\">License<\/Type>]<\/Declaration>"
+          },
+          {
+            "key.namelength" : 25,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/LicenseResolver.swift",
+            "key.name" : "registerDefaultLicenses()",
+            "key.bodylength" : 437,
+            "key.nameoffset" : 270,
+            "key.typename" : "LicenseResolver -> () -> ()",
+            "key.usr" : "s:FC11LicensesKit15LicenseResolver23registerDefaultLicensesFS0_FT_T_",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.bodyoffset" : 297,
+            "key.parsed_declaration" : "func registerDefaultLicenses()",
+            "key.substructure" : [
+
+            ],
+            "key.length" : 25,
+            "key.offset" : 270,
+            "key.annotated_decl" : "<Declaration>func registerDefaultLicenses()<\/Declaration>"
+          },
+          {
+            "key.namelength" : 33,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/LicenseResolver.swift",
+            "key.name" : "registerLicense(_:)",
+            "key.bodylength" : 65,
+            "key.nameoffset" : 757,
+            "key.typename" : "LicenseResolver -> (License) -> ()",
+            "key.usr" : "s:FC11LicensesKit15LicenseResolver15registerLicenseFS0_FCS_7LicenseT_",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.bodyoffset" : 792,
+            "key.parsed_declaration" : "public func registerLicense(license: License)",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              }
+            ],
+            "key.length" : 33,
+            "key.offset" : 757,
+            "key.annotated_decl" : "<Declaration>public func registerLicense(license: <Type usr=\"s:C11LicensesKit7License\">License<\/Type>)<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 6,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/LicenseResolver.swift",
+            "key.name" : "init()",
+            "key.bodylength" : 39,
+            "key.nameoffset" : 868,
+            "key.typename" : "LicenseResolver.Type -> () -> LicenseResolver",
+            "key.usr" : "s:FC11LicensesKit15LicenseResolvercFMS0_FT_S0_",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.bodyoffset" : 876,
+            "key.parsed_declaration" : "init()",
+            "key.substructure" : [
+
+            ],
+            "key.length" : 6,
+            "key.offset" : 868,
+            "key.annotated_decl" : "<Declaration>init()<\/Declaration>"
+          },
+          {
+            "key.namelength" : 28,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/LicenseResolver.swift",
+            "key.name" : "licenseForName(_:)",
+            "key.bodylength" : 35,
+            "key.nameoffset" : 931,
+            "key.typename" : "LicenseResolver -> (String) -> License?",
+            "key.usr" : "s:FC11LicensesKit15LicenseResolver14licenseForNameFS0_FSSGSqCS_7License_",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.bodyoffset" : 973,
+            "key.parsed_declaration" : "func licenseForName(name: String) -> License?",
+            "key.substructure" : [
+
+            ],
+            "key.length" : 28,
+            "key.offset" : 931,
+            "key.annotated_decl" : "<Declaration>func licenseForName(name: <Type usr=\"s:SS\">String<\/Type>) -&gt; <Type usr=\"s:C11LicensesKit7License\">License<\/Type>?<\/Declaration>"
+          }
+        ]
+      }
+    ],
+    "key.offset" : 0,
+    "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
+    "key.length" : 1016
+  },
+  {
+    "key.substructure" : [
+      {
+        "key.substructure" : [
+          {
+            "key.namelength" : 4,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/ISCLicense.swift",
+            "key.name" : "name",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License4nameSS"
+              }
+            ],
+            "key.bodylength" : 62,
+            "key.nameoffset" : 235,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit10ISCLicense4nameSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 249,
+            "key.parsed_declaration" : "override public var name: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 4,
+            "key.offset" : 235,
+            "key.annotated_decl" : "<Declaration>override public var name: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 11,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/ISCLicense.swift",
+            "key.name" : "summaryText",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License11summaryTextSS"
+              }
+            ],
+            "key.bodylength" : 106,
+            "key.nameoffset" : 342,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit10ISCLicense11summaryTextSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 363,
+            "key.parsed_declaration" : "override public var summaryText: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 11,
+            "key.offset" : 342,
+            "key.annotated_decl" : "<Declaration>override public var summaryText: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 8,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/ISCLicense.swift",
+            "key.name" : "fullText",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License8fullTextSS"
+              }
+            ],
+            "key.bodylength" : 103,
+            "key.nameoffset" : 500,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit10ISCLicense8fullTextSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 518,
+            "key.parsed_declaration" : "override public var fullText: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 8,
+            "key.offset" : 500,
+            "key.annotated_decl" : "<Declaration>override public var fullText: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 7,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/ISCLicense.swift",
+            "key.name" : "version",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License7versionSS"
+              }
+            ],
+            "key.bodylength" : 51,
+            "key.nameoffset" : 652,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit10ISCLicense7versionSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 669,
+            "key.parsed_declaration" : "override public var version: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 7,
+            "key.offset" : 652,
+            "key.annotated_decl" : "<Declaration>override public var version: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 3,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/ISCLicense.swift",
+            "key.name" : "url",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License3urlSS"
+              }
+            ],
+            "key.bodylength" : 97,
+            "key.nameoffset" : 751,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit10ISCLicense3urlSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 764,
+            "key.parsed_declaration" : "override public var url: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 3,
+            "key.offset" : 751,
+            "key.annotated_decl" : "<Declaration>override public var url: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          }
+        ],
+        "key.namelength" : 10,
+        "key.runtime_name" : "_TtC8__main__10ISCLicense",
+        "key.name" : "ISCLicense",
+        "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/ISCLicense.swift",
+        "key.bodylength" : 662,
+        "key.nameoffset" : 184,
+        "key.typename" : "ISCLicense.Type",
+        "key.usr" : "s:C11LicensesKit10ISCLicense",
+        "key.kind" : "source.lang.swift.decl.class",
+        "key.bodyoffset" : 205,
+        "key.parsed_declaration" : "@objc public class ISCLicense: License",
+        "key.attributes" : [
+          {
+            "key.attribute" : "source.decl.attribute.private"
+          },
+          {
+            "key.attribute" : "source.decl.attribute.objc"
+          }
+        ],
+        "key.length" : 10,
+        "key.offset" : 184,
+        "key.inheritedtypes" : [
+          {
+            "key.name" : "License"
+          }
+        ],
+        "key.annotated_decl" : "<Declaration>@objc public class ISCLicense : <Type usr=\"s:C11LicensesKit7License\">License<\/Type><\/Declaration>"
+      }
+    ],
+    "key.offset" : 0,
+    "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
+    "key.length" : 868
+  },
+  {
+    "key.substructure" : [
+      {
+        "key.substructure" : [
+          {
+            "key.namelength" : 4,
+            "key.doc.full_as_xml" : "<Other file=\"\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/License.swift\" line=\"16\" column=\"16\"><Name>name<\/Name><USR>s:vC11LicensesKit7License4nameSS<\/USR><Declaration>public var name: String { get }<\/Declaration><Abstract><Para>The name of the license<\/Para><\/Abstract><\/Other>",
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/License.swift",
+            "key.name" : "name",
+            "key.bodylength" : 78,
+            "key.nameoffset" : 302,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit7License4nameSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 316,
+            "key.parsed_declaration" : "public var name: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.__raw_doc_comment"
+              }
+            ],
+            "key.length" : 4,
+            "key.offset" : 302,
+            "key.annotated_decl" : "<Declaration>public var name: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 11,
+            "key.doc.full_as_xml" : "<Other file=\"\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/License.swift\" line=\"23\" column=\"16\"><Name>summaryText<\/Name><USR>s:vC11LicensesKit7License11summaryTextSS<\/USR><Declaration>public var summaryText: String { get }<\/Declaration><Abstract><Para>The license summary text<\/Para><\/Abstract><\/Other>",
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/License.swift",
+            "key.name" : "summaryText",
+            "key.bodylength" : 109,
+            "key.nameoffset" : 449,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit7License11summaryTextSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 470,
+            "key.parsed_declaration" : "public var summaryText: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.__raw_doc_comment"
+              }
+            ],
+            "key.length" : 11,
+            "key.offset" : 449,
+            "key.annotated_decl" : "<Declaration>public var summaryText: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 8,
+            "key.doc.full_as_xml" : "<Other file=\"\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/License.swift\" line=\"30\" column=\"16\"><Name>fullText<\/Name><USR>s:vC11LicensesKit7License8fullTextSS<\/USR><Declaration>public var fullText: String { get }<\/Declaration><Abstract><Para>The license full text<\/Para><\/Abstract><\/Other>",
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/License.swift",
+            "key.name" : "fullText",
+            "key.bodylength" : 106,
+            "key.nameoffset" : 631,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit7License8fullTextSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 649,
+            "key.parsed_declaration" : "public var fullText: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.__raw_doc_comment"
+              }
+            ],
+            "key.length" : 8,
+            "key.offset" : 631,
+            "key.annotated_decl" : "<Declaration>public var fullText: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 7,
+            "key.doc.full_as_xml" : "<Other file=\"\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/License.swift\" line=\"37\" column=\"16\"><Name>version<\/Name><USR>s:vC11LicensesKit7License7versionSS<\/USR><Declaration>public var version: String { get }<\/Declaration><Abstract><Para>The license version<\/Para><\/Abstract><\/Other>",
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/License.swift",
+            "key.name" : "version",
+            "key.bodylength" : 54,
+            "key.nameoffset" : 805,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit7License7versionSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 822,
+            "key.parsed_declaration" : "public var version: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.__raw_doc_comment"
+              }
+            ],
+            "key.length" : 7,
+            "key.offset" : 805,
+            "key.annotated_decl" : "<Declaration>public var version: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 3,
+            "key.doc.full_as_xml" : "<Other file=\"\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/License.swift\" line=\"44\" column=\"16\"><Name>url<\/Name><USR>s:vC11LicensesKit7License3urlSS<\/USR><Declaration>public var url: String { get }<\/Declaration><Abstract><Para>The license URL<\/Para><\/Abstract><\/Other>",
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/License.swift",
+            "key.name" : "url",
+            "key.bodylength" : 97,
+            "key.nameoffset" : 922,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit7License3urlSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 935,
+            "key.parsed_declaration" : "public var url: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.__raw_doc_comment"
+              }
+            ],
+            "key.length" : 3,
+            "key.offset" : 922,
+            "key.annotated_decl" : "<Declaration>public var url: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          }
+        ],
+        "key.namelength" : 7,
+        "key.doc.full_as_xml" : "<Class file=\"\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/License.swift\" line=\"13\" column=\"20\"><Name>License<\/Name><USR>s:C11LicensesKit7License<\/USR><Declaration>@objc public class License : NSObject, Hashable<\/Declaration><Discussion><Para><rawHTML><![CDATA[<ul>]]><\/rawHTML><rawHTML><![CDATA[<li>]]><\/rawHTML>Describes a library&apos;s license<rawHTML><![CDATA[<\/li>]]><\/rawHTML><rawHTML><![CDATA[<\/ul>]]><\/rawHTML><\/Para><\/Discussion><\/Class>",
+        "key.runtime_name" : "_TtC8__main__7License",
+        "key.name" : "License",
+        "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/License.swift",
+        "key.bodylength" : 789,
+        "key.nameoffset" : 220,
+        "key.typename" : "License.Type",
+        "key.usr" : "s:C11LicensesKit7License",
+        "key.kind" : "source.lang.swift.decl.class",
+        "key.bodyoffset" : 249,
+        "key.parsed_declaration" : "@objc public class License: NSObject, Hashable",
+        "key.attributes" : [
+          {
+            "key.attribute" : "source.decl.attribute.private"
+          },
+          {
+            "key.attribute" : "source.decl.attribute.objc"
+          },
+          {
+            "key.attribute" : "source.decl.attribute.__raw_doc_comment"
+          }
+        ],
+        "key.length" : 7,
+        "key.offset" : 220,
+        "key.inheritedtypes" : [
+          {
+            "key.name" : "NSObject"
+          },
+          {
+            "key.name" : "Hashable"
+          }
+        ],
+        "key.annotated_decl" : "<Declaration>@objc public class License : <Type usr=\"c:objc(cs)NSObject\">NSObject<\/Type>, <Type usr=\"s:PSs8Hashable\">Hashable<\/Type><\/Declaration>"
+      },
+      {
+        "key.namelength" : 7,
+        "key.doc.full_as_xml" : "<Class file=\"\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/License.swift\" line=\"13\" column=\"20\"><Name>License<\/Name><USR>s:C11LicensesKit7License<\/USR><Declaration>@objc public class License : NSObject, Hashable<\/Declaration><Discussion><Para><rawHTML><![CDATA[<ul>]]><\/rawHTML><rawHTML><![CDATA[<li>]]><\/rawHTML>Describes a library&apos;s license<rawHTML><![CDATA[<\/li>]]><\/rawHTML><rawHTML><![CDATA[<\/ul>]]><\/rawHTML><\/Para><\/Discussion><\/Class>",
+        "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/License.swift",
+        "key.name" : "License",
+        "key.bodylength" : 122,
+        "key.nameoffset" : 1051,
+        "key.typename" : "License.Type",
+        "key.usr" : "s:C11LicensesKit7License",
+        "key.kind" : "source.lang.swift.decl.extension",
+        "key.bodyoffset" : 1070,
+        "key.substructure" : [
+          {
+            "key.namelength" : 9,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/License.swift",
+            "key.name" : "hashValue",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vPSs8Hashable9hashValueSi"
+              },
+              {
+                "key.usr" : "s:vE10FoundationCSo8NSObject9hashValueSi"
+              },
+              {
+                "key.usr" : "s:vPSs8Hashable9hashValueSi"
+              }
+            ],
+            "key.bodylength" : 63,
+            "key.nameoffset" : 1111,
+            "key.typename" : "Int",
+            "key.usr" : "s:vC11LicensesKit7License9hashValueSi",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 1127,
+            "key.parsed_declaration" : "public override var hashValue: Int",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.__raw_doc_comment"
+              }
+            ],
+            "key.length" : 9,
+            "key.offset" : 1111,
+            "key.annotated_decl" : "<Declaration>public override var hashValue: <Type usr=\"s:Si\">Int<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          }
+        ],
+        "key.length" : 7,
+        "key.offset" : 220,
+        "key.inheritedtypes" : [
+          {
+            "key.name" : "Hashable"
+          }
+        ],
+        "key.annotated_decl" : "<Declaration>@objc public class License : <Type usr=\"c:objc(cs)NSObject\">NSObject<\/Type>, <Type usr=\"s:PSs8Hashable\">Hashable<\/Type><\/Declaration>"
+      },
+      {
+        "key.substructure" : [
+
+        ],
+        "key.namelength" : 30,
+        "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/License.swift",
+        "key.name" : "==(_:_:)",
+        "key.overrides" : [
+          {
+            "key.usr" : "s:FPSs9Equatableoi2eeUS___FMQPS_FTS0_S0__Sb"
+          }
+        ],
+        "key.bodylength" : 43,
+        "key.nameoffset" : 1220,
+        "key.typename" : "(License, License) -> Bool",
+        "key.usr" : "s:F11LicensesKitoi2eeFTCS_7LicenseS0__Sb",
+        "key.kind" : "source.lang.swift.decl.function.free",
+        "key.bodyoffset" : 1260,
+        "key.parsed_declaration" : "public func ==(lhs: License, rhs: License) -> Bool",
+        "key.attributes" : [
+          {
+            "key.attribute" : "source.decl.attribute.private"
+          },
+          {
+            "key.attribute" : "source.decl.attribute.__raw_doc_comment"
+          }
+        ],
+        "key.length" : 30,
+        "key.offset" : 1220,
+        "key.related_decls" : [
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeFTOSs17MirrorDispositionS__Sb\">==(_: MirrorDisposition, _: MirrorDisposition) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeUSs9Equatable__FTGVSs15ContiguousArrayQ__GS0_Q___Sb\">==&lt;T : Equatable&gt;(_: ContiguousArray&lt;T&gt;, _: ContiguousArray&lt;T&gt;) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeUSs9Equatable__FTGVSs5SliceQ__GS0_Q___Sb\">==&lt;T : Equatable&gt;(_: Slice&lt;T&gt;, _: Slice&lt;T&gt;) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeUSs9Equatable__FTGSaQ__GSaQ___Sb\">==&lt;T : Equatable&gt;(_: Array&lt;T&gt;, _: Array&lt;T&gt;) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeFTSbSb_Sb\">==(_: Bool, _: Bool) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeU__FTGVSs33AutoreleasingUnsafeMutablePointerQ__GS_Q___Sb\">==&lt;T&gt;(_: AutoreleasingUnsafeMutablePointer&lt;T&gt;, _: AutoreleasingUnsafeMutablePointer&lt;T&gt;) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeFTVSs14COpaquePointerS__Sb\">==(_: COpaquePointer, _: COpaquePointer) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeU__FTGVSs16CFunctionPointerQ__GS_Q___Sb\">==&lt;T&gt;(_: CFunctionPointer&lt;T&gt;, _: CFunctionPointer&lt;T&gt;) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeFTOSs9CharacterS__Sb\">==(_: Character, _: Character) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeUSs17_RawOptionSetType_USs21BitwiseOperationsTypeSs9Equatable__FTQ_Q__Sb\">==&lt;T : _RawOptionSetType&gt;(_: T, _: T) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeUSs8Hashable___FTGVSs15DictionaryIndexQ_Q0__GS0_Q_Q0___Sb\">==&lt;Key : Hashable, Value&gt;(_: DictionaryIndex&lt;Key, Value&gt;, _: DictionaryIndex&lt;Key, Value&gt;) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeUSs8Hashable_Ss9Equatable__FTGVSs10DictionaryQ_Q0__GS1_Q_Q0___Sb\">==&lt;Key : Equatable, Value : Equatable&gt;(_: [Key : Value], _: [Key : Value]) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeUSs14CollectionType_USs13GeneratorType__Ss16ForwardIndexType_Ss18_SignedIntegerType_Ss33_BuiltinIntegerLiteralConvertible____FTGVSs25FilterCollectionViewIndexQ__GS4_Q___Sb\">==&lt;Base : CollectionType&gt;(_: FilterCollectionViewIndex&lt;Base&gt;, _: FilterCollectionViewIndex&lt;Base&gt;) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeFTVSs5UInt8S__Sb\">==(_: UInt8, _: UInt8) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeFTVSs4Int8S__Sb\">==(_: Int8, _: Int8) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeFTVSs6UInt16S__Sb\">==(_: UInt16, _: UInt16) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeFTVSs5Int16S__Sb\">==(_: Int16, _: Int16) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeFTVSs6UInt32S__Sb\">==(_: UInt32, _: UInt32) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeFTVSs5Int32S__Sb\">==(_: Int32, _: Int32) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeFTVSs6UInt64S__Sb\">==(_: UInt64, _: UInt64) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeFTVSs5Int64S__Sb\">==(_: Int64, _: Int64) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeFTSuSu_Sb\">==(_: UInt, _: UInt) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeFTSiSi_Sb\">==(_: Int, _: Int) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeFTSfSf_Sb\">==(_: Float, _: Float) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeFTSdSd_Sb\">==(_: Double, _: Double) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeFTVSs7Float80S__Sb\">==(_: Float80, _: Float80) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeFTOSs27FloatingPointClassificationS__Sb\">==(_: FloatingPointClassification, _: FloatingPointClassification) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeU___FTGVSs10HeapBufferQ_Q0__GS_Q_Q0___Sb\">==&lt;Value, Element&gt;(_: HeapBuffer&lt;Value, Element&gt;, _: HeapBuffer&lt;Value, Element&gt;) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeUSs10Comparable__FTGVSs16HalfOpenIntervalQ__GS0_Q___Sb\">==&lt;T : Comparable&gt;(_: HalfOpenInterval&lt;T&gt;, _: HalfOpenInterval&lt;T&gt;) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeUSs10Comparable__FTGVSs14ClosedIntervalQ__GS0_Q___Sb\">==&lt;T : Comparable&gt;(_: ClosedInterval&lt;T&gt;, _: ClosedInterval&lt;T&gt;) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeUSs9Equatable__FTGSqQ__GSqQ___Sb\">==&lt;T : Equatable&gt;(_: T?, _: T?) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeU__FTGSqQ__VSs26_OptionalNilComparisonType_Sb\">==&lt;T&gt;(_: T?, _: _OptionalNilComparisonType) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeU__FTVSs26_OptionalNilComparisonTypeGSqQ___Sb\">==&lt;T&gt;(_: _OptionalNilComparisonType, _: T?) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeUSs16ForwardIndexType_USs18_SignedIntegerType_Ss33_BuiltinIntegerLiteralConvertible___FTGVSs5RangeQ__GS2_Q___Sb\">==&lt;T&gt;(_: Range&lt;T&gt;, _: Range&lt;T&gt;) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeFTVSs16ObjectIdentifierS__Sb\">==(_: ObjectIdentifier, _: ObjectIdentifier) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeUSs22BidirectionalIndexType_USs18_SignedIntegerType_Ss33_BuiltinIntegerLiteralConvertible___FTGVSs25ReverseBidirectionalIndexQ__GS2_Q___Sb\">==&lt;I&gt;(_: ReverseBidirectionalIndex&lt;I&gt;, _: ReverseBidirectionalIndex&lt;I&gt;) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeUSs21RandomAccessIndexType_USs18_SignedIntegerType_Ss33_BuiltinIntegerLiteralConvertible_Ss16SignedNumberType_S1____FTGVSs24ReverseRandomAccessIndexQ__GS3_Q___Sb\">==&lt;I&gt;(_: ReverseRandomAccessIndex&lt;I&gt;, _: ReverseRandomAccessIndex&lt;I&gt;) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeUSs11_Strideable_USs16SignedNumberType_Ss33_BuiltinIntegerLiteralConvertible__FTQ_Q__Sb\">==&lt;T : _Strideable&gt;(_: T, _: T) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeFTSSSS_Sb\">==(_: String, _: String) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeFTVSS5IndexS__Sb\">==(_: String.Index, _: String.Index) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeFTVVSS8UTF8View5IndexS0__Sb\">==(_: String.UTF8View.Index, _: String.UTF8View.Index) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeFTVVSS17UnicodeScalarView5IndexS0__Sb\">==(_: String.UnicodeScalarView.Index, _: String.UnicodeScalarView.Index) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeFTScSc_Sb\">==(_: UnicodeScalar, _: UnicodeScalar) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeU__FTGVSs20UnsafeMutablePointerQ__GS_Q___Sb\">==&lt;T&gt;(_: UnsafeMutablePointer&lt;T&gt;, _: UnsafeMutablePointer&lt;T&gt;) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeU__FTGVSs13UnsafePointerQ__GS_Q___Sb\">==&lt;T&gt;(_: UnsafePointer&lt;T&gt;, _: UnsafePointer&lt;T&gt;) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FSsoi2eeFTOSs3BitS__Sb\">==(_: Bit, _: Bit) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:FPSs9Equatableoi2eeUS___FMQPS_FTS0_S0__Sb\">==(_: Self, _: Self) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:F10Foundationoi2eeFTCSo8NSObjectS0__Sb\">==(_: NSObject, _: NSObject) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:F10Foundationoi2eeFTSSCSo8NSString_Sb\">==(_: String, _: NSString) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:F10Foundationoi2eeFTCSo8NSStringSS_Sb\">==(_: NSString, _: String) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:F10Foundationoi2eeFTCSo8NSStringS0__Sb\">==(_: NSString, _: NSString) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:F10ObjectiveCoi2eeFTVS_8SelectorS0__Sb\">==(_: Selector, _: Selector) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:F12CoreGraphicsoi2eeFTVSC7CGPointS0__Sb\">==(_: CGPoint, _: CGPoint) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:F12CoreGraphicsoi2eeFTVSC6CGSizeS0__Sb\">==(_: CGSize, _: CGSize) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:F12CoreGraphicsoi2eeFTVSC8CGVectorS0__Sb\">==(_: CGVector, _: CGVector) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:F12CoreGraphicsoi2eeFTVSC6CGRectS0__Sb\">==(_: CGRect, _: CGRect) -&gt; Bool<\/RelatedName>"
+          },
+          {
+            "key.annotated_decl" : "<RelatedName usr=\"s:F12CoreGraphicsoi2eeFTVS_7CGFloatS0__Sb\">==(_: CGFloat, _: CGFloat) -&gt; Bool<\/RelatedName>"
+          }
+        ],
+        "key.annotated_decl" : "<Declaration>public func ==(lhs: <Type usr=\"s:C11LicensesKit7License\">License<\/Type>, rhs: <Type usr=\"s:C11LicensesKit7License\">License<\/Type>) -&gt; <Type usr=\"s:Sb\">Bool<\/Type><\/Declaration>"
+      },
+      {
+        "key.namelength" : 21,
+        "key.runtime_name" : "_TtC8__main__21LicenseContentFetcher",
+        "key.name" : "LicenseContentFetcher",
+        "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/License.swift",
+        "key.bodylength" : 613,
+        "key.nameoffset" : 1325,
+        "key.typename" : "LicenseContentFetcher.Type",
+        "key.usr" : "s:C11LicensesKit21LicenseContentFetcher",
+        "key.kind" : "source.lang.swift.decl.class",
+        "key.bodyoffset" : 1348,
+        "key.parsed_declaration" : "@objc public class LicenseContentFetcher",
+        "key.attributes" : [
+          {
+            "key.attribute" : "source.decl.attribute.private"
+          },
+          {
+            "key.attribute" : "source.decl.attribute.objc"
+          }
+        ],
+        "key.length" : 21,
+        "key.offset" : 1325,
+        "key.annotated_decl" : "<Declaration>@objc public class LicenseContentFetcher<\/Declaration>",
+        "key.substructure" : [
+          {
+            "key.namelength" : 6,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/License.swift",
+            "key.name" : "bundle",
+            "key.bodylength" : 52,
+            "key.nameoffset" : 1371,
+            "key.typename" : "NSBundle",
+            "key.usr" : "s:vC11LicensesKit21LicenseContentFetcherP33_CF1BA5D30DE88689989DCBF21AEF1E1B6bundleCSo8NSBundle",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 1389,
+            "key.parsed_declaration" : "private class var bundle: NSBundle",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              }
+            ],
+            "key.length" : 6,
+            "key.offset" : 1371,
+            "key.annotated_decl" : "<Declaration>private class var bundle: <Type usr=\"c:objc(cs)NSBundle\">NSBundle<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 65,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/License.swift",
+            "key.name" : "getContent(filename:inBundle:)",
+            "key.bodylength" : 416,
+            "key.nameoffset" : 1465,
+            "key.typename" : "LicenseContentFetcher.Type -> (filename: String, inBundle: NSBundle) -> String!",
+            "key.usr" : "s:FC11LicensesKit21LicenseContentFetcher10getContentFMS0_FT8filenameSS8inBundleCSo8NSBundle_GSQSS_",
+            "key.kind" : "source.lang.swift.decl.function.method.static",
+            "key.bodyoffset" : 1543,
+            "key.parsed_declaration" : "public class func getContent(#filename: String, inBundle bundle: NSBundle = bundle) -> String!",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              }
+            ],
+            "key.length" : 65,
+            "key.offset" : 1465,
+            "key.annotated_decl" : "<Declaration>public class func getContent(#filename: <Type usr=\"s:SS\">String<\/Type>, inBundle bundle: <Type usr=\"c:objc(cs)NSBundle\">NSBundle<\/Type> = default) -&gt; <Type usr=\"s:SS\">String<\/Type>!<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          }
+        ]
+      }
+    ],
+    "key.offset" : 0,
+    "key.diagnostics" : [
+      {
+        "key.column" : 33,
+        "key.severity" : "source.diagnostic.severity.error",
+        "key.description" : "expected type after 'as'",
+        "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
+        "key.line" : 77
+      }
+    ],
+    "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
+    "key.length" : 1963
+  },
+  {
+    "key.substructure" : [
+      {
+        "key.substructure" : [
+          {
+            "key.namelength" : 4,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/GnuLesserGeneralPublicLicense21.swift",
+            "key.name" : "name",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License4nameSS"
+              }
+            ],
+            "key.bodylength" : 88,
+            "key.nameoffset" : 277,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit31GnuLesserGeneralPublicLicense214nameSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 291,
+            "key.parsed_declaration" : "override public var name: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 4,
+            "key.offset" : 277,
+            "key.annotated_decl" : "<Declaration>override public var name: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 11,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/GnuLesserGeneralPublicLicense21.swift",
+            "key.name" : "summaryText",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License11summaryTextSS"
+              }
+            ],
+            "key.bodylength" : 110,
+            "key.nameoffset" : 410,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit31GnuLesserGeneralPublicLicense2111summaryTextSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 431,
+            "key.parsed_declaration" : "override public var summaryText: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 11,
+            "key.offset" : 410,
+            "key.annotated_decl" : "<Declaration>override public var summaryText: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 8,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/GnuLesserGeneralPublicLicense21.swift",
+            "key.name" : "fullText",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License8fullTextSS"
+              }
+            ],
+            "key.bodylength" : 107,
+            "key.nameoffset" : 572,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit31GnuLesserGeneralPublicLicense218fullTextSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 590,
+            "key.parsed_declaration" : "override public var fullText: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 8,
+            "key.offset" : 572,
+            "key.annotated_decl" : "<Declaration>override public var fullText: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 7,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/GnuLesserGeneralPublicLicense21.swift",
+            "key.name" : "version",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License7versionSS"
+              }
+            ],
+            "key.bodylength" : 54,
+            "key.nameoffset" : 728,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit31GnuLesserGeneralPublicLicense217versionSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 745,
+            "key.parsed_declaration" : "override public var version: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 7,
+            "key.offset" : 728,
+            "key.annotated_decl" : "<Declaration>override public var version: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 3,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/GnuLesserGeneralPublicLicense21.swift",
+            "key.name" : "url",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License3urlSS"
+              }
+            ],
+            "key.bodylength" : 105,
+            "key.nameoffset" : 830,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit31GnuLesserGeneralPublicLicense213urlSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 843,
+            "key.parsed_declaration" : "override public var url: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 3,
+            "key.offset" : 830,
+            "key.annotated_decl" : "<Declaration>override public var url: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          }
+        ],
+        "key.namelength" : 31,
+        "key.runtime_name" : "_TtC8__main__31GnuLesserGeneralPublicLicense21",
+        "key.name" : "GnuLesserGeneralPublicLicense21",
+        "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/GnuLesserGeneralPublicLicense21.swift",
+        "key.bodylength" : 708,
+        "key.nameoffset" : 205,
+        "key.typename" : "GnuLesserGeneralPublicLicense21.Type",
+        "key.usr" : "s:C11LicensesKit31GnuLesserGeneralPublicLicense21",
+        "key.kind" : "source.lang.swift.decl.class",
+        "key.bodyoffset" : 247,
+        "key.parsed_declaration" : "@objc public class GnuLesserGeneralPublicLicense21: License",
+        "key.attributes" : [
+          {
+            "key.attribute" : "source.decl.attribute.private"
+          },
+          {
+            "key.attribute" : "source.decl.attribute.objc"
+          }
+        ],
+        "key.length" : 31,
+        "key.offset" : 205,
+        "key.inheritedtypes" : [
+          {
+            "key.name" : "License"
+          }
+        ],
+        "key.annotated_decl" : "<Declaration>@objc public class GnuLesserGeneralPublicLicense21 : <Type usr=\"s:C11LicensesKit7License\">License<\/Type><\/Declaration>"
+      }
+    ],
+    "key.offset" : 0,
+    "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
+    "key.length" : 957
+  },
+  {
+    "key.substructure" : [
+      {
+        "key.substructure" : [
+          {
+            "key.namelength" : 4,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/BSD3ClauseLicense.swift",
+            "key.name" : "name",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License4nameSS"
+              }
+            ],
+            "key.bodylength" : 71,
+            "key.nameoffset" : 249,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit17BSD3ClauseLicense4nameSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 263,
+            "key.parsed_declaration" : "override public var name: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 4,
+            "key.offset" : 249,
+            "key.annotated_decl" : "<Declaration>override public var name: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 11,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/BSD3ClauseLicense.swift",
+            "key.name" : "summaryText",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License11summaryTextSS"
+              }
+            ],
+            "key.bodylength" : 107,
+            "key.nameoffset" : 365,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit17BSD3ClauseLicense11summaryTextSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 386,
+            "key.parsed_declaration" : "override public var summaryText: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 11,
+            "key.offset" : 365,
+            "key.annotated_decl" : "<Declaration>override public var summaryText: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 8,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/BSD3ClauseLicense.swift",
+            "key.name" : "fullText",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License8fullTextSS"
+              }
+            ],
+            "key.bodylength" : 104,
+            "key.nameoffset" : 524,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit17BSD3ClauseLicense8fullTextSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 542,
+            "key.parsed_declaration" : "override public var fullText: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 8,
+            "key.offset" : 524,
+            "key.annotated_decl" : "<Declaration>override public var fullText: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 7,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/BSD3ClauseLicense.swift",
+            "key.name" : "version",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License7versionSS"
+              }
+            ],
+            "key.bodylength" : 51,
+            "key.nameoffset" : 677,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit17BSD3ClauseLicense7versionSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 694,
+            "key.parsed_declaration" : "override public var version: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 7,
+            "key.offset" : 677,
+            "key.annotated_decl" : "<Declaration>override public var version: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 3,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/BSD3ClauseLicense.swift",
+            "key.name" : "url",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License3urlSS"
+              }
+            ],
+            "key.bodylength" : 94,
+            "key.nameoffset" : 776,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit17BSD3ClauseLicense3urlSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 789,
+            "key.parsed_declaration" : "override public var url: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 3,
+            "key.offset" : 776,
+            "key.annotated_decl" : "<Declaration>override public var url: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          }
+        ],
+        "key.namelength" : 17,
+        "key.runtime_name" : "_TtC8__main__17BSD3ClauseLicense",
+        "key.name" : "BSD3ClauseLicense",
+        "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/BSD3ClauseLicense.swift",
+        "key.bodylength" : 671,
+        "key.nameoffset" : 191,
+        "key.typename" : "BSD3ClauseLicense.Type",
+        "key.usr" : "s:C11LicensesKit17BSD3ClauseLicense",
+        "key.kind" : "source.lang.swift.decl.class",
+        "key.bodyoffset" : 219,
+        "key.parsed_declaration" : "@objc public class BSD3ClauseLicense: License",
+        "key.attributes" : [
+          {
+            "key.attribute" : "source.decl.attribute.private"
+          },
+          {
+            "key.attribute" : "source.decl.attribute.objc"
+          }
+        ],
+        "key.length" : 17,
+        "key.offset" : 191,
+        "key.inheritedtypes" : [
+          {
+            "key.name" : "License"
+          }
+        ],
+        "key.annotated_decl" : "<Declaration>@objc public class BSD3ClauseLicense : <Type usr=\"s:C11LicensesKit7License\">License<\/Type><\/Declaration>"
+      }
+    ],
+    "key.offset" : 0,
+    "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
+    "key.length" : 892
+  },
+  {
+    "key.substructure" : [
+      {
+        "key.substructure" : [
+          {
+            "key.namelength" : 11,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/CustomLicense.swift",
+            "key.name" : "privateName",
+            "key.nameoffset" : 234,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit13CustomLicenseP33_C7108F4D6493AE59D5B5C9726820016911privateNameSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              }
+            ],
+            "key.parsed_declaration" : "private var privateName: String = \"\"",
+            "key.substructure" : [
+
+            ],
+            "key.length" : 11,
+            "key.offset" : 234,
+            "key.annotated_decl" : "<Declaration>private var privateName: <Type usr=\"s:SS\">String<\/Type><\/Declaration>"
+          },
+          {
+            "key.namelength" : 4,
+            "key.doc.full_as_xml" : "<Other file=\"\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/CustomLicense.swift\" line=\"16\" column=\"25\"><Name>name<\/Name><USR>s:vC11LicensesKit13CustomLicense4nameSS<\/USR><Declaration>override public var name: String { get set }<\/Declaration><Abstract><Para>The name of the license<\/Para><\/Abstract><\/Other>",
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/CustomLicense.swift",
+            "key.name" : "name",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License4nameSS"
+              }
+            ],
+            "key.bodylength" : 129,
+            "key.nameoffset" : 316,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit13CustomLicense4nameSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 330,
+            "key.parsed_declaration" : "override public var name: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.__raw_doc_comment"
+              }
+            ],
+            "key.length" : 4,
+            "key.offset" : 316,
+            "key.annotated_decl" : "<Declaration>override public var name: <Type usr=\"s:SS\">String<\/Type> { get set }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 18,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/CustomLicense.swift",
+            "key.name" : "privateSummaryText",
+            "key.nameoffset" : 482,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit13CustomLicenseP33_C7108F4D6493AE59D5B5C9726820016918privateSummaryTextSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              }
+            ],
+            "key.parsed_declaration" : "private var privateSummaryText: String = \"\"",
+            "key.substructure" : [
+
+            ],
+            "key.length" : 18,
+            "key.offset" : 482,
+            "key.annotated_decl" : "<Declaration>private var privateSummaryText: <Type usr=\"s:SS\">String<\/Type><\/Declaration>"
+          },
+          {
+            "key.namelength" : 11,
+            "key.doc.full_as_xml" : "<Other file=\"\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/CustomLicense.swift\" line=\"27\" column=\"25\"><Name>summaryText<\/Name><USR>s:vC11LicensesKit13CustomLicense11summaryTextSS<\/USR><Declaration>override public var summaryText: String { get set }<\/Declaration><Abstract><Para>The license summary text<\/Para><\/Abstract><\/Other>",
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/CustomLicense.swift",
+            "key.name" : "summaryText",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License11summaryTextSS"
+              }
+            ],
+            "key.bodylength" : 143,
+            "key.nameoffset" : 571,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit13CustomLicense11summaryTextSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 592,
+            "key.parsed_declaration" : "override public var summaryText: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.__raw_doc_comment"
+              }
+            ],
+            "key.length" : 11,
+            "key.offset" : 571,
+            "key.annotated_decl" : "<Declaration>override public var summaryText: <Type usr=\"s:SS\">String<\/Type> { get set }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 15,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/CustomLicense.swift",
+            "key.name" : "privateFullText",
+            "key.nameoffset" : 758,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit13CustomLicenseP33_C7108F4D6493AE59D5B5C9726820016915privateFullTextSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              }
+            ],
+            "key.parsed_declaration" : "private var privateFullText: String = \"\"",
+            "key.substructure" : [
+
+            ],
+            "key.length" : 15,
+            "key.offset" : 758,
+            "key.annotated_decl" : "<Declaration>private var privateFullText: <Type usr=\"s:SS\">String<\/Type><\/Declaration>"
+          },
+          {
+            "key.namelength" : 8,
+            "key.doc.full_as_xml" : "<Other file=\"\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/CustomLicense.swift\" line=\"38\" column=\"25\"><Name>fullText<\/Name><USR>s:vC11LicensesKit13CustomLicense8fullTextSS<\/USR><Declaration>override public var fullText: String { get set }<\/Declaration><Abstract><Para>The license full text<\/Para><\/Abstract><\/Other>",
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/CustomLicense.swift",
+            "key.name" : "fullText",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License8fullTextSS"
+              }
+            ],
+            "key.bodylength" : 137,
+            "key.nameoffset" : 841,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit13CustomLicense8fullTextSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 859,
+            "key.parsed_declaration" : "override public var fullText: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.__raw_doc_comment"
+              }
+            ],
+            "key.length" : 8,
+            "key.offset" : 841,
+            "key.annotated_decl" : "<Declaration>override public var fullText: <Type usr=\"s:SS\">String<\/Type> { get set }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 14,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/CustomLicense.swift",
+            "key.name" : "privateVersion",
+            "key.nameoffset" : 1019,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit13CustomLicenseP33_C7108F4D6493AE59D5B5C9726820016914privateVersionSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              }
+            ],
+            "key.parsed_declaration" : "private var privateVersion: String = \"\"",
+            "key.substructure" : [
+
+            ],
+            "key.length" : 14,
+            "key.offset" : 1019,
+            "key.annotated_decl" : "<Declaration>private var privateVersion: <Type usr=\"s:SS\">String<\/Type><\/Declaration>"
+          },
+          {
+            "key.namelength" : 7,
+            "key.doc.full_as_xml" : "<Other file=\"\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/CustomLicense.swift\" line=\"49\" column=\"25\"><Name>version<\/Name><USR>s:vC11LicensesKit13CustomLicense7versionSS<\/USR><Declaration>override public var version: String { get set }<\/Declaration><Abstract><Para>The license version<\/Para><\/Abstract><\/Other>",
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/CustomLicense.swift",
+            "key.name" : "version",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License7versionSS"
+              }
+            ],
+            "key.bodylength" : 135,
+            "key.nameoffset" : 1099,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit13CustomLicense7versionSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 1116,
+            "key.parsed_declaration" : "override public var version: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.__raw_doc_comment"
+              }
+            ],
+            "key.length" : 7,
+            "key.offset" : 1099,
+            "key.annotated_decl" : "<Declaration>override public var version: <Type usr=\"s:SS\">String<\/Type> { get set }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 10,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/CustomLicense.swift",
+            "key.name" : "privateURL",
+            "key.nameoffset" : 1274,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit13CustomLicenseP33_C7108F4D6493AE59D5B5C9726820016910privateURLSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              }
+            ],
+            "key.parsed_declaration" : "private var privateURL: String = \"\"",
+            "key.substructure" : [
+
+            ],
+            "key.length" : 10,
+            "key.offset" : 1274,
+            "key.annotated_decl" : "<Declaration>private var privateURL: <Type usr=\"s:SS\">String<\/Type><\/Declaration>"
+          },
+          {
+            "key.namelength" : 3,
+            "key.doc.full_as_xml" : "<Other file=\"\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/CustomLicense.swift\" line=\"60\" column=\"25\"><Name>url<\/Name><USR>s:vC11LicensesKit13CustomLicense3urlSS<\/USR><Declaration>override public var url: String { get set }<\/Declaration><Abstract><Para>The license URL<\/Para><\/Abstract><\/Other>",
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/CustomLicense.swift",
+            "key.name" : "url",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License3urlSS"
+              }
+            ],
+            "key.bodylength" : 127,
+            "key.nameoffset" : 1346,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit13CustomLicense3urlSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 1359,
+            "key.parsed_declaration" : "override public var url: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.__raw_doc_comment"
+              }
+            ],
+            "key.length" : 3,
+            "key.offset" : 1346,
+            "key.annotated_decl" : "<Declaration>override public var url: <Type usr=\"s:SS\">String<\/Type> { get set }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 87,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/CustomLicense.swift",
+            "key.name" : "init(name:summaryText:fullText:version:url:)",
+            "key.bodylength" : 177,
+            "key.nameoffset" : 1504,
+            "key.typename" : "CustomLicense.Type -> (name: String, summaryText: String, fullText: String, version: String, url: String) -> CustomLicense",
+            "key.usr" : "s:FC11LicensesKit13CustomLicensecFMS0_FT4nameSS11summaryTextSS8fullTextSS7versionSS3urlSS_S0_",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.bodyoffset" : 1593,
+            "key.parsed_declaration" : "public init(name: String, summaryText: String, fullText: String, version: String, url: String)",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              }
+            ],
+            "key.length" : 87,
+            "key.offset" : 1504,
+            "key.annotated_decl" : "<Declaration>public init(name: <Type usr=\"s:SS\">String<\/Type>, summaryText: <Type usr=\"s:SS\">String<\/Type>, fullText: <Type usr=\"s:SS\">String<\/Type>, version: <Type usr=\"s:SS\">String<\/Type>, url: <Type usr=\"s:SS\">String<\/Type>)<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          }
+        ],
+        "key.namelength" : 13,
+        "key.runtime_name" : "_TtC8__main__13CustomLicense",
+        "key.name" : "CustomLicense",
+        "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/CustomLicense.swift",
+        "key.bodylength" : 1564,
+        "key.nameoffset" : 188,
+        "key.typename" : "CustomLicense.Type",
+        "key.usr" : "s:C11LicensesKit13CustomLicense",
+        "key.kind" : "source.lang.swift.decl.class",
+        "key.bodyoffset" : 212,
+        "key.parsed_declaration" : "@objc public class CustomLicense: License",
+        "key.attributes" : [
+          {
+            "key.attribute" : "source.decl.attribute.private"
+          },
+          {
+            "key.attribute" : "source.decl.attribute.objc"
+          }
+        ],
+        "key.length" : 13,
+        "key.offset" : 188,
+        "key.inheritedtypes" : [
+          {
+            "key.name" : "License"
+          }
+        ],
+        "key.annotated_decl" : "<Declaration>@objc public class CustomLicense : <Type usr=\"s:C11LicensesKit7License\">License<\/Type><\/Declaration>"
+      }
+    ],
+    "key.offset" : 0,
+    "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
+    "key.length" : 1778
+  },
+  {
+    "key.substructure" : [
+      {
+        "key.substructure" : [
+          {
+            "key.namelength" : 4,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/MITLicense.swift",
+            "key.name" : "name",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License4nameSS"
+              }
+            ],
+            "key.bodylength" : 62,
+            "key.nameoffset" : 235,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit10MITLicense4nameSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 249,
+            "key.parsed_declaration" : "override public var name: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 4,
+            "key.offset" : 235,
+            "key.annotated_decl" : "<Declaration>override public var name: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 11,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/MITLicense.swift",
+            "key.name" : "summaryText",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License11summaryTextSS"
+              }
+            ],
+            "key.bodylength" : 106,
+            "key.nameoffset" : 342,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit10MITLicense11summaryTextSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 363,
+            "key.parsed_declaration" : "override public var summaryText: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 11,
+            "key.offset" : 342,
+            "key.annotated_decl" : "<Declaration>override public var summaryText: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 8,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/MITLicense.swift",
+            "key.name" : "fullText",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License8fullTextSS"
+              }
+            ],
+            "key.bodylength" : 103,
+            "key.nameoffset" : 500,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit10MITLicense8fullTextSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 518,
+            "key.parsed_declaration" : "override public var fullText: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 8,
+            "key.offset" : 500,
+            "key.annotated_decl" : "<Declaration>override public var fullText: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 7,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/MITLicense.swift",
+            "key.name" : "version",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License7versionSS"
+              }
+            ],
+            "key.bodylength" : 51,
+            "key.nameoffset" : 652,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit10MITLicense7versionSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 669,
+            "key.parsed_declaration" : "override public var version: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 7,
+            "key.offset" : 652,
+            "key.annotated_decl" : "<Declaration>override public var version: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 3,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/MITLicense.swift",
+            "key.name" : "url",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License3urlSS"
+              }
+            ],
+            "key.bodylength" : 85,
+            "key.nameoffset" : 751,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit10MITLicense3urlSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 764,
+            "key.parsed_declaration" : "override public var url: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 3,
+            "key.offset" : 751,
+            "key.annotated_decl" : "<Declaration>override public var url: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          }
+        ],
+        "key.namelength" : 10,
+        "key.runtime_name" : "_TtC8__main__10MITLicense",
+        "key.name" : "MITLicense",
+        "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/MITLicense.swift",
+        "key.bodylength" : 650,
+        "key.nameoffset" : 184,
+        "key.typename" : "MITLicense.Type",
+        "key.usr" : "s:C11LicensesKit10MITLicense",
+        "key.kind" : "source.lang.swift.decl.class",
+        "key.bodyoffset" : 205,
+        "key.parsed_declaration" : "@objc public class MITLicense: License",
+        "key.attributes" : [
+          {
+            "key.attribute" : "source.decl.attribute.private"
+          },
+          {
+            "key.attribute" : "source.decl.attribute.objc"
+          }
+        ],
+        "key.length" : 10,
+        "key.offset" : 184,
+        "key.inheritedtypes" : [
+          {
+            "key.name" : "License"
+          }
+        ],
+        "key.annotated_decl" : "<Declaration>@objc public class MITLicense : <Type usr=\"s:C11LicensesKit7License\">License<\/Type><\/Declaration>"
+      }
+    ],
+    "key.offset" : 0,
+    "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
+    "key.length" : 856
+  },
+  {
+    "key.substructure" : [
+      {
+        "key.substructure" : [
+          {
+            "key.namelength" : 4,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/ApacheSoftwareLicense20.swift",
+            "key.name" : "name",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License4nameSS"
+              }
+            ],
+            "key.bodylength" : 78,
+            "key.nameoffset" : 261,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit23ApacheSoftwareLicense204nameSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 275,
+            "key.parsed_declaration" : "override public var name: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 4,
+            "key.offset" : 261,
+            "key.annotated_decl" : "<Declaration>override public var name: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 11,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/ApacheSoftwareLicense20.swift",
+            "key.name" : "summaryText",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License11summaryTextSS"
+              }
+            ],
+            "key.bodylength" : 109,
+            "key.nameoffset" : 384,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit23ApacheSoftwareLicense2011summaryTextSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 405,
+            "key.parsed_declaration" : "override public var summaryText: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 11,
+            "key.offset" : 384,
+            "key.annotated_decl" : "<Declaration>override public var summaryText: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 8,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/ApacheSoftwareLicense20.swift",
+            "key.name" : "fullText",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License8fullTextSS"
+              }
+            ],
+            "key.bodylength" : 106,
+            "key.nameoffset" : 545,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit23ApacheSoftwareLicense208fullTextSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 563,
+            "key.parsed_declaration" : "override public var fullText: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 8,
+            "key.offset" : 545,
+            "key.annotated_decl" : "<Declaration>override public var fullText: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 7,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/ApacheSoftwareLicense20.swift",
+            "key.name" : "version",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License7versionSS"
+              }
+            ],
+            "key.bodylength" : 54,
+            "key.nameoffset" : 700,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit23ApacheSoftwareLicense207versionSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 717,
+            "key.parsed_declaration" : "override public var version: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 7,
+            "key.offset" : 700,
+            "key.annotated_decl" : "<Declaration>override public var version: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 3,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/ApacheSoftwareLicense20.swift",
+            "key.name" : "url",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License3urlSS"
+              }
+            ],
+            "key.bodylength" : 97,
+            "key.nameoffset" : 802,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit23ApacheSoftwareLicense203urlSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 815,
+            "key.parsed_declaration" : "override public var url: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 3,
+            "key.offset" : 802,
+            "key.annotated_decl" : "<Declaration>override public var url: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          }
+        ],
+        "key.namelength" : 23,
+        "key.runtime_name" : "_TtC8__main__23ApacheSoftwareLicense20",
+        "key.name" : "ApacheSoftwareLicense20",
+        "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/ApacheSoftwareLicense20.swift",
+        "key.bodylength" : 687,
+        "key.nameoffset" : 197,
+        "key.typename" : "ApacheSoftwareLicense20.Type",
+        "key.usr" : "s:C11LicensesKit23ApacheSoftwareLicense20",
+        "key.kind" : "source.lang.swift.decl.class",
+        "key.bodyoffset" : 231,
+        "key.parsed_declaration" : "@objc public class ApacheSoftwareLicense20: License",
+        "key.attributes" : [
+          {
+            "key.attribute" : "source.decl.attribute.private"
+          },
+          {
+            "key.attribute" : "source.decl.attribute.objc"
+          }
+        ],
+        "key.length" : 23,
+        "key.offset" : 197,
+        "key.inheritedtypes" : [
+          {
+            "key.name" : "License"
+          }
+        ],
+        "key.annotated_decl" : "<Declaration>@objc public class ApacheSoftwareLicense20 : <Type usr=\"s:C11LicensesKit7License\">License<\/Type><\/Declaration>"
+      }
+    ],
+    "key.offset" : 0,
+    "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
+    "key.length" : 920
+  },
+  {
+    "key.substructure" : [
+      {
+        "key.substructure" : [
+          {
+            "key.namelength" : 4,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/GnuGeneralPublicLicense20.swift",
+            "key.name" : "name",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License4nameSS"
+              }
+            ],
+            "key.bodylength" : 81,
+            "key.nameoffset" : 265,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit25GnuGeneralPublicLicense204nameSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 279,
+            "key.parsed_declaration" : "override public var name: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 4,
+            "key.offset" : 265,
+            "key.annotated_decl" : "<Declaration>override public var name: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 11,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/GnuGeneralPublicLicense20.swift",
+            "key.name" : "summaryText",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License11summaryTextSS"
+              }
+            ],
+            "key.bodylength" : 109,
+            "key.nameoffset" : 391,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit25GnuGeneralPublicLicense2011summaryTextSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 412,
+            "key.parsed_declaration" : "override public var summaryText: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 11,
+            "key.offset" : 391,
+            "key.annotated_decl" : "<Declaration>override public var summaryText: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 8,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/GnuGeneralPublicLicense20.swift",
+            "key.name" : "fullText",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License8fullTextSS"
+              }
+            ],
+            "key.bodylength" : 106,
+            "key.nameoffset" : 552,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit25GnuGeneralPublicLicense208fullTextSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 570,
+            "key.parsed_declaration" : "override public var fullText: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 8,
+            "key.offset" : 552,
+            "key.annotated_decl" : "<Declaration>override public var fullText: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 7,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/GnuGeneralPublicLicense20.swift",
+            "key.name" : "version",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License7versionSS"
+              }
+            ],
+            "key.bodylength" : 54,
+            "key.nameoffset" : 707,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit25GnuGeneralPublicLicense207versionSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 724,
+            "key.parsed_declaration" : "override public var version: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 7,
+            "key.offset" : 707,
+            "key.annotated_decl" : "<Declaration>override public var version: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 3,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/GnuGeneralPublicLicense20.swift",
+            "key.name" : "url",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License3urlSS"
+              }
+            ],
+            "key.bodylength" : 79,
+            "key.nameoffset" : 809,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit25GnuGeneralPublicLicense203urlSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 822,
+            "key.parsed_declaration" : "override public var url: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 3,
+            "key.offset" : 809,
+            "key.annotated_decl" : "<Declaration>override public var url: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          }
+        ],
+        "key.namelength" : 25,
+        "key.runtime_name" : "_TtC8__main__25GnuGeneralPublicLicense20",
+        "key.name" : "GnuGeneralPublicLicense20",
+        "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/GnuGeneralPublicLicense20.swift",
+        "key.bodylength" : 672,
+        "key.nameoffset" : 199,
+        "key.typename" : "GnuGeneralPublicLicense20.Type",
+        "key.usr" : "s:C11LicensesKit25GnuGeneralPublicLicense20",
+        "key.kind" : "source.lang.swift.decl.class",
+        "key.bodyoffset" : 235,
+        "key.parsed_declaration" : "@objc public class GnuGeneralPublicLicense20: License",
+        "key.attributes" : [
+          {
+            "key.attribute" : "source.decl.attribute.private"
+          },
+          {
+            "key.attribute" : "source.decl.attribute.objc"
+          }
+        ],
+        "key.length" : 25,
+        "key.offset" : 199,
+        "key.inheritedtypes" : [
+          {
+            "key.name" : "License"
+          }
+        ],
+        "key.annotated_decl" : "<Declaration>@objc public class GnuGeneralPublicLicense20 : <Type usr=\"s:C11LicensesKit7License\">License<\/Type><\/Declaration>"
+      }
+    ],
+    "key.offset" : 0,
+    "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
+    "key.length" : 908
+  },
+  {
+    "key.substructure" : [
+      {
+        "key.substructure" : [
+          {
+            "key.namelength" : 4,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/CreativeCommonsAttributionNoDerivs30Unported.swift",
+            "key.name" : "name",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License4nameSS"
+              }
+            ],
+            "key.bodylength" : 101,
+            "key.nameoffset" : 303,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit44CreativeCommonsAttributionNoDerivs30Unported4nameSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 317,
+            "key.parsed_declaration" : "override public var name: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 4,
+            "key.offset" : 303,
+            "key.annotated_decl" : "<Declaration>override public var name: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 11,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/CreativeCommonsAttributionNoDerivs30Unported.swift",
+            "key.name" : "summaryText",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License11summaryTextSS"
+              }
+            ],
+            "key.bodylength" : 111,
+            "key.nameoffset" : 449,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit44CreativeCommonsAttributionNoDerivs30Unported11summaryTextSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 470,
+            "key.parsed_declaration" : "override public var summaryText: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 11,
+            "key.offset" : 449,
+            "key.annotated_decl" : "<Declaration>override public var summaryText: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 8,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/CreativeCommonsAttributionNoDerivs30Unported.swift",
+            "key.name" : "fullText",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License8fullTextSS"
+              }
+            ],
+            "key.bodylength" : 108,
+            "key.nameoffset" : 612,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit44CreativeCommonsAttributionNoDerivs30Unported8fullTextSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 630,
+            "key.parsed_declaration" : "override public var fullText: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 8,
+            "key.offset" : 612,
+            "key.annotated_decl" : "<Declaration>override public var fullText: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 7,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/CreativeCommonsAttributionNoDerivs30Unported.swift",
+            "key.name" : "version",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License7versionSS"
+              }
+            ],
+            "key.bodylength" : 54,
+            "key.nameoffset" : 769,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit44CreativeCommonsAttributionNoDerivs30Unported7versionSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 786,
+            "key.parsed_declaration" : "override public var version: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 7,
+            "key.offset" : 769,
+            "key.annotated_decl" : "<Declaration>override public var version: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 3,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/CreativeCommonsAttributionNoDerivs30Unported.swift",
+            "key.name" : "url",
+            "key.overrides" : [
+              {
+                "key.usr" : "s:vC11LicensesKit7License3urlSS"
+              }
+            ],
+            "key.bodylength" : 96,
+            "key.nameoffset" : 871,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit44CreativeCommonsAttributionNoDerivs30Unported3urlSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.bodyoffset" : 884,
+            "key.parsed_declaration" : "override public var url: String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              },
+              {
+                "key.attribute" : "source.decl.attribute.override"
+              }
+            ],
+            "key.length" : 3,
+            "key.offset" : 871,
+            "key.annotated_decl" : "<Declaration>override public var url: <Type usr=\"s:SS\">String<\/Type> { get }<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          }
+        ],
+        "key.namelength" : 44,
+        "key.runtime_name" : "_TtC8__main__44CreativeCommonsAttributionNoDerivs30Unported",
+        "key.name" : "CreativeCommonsAttributionNoDerivs30Unported",
+        "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/Model\/Licenses\/CreativeCommonsAttributionNoDerivs30Unported.swift",
+        "key.bodylength" : 713,
+        "key.nameoffset" : 218,
+        "key.typename" : "CreativeCommonsAttributionNoDerivs30Unported.Type",
+        "key.usr" : "s:C11LicensesKit44CreativeCommonsAttributionNoDerivs30Unported",
+        "key.kind" : "source.lang.swift.decl.class",
+        "key.bodyoffset" : 273,
+        "key.parsed_declaration" : "@objc public class CreativeCommonsAttributionNoDerivs30Unported: License",
+        "key.attributes" : [
+          {
+            "key.attribute" : "source.decl.attribute.private"
+          },
+          {
+            "key.attribute" : "source.decl.attribute.objc"
+          }
+        ],
+        "key.length" : 44,
+        "key.offset" : 218,
+        "key.inheritedtypes" : [
+          {
+            "key.name" : "License"
+          }
+        ],
+        "key.annotated_decl" : "<Declaration>@objc public class CreativeCommonsAttributionNoDerivs30Unported : <Type usr=\"s:C11LicensesKit7License\">License<\/Type><\/Declaration>"
+      }
+    ],
+    "key.offset" : 0,
+    "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
+    "key.length" : 988
+  },
+  {
+    "key.substructure" : [
+      {
+        "key.namelength" : 18,
+        "key.runtime_name" : "_TtC8__main__18NoticesHtmlBuilder",
+        "key.name" : "NoticesHtmlBuilder",
+        "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/NoticesHtmlBuilder.swift",
+        "key.bodylength" : 1453,
+        "key.nameoffset" : 200,
+        "key.typename" : "NoticesHtmlBuilder.Type",
+        "key.usr" : "s:C11LicensesKit18NoticesHtmlBuilder",
+        "key.kind" : "source.lang.swift.decl.class",
+        "key.bodyoffset" : 220,
+        "key.parsed_declaration" : "class NoticesHtmlBuilder",
+        "key.substructure" : [
+          {
+            "key.namelength" : 16,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/NoticesHtmlBuilder.swift",
+            "key.name" : "licenseTextCache",
+            "key.nameoffset" : 242,
+            "key.typename" : "[License : String]",
+            "key.usr" : "s:vC11LicensesKit18NoticesHtmlBuilderP33_8D0E7BAFE79F34C5DBE59F57AD25BB0916licenseTextCacheGVSs10DictionaryCS_7LicenseSS_",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              }
+            ],
+            "key.parsed_declaration" : "private var licenseTextCache: [License: String] = [:]",
+            "key.substructure" : [
+
+            ],
+            "key.length" : 16,
+            "key.offset" : 242,
+            "key.annotated_decl" : "<Declaration>private var licenseTextCache: [<Type usr=\"s:C11LicensesKit7License\">License<\/Type> : <Type usr=\"s:SS\">String<\/Type>]<\/Declaration>"
+          },
+          {
+            "key.namelength" : 5,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/NoticesHtmlBuilder.swift",
+            "key.name" : "style",
+            "key.nameoffset" : 292,
+            "key.typename" : "String",
+            "key.usr" : "s:vC11LicensesKit18NoticesHtmlBuilder5styleSS",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.parsed_declaration" : "var style: String = \"p.license { background:grey;} body { font-family: sans-serif; overflow-wrap: break-word; } pre {background-color: #eeeeee; padding: 1em; white-space: pre-wrap; }\"",
+            "key.substructure" : [
+
+            ],
+            "key.length" : 5,
+            "key.offset" : 292,
+            "key.annotated_decl" : "<Declaration>var style: <Type usr=\"s:SS\">String<\/Type><\/Declaration>"
+          },
+          {
+            "key.namelength" : 7,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/NoticesHtmlBuilder.swift",
+            "key.name" : "notices",
+            "key.nameoffset" : 480,
+            "key.typename" : "[Notice]",
+            "key.usr" : "s:vC11LicensesKit18NoticesHtmlBuilder7noticesGSaCS_6Notice_",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.parsed_declaration" : "var notices: [Notice] = []",
+            "key.substructure" : [
+
+            ],
+            "key.length" : 7,
+            "key.offset" : 480,
+            "key.annotated_decl" : "<Declaration>var notices: [<Type usr=\"s:C11LicensesKit6Notice\">Notice<\/Type>]<\/Declaration>"
+          },
+          {
+            "key.namelength" : 25,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/NoticesHtmlBuilder.swift",
+            "key.name" : "addNotice(_:)",
+            "key.bodylength" : 36,
+            "key.nameoffset" : 517,
+            "key.typename" : "NoticesHtmlBuilder -> (Notice) -> ()",
+            "key.usr" : "s:FC11LicensesKit18NoticesHtmlBuilder9addNoticeFS0_FCS_6NoticeT_",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.bodyoffset" : 544,
+            "key.parsed_declaration" : "func addNotice(notice: Notice)",
+            "key.substructure" : [
+
+            ],
+            "key.length" : 25,
+            "key.offset" : 517,
+            "key.annotated_decl" : "<Declaration>func addNotice(notice: <Type usr=\"s:C11LicensesKit6Notice\">Notice<\/Type>)<\/Declaration>"
+          },
+          {
+            "key.namelength" : 29,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/NoticesHtmlBuilder.swift",
+            "key.name" : "addNotices(_:)",
+            "key.bodylength" : 87,
+            "key.nameoffset" : 596,
+            "key.typename" : "NoticesHtmlBuilder -> ([Notice]) -> ()",
+            "key.usr" : "s:FC11LicensesKit18NoticesHtmlBuilder10addNoticesFS0_FGSaCS_6Notice_T_",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.bodyoffset" : 627,
+            "key.parsed_declaration" : "func addNotices(notices: [Notice])",
+            "key.substructure" : [
+
+            ],
+            "key.length" : 29,
+            "key.offset" : 596,
+            "key.annotated_decl" : "<Declaration>func addNotices(notices: [<Type usr=\"s:C11LicensesKit6Notice\">Notice<\/Type>])<\/Declaration>"
+          },
+          {
+            "key.namelength" : 19,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/NoticesHtmlBuilder.swift",
+            "key.name" : "showFullLicenseText",
+            "key.nameoffset" : 729,
+            "key.typename" : "Bool",
+            "key.usr" : "s:vC11LicensesKit18NoticesHtmlBuilder19showFullLicenseTextSb",
+            "key.kind" : "source.lang.swift.decl.var.instance",
+            "key.parsed_declaration" : "var showFullLicenseText: Bool = false",
+            "key.substructure" : [
+
+            ],
+            "key.length" : 19,
+            "key.offset" : 729,
+            "key.annotated_decl" : "<Declaration>var showFullLicenseText: <Type usr=\"s:Sb\">Bool<\/Type><\/Declaration>"
+          },
+          {
+            "key.namelength" : 7,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/NoticesHtmlBuilder.swift",
+            "key.name" : "build()",
+            "key.bodylength" : 391,
+            "key.nameoffset" : 777,
+            "key.typename" : "NoticesHtmlBuilder -> () -> String",
+            "key.usr" : "s:FC11LicensesKit18NoticesHtmlBuilder5buildFS0_FT_SS",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.bodyoffset" : 796,
+            "key.parsed_declaration" : "func build() -> String",
+            "key.substructure" : [
+
+            ],
+            "key.length" : 7,
+            "key.offset" : 777,
+            "key.annotated_decl" : "<Declaration>func build() -&gt; <Type usr=\"s:SS\">String<\/Type><\/Declaration>"
+          },
+          {
+            "key.namelength" : 31,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/NoticesHtmlBuilder.swift",
+            "key.name" : "writeHTMLFilePath(_:)",
+            "key.bodylength" : 403,
+            "key.nameoffset" : 1211,
+            "key.typename" : "NoticesHtmlBuilder -> (String) -> String",
+            "key.usr" : "s:FC11LicensesKit18NoticesHtmlBuilderP33_8D0E7BAFE79F34C5DBE59F57AD25BB0917writeHTMLFilePathFS0_FSSSS",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.bodyoffset" : 1254,
+            "key.parsed_declaration" : "private func writeHTMLFilePath(html: String) -> String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              }
+            ],
+            "key.length" : 31,
+            "key.offset" : 1211,
+            "key.annotated_decl" : "<Declaration>private func writeHTMLFilePath(html: <Type usr=\"s:SS\">String<\/Type>) -&gt; <Type usr=\"s:SS\">String<\/Type><\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          }
+        ],
+        "key.length" : 18,
+        "key.offset" : 200,
+        "key.annotated_decl" : "<Declaration>class NoticesHtmlBuilder<\/Declaration>"
+      },
+      {
+        "key.namelength" : 13,
+        "key.modulename" : "StringBuilder",
+        "key.name" : "StringBuilder",
+        "key.bodylength" : 1215,
+        "key.nameoffset" : 1686,
+        "key.typename" : "StringBuilder.Type",
+        "key.usr" : "s:C13StringBuilder13StringBuilder",
+        "key.kind" : "source.lang.swift.decl.extension",
+        "key.bodyoffset" : 1701,
+        "key.substructure" : [
+          {
+            "key.namelength" : 0,
+            "key.substructure" : [
+
+            ],
+            "key.kind" : "source.lang.swift.syntaxtype.comment.mark",
+            "key.nameoffset" : 0,
+            "key.name" : "MARK: Private methods",
+            "key.length" : 21,
+            "key.offset" : 1709
+          },
+          {
+            "key.namelength" : 43,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/NoticesHtmlBuilder.swift",
+            "key.name" : "appendNoticesContainerStart(style:)",
+            "key.bodylength" : 180,
+            "key.nameoffset" : 1740,
+            "key.typename" : "Self -> (style: String) -> Self",
+            "key.usr" : "s:FE11LicensesKitC13StringBuilder13StringBuilder27appendNoticesContainerStartFDS1_FT5styleSS_DS1_",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.bodyoffset" : 1793,
+            "key.parsed_declaration" : "func appendNoticesContainerStart(#style: String) -> Self",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.__raw_doc_comment"
+              }
+            ],
+            "key.length" : 43,
+            "key.offset" : 1740,
+            "key.annotated_decl" : "<Declaration>func appendNoticesContainerStart(#style: <Type usr=\"s:SS\">String<\/Type>) -&gt; Self<\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          },
+          {
+            "key.namelength" : 61,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/NoticesHtmlBuilder.swift",
+            "key.name" : "appendNoticeBlock(notice:showFullLicenseText:)",
+            "key.bodylength" : 493,
+            "key.nameoffset" : 1989,
+            "key.typename" : "Self -> (notice: Notice, showFullLicenseText: Bool) -> Self",
+            "key.usr" : "s:FE11LicensesKitC13StringBuilder13StringBuilder17appendNoticeBlockFDS1_FT6noticeCS_6Notice19showFullLicenseTextSb_DS1_",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.bodyoffset" : 2060,
+            "key.parsed_declaration" : "func appendNoticeBlock(#notice: Notice, showFullLicenseText: Bool) -> Self",
+            "key.substructure" : [
+
+            ],
+            "key.length" : 61,
+            "key.offset" : 1989,
+            "key.annotated_decl" : "<Declaration>func appendNoticeBlock(#notice: <Type usr=\"s:C11LicensesKit6Notice\">Notice<\/Type>, showFullLicenseText: <Type usr=\"s:Sb\">Bool<\/Type>) -&gt; Self<\/Declaration>"
+          },
+          {
+            "key.namelength" : 27,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/NoticesHtmlBuilder.swift",
+            "key.name" : "appendNoticesContainerEnd()",
+            "key.bodylength" : 58,
+            "key.nameoffset" : 2569,
+            "key.typename" : "StringBuilder -> () -> StringBuilder",
+            "key.usr" : "s:FE11LicensesKitC13StringBuilder13StringBuilder25appendNoticesContainerEndFS1_FT_S1_",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.bodyoffset" : 2615,
+            "key.parsed_declaration" : "func appendNoticesContainerEnd() -> StringBuilder",
+            "key.substructure" : [
+
+            ],
+            "key.length" : 27,
+            "key.offset" : 2569,
+            "key.annotated_decl" : "<Declaration>func appendNoticesContainerEnd() -&gt; <Type usr=\"s:C13StringBuilder13StringBuilder\">StringBuilder<\/Type><\/Declaration>"
+          },
+          {
+            "key.namelength" : 60,
+            "key.filepath" : "\/Users\/matthewwyskiel\/Documents\/Developer\/iOS\/Objective-C_Resources\/LicensesKit\/LicensesKit\/NoticesHtmlBuilder.swift",
+            "key.name" : "getLicenseText(_:showFullLicenseText:)",
+            "key.bodylength" : 145,
+            "key.nameoffset" : 2697,
+            "key.typename" : "StringBuilder -> (License!, showFullLicenseText: Bool) -> String",
+            "key.usr" : "s:FE11LicensesKitC13StringBuilder13StringBuilderP33_8D0E7BAFE79F34C5DBE59F57AD25BB0914getLicenseTextFS1_FTGSQCS_7License_19showFullLicenseTextSb_SS",
+            "key.kind" : "source.lang.swift.decl.function.method.instance",
+            "key.bodyoffset" : 2769,
+            "key.parsed_declaration" : "private func getLicenseText(license: License!, showFullLicenseText: Bool) -> String",
+            "key.attributes" : [
+              {
+                "key.attribute" : "source.decl.attribute.private"
+              }
+            ],
+            "key.length" : 60,
+            "key.offset" : 2697,
+            "key.annotated_decl" : "<Declaration>private func getLicenseText(license: <Type usr=\"s:C11LicensesKit7License\">License<\/Type>!, showFullLicenseText: <Type usr=\"s:Sb\">Bool<\/Type>) -&gt; <Type usr=\"s:SS\">String<\/Type><\/Declaration>",
+            "key.substructure" : [
+
+            ]
+          }
+        ],
+        "key.length" : 1241,
+        "key.offset" : 1676,
+        "key.annotated_decl" : "<Declaration>class StringBuilder<\/Declaration>"
+      }
+    ],
+    "key.offset" : 0,
+    "key.diagnostics" : [
+      {
+        "key.column" : 42,
+        "key.severity" : "source.diagnostic.severity.error",
+        "key.description" : "expected type after 'as'",
+        "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
+        "key.line" : 42
+      }
+    ],
+    "key.diagnostic_stage" : "source.diagnostic.stage.swift.parse",
+    "key.length" : 2918
+  }
+]
