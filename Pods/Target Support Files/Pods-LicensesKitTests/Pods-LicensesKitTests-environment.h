@@ -8,8 +8,7 @@
 
 // StringBuilder
 #define COCOAPODS_POD_AVAILABLE_StringBuilder
-// This library does not follow semantic-versioning,
-// so we were not able to define version macros.
-// Please contact the author.
-// Version: 0.0.1.1.
+#define COCOAPODS_VERSION_MAJOR_StringBuilder 0
+#define COCOAPODS_VERSION_MINOR_StringBuilder 1
+#define COCOAPODS_VERSION_PATCH_StringBuilder 0
 
