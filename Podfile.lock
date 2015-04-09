@@ -1,0 +1,10 @@
+PODS:
+  - StringBuilder (0.1.0)
+
+DEPENDENCIES:
+  - StringBuilder
+
+SPEC CHECKSUMS:
+  StringBuilder: e47be1c725272a39ee54f9225e081f3d752403a5
+
+COCOAPODS: 0.36.3
