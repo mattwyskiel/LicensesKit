@@ -10,7 +10,7 @@
 #define COCOAPODS_POD_AVAILABLE_LicensesKit
 #define COCOAPODS_VERSION_MAJOR_LicensesKit 0
 #define COCOAPODS_VERSION_MINOR_LicensesKit 0
-#define COCOAPODS_VERSION_PATCH_LicensesKit 5
+#define COCOAPODS_VERSION_PATCH_LicensesKit 4
 
 // StringBuilder
 #define COCOAPODS_POD_AVAILABLE_StringBuilder

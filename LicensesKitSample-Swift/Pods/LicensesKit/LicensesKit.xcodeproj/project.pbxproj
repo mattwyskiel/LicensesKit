@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EA6287BDE5752BA789FC3F8 /* Pods_LicensesKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68CEF09310867950D6F9EF3 /* Pods_LicensesKitTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A459639119DCD0C2001AC2CA /* LicensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A459639019DCD0C2001AC2CA /* LicensesViewController.swift */; };
-		A497720D19DB8F1700A6590F /* StringBuilder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A497720A19DB8F0800A6590F /* StringBuilder.framework */; };
 		A4A3AE5919E9830700FF5CBD /* LicenseResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3AE5819E9830700FF5CBD /* LicenseResolver.swift */; };
 		A4A3AE5B19E98B6D00FF5CBD /* CustomLicense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3AE5A19E98B6D00FF5CBD /* CustomLicense.swift */; };
 		A4A3AE5E19E98FD100FF5CBD /* Notices.json in Resources */ = {isa = PBXBuildFile; fileRef = A4A3AE5C19E98FD100FF5CBD /* Notices.json */; };
-		A4A3AE9E19ECAC7500FF5CBD /* LicensesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4A3AE9D19ECAC7500FF5CBD /* LicensesViewController.xib */; };
 		A4D0D26419DA22AC004F028B /* LicensesKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A4D0D26319DA22AC004F028B /* LicensesKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4D0D26E19DA22AC004F028B /* LicensesKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D0D26D19DA22AC004F028B /* LicensesKitTests.swift */; };
 		A4D0D27A19DA27DD004F028B /* Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D0D27919DA27DD004F028B /* Notice.swift */; };
@@ -42,48 +41,16 @@
 		A4D0D2CF19DA36AD004F028B /* ISCLicense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D0D2CE19DA36AD004F028B /* ISCLicense.swift */; };
 		A4D0D2D119DA3718004F028B /* MITLicense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D0D2D019DA3718004F028B /* MITLicense.swift */; };
 		A4D0D2D319DA39D8004F028B /* NoticesHtmlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D0D2D219DA39D8004F028B /* NoticesHtmlBuilder.swift */; };
+		D73FEF247DBBCC83776937B2 /* Pods_LicensesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DECC27D8E858DB6A28FF72 /* Pods_LicensesKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A46E01041A8114B800585C60 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A46E00FF1A8114B700585C60 /* StringBuilder.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A49771E819DB854200A6590F;
-			remoteInfo = StringBuilder;
-		};
-		A46E01061A8114B800585C60 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A46E00FF1A8114B700585C60 /* StringBuilder.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A49771F319DB854200A6590F;
-			remoteInfo = StringBuilderTests;
-		};
-		A497720919DB8F0800A6590F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A497720419DB8F0800A6590F /* StringBuilder.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A49771E819DB854200A6590F;
-			remoteInfo = StringBuilder;
-		};
-		A497720B19DB8F0800A6590F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A497720419DB8F0800A6590F /* StringBuilder.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A49771F319DB854200A6590F;
-			remoteInfo = StringBuilderTests;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		74E6F0E4187E283B5F0ECE95 /* Pods-LicensesKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LicensesKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-LicensesKit/Pods-LicensesKit.release.xcconfig"; sourceTree = "<group>"; };
 		A459639019DCD0C2001AC2CA /* LicensesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicensesViewController.swift; sourceTree = "<group>"; };
-		A46E00FF1A8114B700585C60 /* StringBuilder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = StringBuilder.xcodeproj; path = "LicensesKitSample-Swift/..StringBuilder/StringBuilder.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		A49771DD19DB83A600A6590F /* LicensesKitPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LicensesKitPlayground.playground; sourceTree = "<group>"; };
-		A497720419DB8F0800A6590F /* StringBuilder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = StringBuilder.xcodeproj; path = ../../StringBuilder/StringBuilder.xcodeproj; sourceTree = SOURCE_ROOT; };
 		A4A3AE5819E9830700FF5CBD /* LicenseResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseResolver.swift; sourceTree = "<group>"; };
 		A4A3AE5A19E98B6D00FF5CBD /* CustomLicense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLicense.swift; sourceTree = "<group>"; };
 		A4A3AE5C19E98FD100FF5CBD /* Notices.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Notices.json; sourceTree = "<group>"; };
-		A4A3AE9D19ECAC7500FF5CBD /* LicensesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LicensesViewController.xib; sourceTree = "<group>"; };
 		A4D0D25E19DA22AC004F028B /* LicensesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LicensesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D0D26219DA22AC004F028B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4D0D26319DA22AC004F028B /* LicensesKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LicensesKit.h; sourceTree = "<group>"; };
@@ -117,6 +84,11 @@
 		A4D0D2CE19DA36AD004F028B /* ISCLicense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISCLicense.swift; sourceTree = "<group>"; };
 		A4D0D2D019DA3718004F028B /* MITLicense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MITLicense.swift; sourceTree = "<group>"; };
 		A4D0D2D219DA39D8004F028B /* NoticesHtmlBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticesHtmlBuilder.swift; sourceTree = "<group>"; };
+		A522874FADB7F38BE083BF24 /* Pods-LicensesKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LicensesKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LicensesKitTests/Pods-LicensesKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		A68CEF09310867950D6F9EF3 /* Pods_LicensesKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LicensesKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2DECC27D8E858DB6A28FF72 /* Pods_LicensesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LicensesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF755B553CC4AF53B967EB37 /* Pods-LicensesKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LicensesKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LicensesKit/Pods-LicensesKit.debug.xcconfig"; sourceTree = "<group>"; };
+		FAC92E50149C81AC3D68C038 /* Pods-LicensesKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LicensesKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LicensesKitTests/Pods-LicensesKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A497720D19DB8F1700A6590F /* StringBuilder.framework in Frameworks */,
+				D73FEF247DBBCC83776937B2 /* Pods_LicensesKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,28 +104,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EA6287BDE5752BA789FC3F8 /* Pods_LicensesKitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A46E01001A8114B700585C60 /* Products */ = {
+		69646FCF14308B94023051E0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A46E01051A8114B800585C60 /* StringBuilder.framework */,
-				A46E01071A8114B800585C60 /* StringBuilderTests.xctest */,
+				EF755B553CC4AF53B967EB37 /* Pods-LicensesKit.debug.xcconfig */,
+				74E6F0E4187E283B5F0ECE95 /* Pods-LicensesKit.release.xcconfig */,
+				FAC92E50149C81AC3D68C038 /* Pods-LicensesKitTests.debug.xcconfig */,
+				A522874FADB7F38BE083BF24 /* Pods-LicensesKitTests.release.xcconfig */,
 			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		A497720519DB8F0800A6590F /* Products */ = {
+		9CA2E7FBC334D020A13FC2F3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A497720A19DB8F0800A6590F /* StringBuilder.framework */,
-				A497720C19DB8F0800A6590F /* StringBuilderTests.xctest */,
+				C2DECC27D8E858DB6A28FF72 /* Pods_LicensesKit.framework */,
+				A68CEF09310867950D6F9EF3 /* Pods_LicensesKitTests.framework */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A4D0D25419DA22AC004F028B = {
@@ -162,6 +137,8 @@
 				A4D0D26019DA22AC004F028B /* LicensesKit */,
 				A4D0D26A19DA22AC004F028B /* LicensesKitTests */,
 				A4D0D25F19DA22AC004F028B /* Products */,
+				69646FCF14308B94023051E0 /* Pods */,
+				9CA2E7FBC334D020A13FC2F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -183,7 +160,6 @@
 				A4D0D2D219DA39D8004F028B /* NoticesHtmlBuilder.swift */,
 				A49771DD19DB83A600A6590F /* LicensesKitPlayground.playground */,
 				A459639019DCD0C2001AC2CA /* LicensesViewController.swift */,
-				A4A3AE9D19ECAC7500FF5CBD /* LicensesViewController.xib */,
 			);
 			path = LicensesKit;
 			sourceTree = "<group>";
@@ -191,8 +167,6 @@
 		A4D0D26119DA22AC004F028B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A46E00FF1A8114B700585C60 /* StringBuilder.xcodeproj */,
-				A497720419DB8F0800A6590F /* StringBuilder.xcodeproj */,
 				A4D0D27D19DA29A1004F028B /* Licenses */,
 				A4D0D26219DA22AC004F028B /* Info.plist */,
 				A4A3AE5C19E98FD100FF5CBD /* Notices.json */,
@@ -285,10 +259,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4D0D27119DA22AC004F028B /* Build configuration list for PBXNativeTarget "LicensesKit" */;
 			buildPhases = (
+				226A40DC4A63D387929E37F6 /* Check Pods Manifest.lock */,
 				A4D0D25919DA22AC004F028B /* Sources */,
 				A4D0D25A19DA22AC004F028B /* Frameworks */,
 				A4D0D25B19DA22AC004F028B /* Headers */,
 				A4D0D25C19DA22AC004F028B /* Resources */,
+				0A3A790A522614C40AEE6739 /* Embed Pods Frameworks */,
+				EBC754DB9AC4D136ABD35358 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -303,9 +280,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4D0D27419DA22AC004F028B /* Build configuration list for PBXNativeTarget "LicensesKitTests" */;
 			buildPhases = (
+				C198E9B8BF08F9C76AD73247 /* Check Pods Manifest.lock */,
 				A4D0D26519DA22AC004F028B /* Sources */,
 				A4D0D26619DA22AC004F028B /* Frameworks */,
 				A4D0D26719DA22AC004F028B /* Resources */,
+				D0A59E1F0AC1912519E6F09A /* Embed Pods Frameworks */,
+				E1340C6C05AE7CFFC0C30192 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -343,16 +323,6 @@
 			mainGroup = A4D0D25419DA22AC004F028B;
 			productRefGroup = A4D0D25F19DA22AC004F028B /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = A497720519DB8F0800A6590F /* Products */;
-					ProjectRef = A497720419DB8F0800A6590F /* StringBuilder.xcodeproj */;
-				},
-				{
-					ProductGroup = A46E01001A8114B700585C60 /* Products */;
-					ProjectRef = A46E00FF1A8114B700585C60 /* StringBuilder.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				A4D0D25D19DA22AC004F028B /* LicensesKit */,
@@ -360,37 +330,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		A46E01051A8114B800585C60 /* StringBuilder.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = StringBuilder.framework;
-			remoteRef = A46E01041A8114B800585C60 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A46E01071A8114B800585C60 /* StringBuilderTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = StringBuilderTests.xctest;
-			remoteRef = A46E01061A8114B800585C60 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A497720A19DB8F0800A6590F /* StringBuilder.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = StringBuilder.framework;
-			remoteRef = A497720919DB8F0800A6590F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A497720C19DB8F0800A6590F /* StringBuilderTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = StringBuilderTests.xctest;
-			remoteRef = A497720B19DB8F0800A6590F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A4D0D25C19DA22AC004F028B /* Resources */ = {
@@ -403,7 +342,6 @@
 				A4D0D2BC19DA2C76004F028B /* isc_summary.txt in Resources */,
 				A4D0D2C019DA2C76004F028B /* mit_summary.txt in Resources */,
 				A4D0D2BB19DA2C76004F028B /* isc_full.txt in Resources */,
-				A4A3AE9E19ECAC7500FF5CBD /* LicensesViewController.xib in Resources */,
 				A4D0D2B219DA2C76004F028B /* asl_20_summary.txt in Resources */,
 				A4D0D2B819DA2C76004F028B /* gpl_20_summary.txt in Resources */,
 				A4D0D2B119DA2C76004F028B /* asl_20_full.txt in Resources */,
@@ -426,6 +364,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A3A790A522614C40AEE6739 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LicensesKit/Pods-LicensesKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		226A40DC4A63D387929E37F6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C198E9B8BF08F9C76AD73247 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D0A59E1F0AC1912519E6F09A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LicensesKitTests/Pods-LicensesKitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1340C6C05AE7CFFC0C30192 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LicensesKitTests/Pods-LicensesKitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBC754DB9AC4D136ABD35358 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LicensesKit/Pods-LicensesKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A4D0D25919DA22AC004F028B /* Sources */ = {
@@ -547,6 +578,7 @@
 		};
 		A4D0D27219DA22AC004F028B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF755B553CC4AF53B967EB37 /* Pods-LicensesKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -564,6 +596,7 @@
 		};
 		A4D0D27319DA22AC004F028B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74E6F0E4187E283B5F0ECE95 /* Pods-LicensesKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -580,6 +613,7 @@
 		};
 		A4D0D27519DA22AC004F028B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAC92E50149C81AC3D68C038 /* Pods-LicensesKitTests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -597,6 +631,7 @@
 		};
 		A4D0D27619DA22AC004F028B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A522874FADB7F38BE083BF24 /* Pods-LicensesKitTests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

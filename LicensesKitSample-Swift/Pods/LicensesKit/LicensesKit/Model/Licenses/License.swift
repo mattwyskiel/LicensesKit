@@ -74,7 +74,7 @@ public func ==(lhs: License, rhs: License) -> Bool {
             if let error = errorMaybe {
                 return nil
             } else {
-                return string;
+                return string as! String;
             }
         } else {
             return nil

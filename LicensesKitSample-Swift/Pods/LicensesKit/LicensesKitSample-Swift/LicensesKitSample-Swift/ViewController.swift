@@ -25,7 +25,12 @@ class ViewController: UIViewController {
         let licensesViewController = LicensesViewController()
         licensesViewController.setNoticesFromJSONFile(NSBundle.mainBundle().pathForResource("Notices", ofType: "json")!)
         let navCont = UINavigationController(rootViewController: licensesViewController)
+        licensesViewController.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Done, target: self, action: "closeViewController:")
         presentViewController(navCont, animated: true, completion: nil)
+    }
+    
+    func closeViewController(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
     }
 
 }

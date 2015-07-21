@@ -9,14 +9,23 @@ A lot of the popular license-diaplaying libraries (namely [VTAcknowledgementsVie
 With LicensesKit you can just aggregate your libraries in a JSON file you include in your app bundle (learn more about specifics below), or add them in code if you prefer. This abstracts and simplifies things for you as the developer because you do not need to worry about where the library is coming from, all you need is to just list it.
 
 ## Installation
-Use CocoaPods:
+Use CocoaPods (0.36):
 
 ```ruby
 pod 'LicensesKit'
 ```
 
+If using Swift 1.2 and Xcode 6.3 beta:
+
+```ruby
+pod 'StringBuilder', :git => 'https://github.com/mattwyskiel/StringBuilder.git', :branch => 'swift-1.2'
+pod 'LicensesKit', :git => 'https://github.com/mattwyskiel/LicensesKit.git', :branch => 'swift-1.2'
+```
+
+(This is because LicensesKit's dependency, StringBuilder, also has a Swift 1.2 branch)
+
 ## Usage
-Basic usage of this library involves creating a `LicensesViewController` object, adding the libraries included in your app, and pushing the view controller 
+Basic usage of this library involves creating a `LicensesViewController` object, adding the libraries included in your app, and pushing the view controller
 ### Adding 'Notices'
 A **notice** is an object containing information about the library being used and its license. Namely:
 
@@ -26,9 +35,9 @@ A **notice** is an object containing information about the library being used an
  url | The url where the library can be found | `"https://github.com/AFNetworking/AFNetworking"`
  copyright | The copyright information for the library (usually found paired with the license) | `"Copyright (c) 2013-2014 AFNetworking (http://afnetworking.com/)"`
  license | The license the library uses | `MITLicense()`
- 
- As you can tell from above the `license` is a property of type `License`, of which this library includes many subclasses for most of the common licenses, adding more often, including: 
- 
+
+ As you can tell from above the `license` is a property of type `License`, of which this library includes many subclasses for most of the common licenses, adding more often, including:
+
  - Apache Software License 2.0
  - BSD 3-Clause License
  - Creative Commons Attribution-NoDerivs 3.0 Unported
@@ -37,7 +46,7 @@ A **notice** is an object containing information about the library being used an
  - GNU Lesser General Public License 2.1
  - ISC License
  - MIT License
- 
+
  Of course, you can use the `CustomLicense` class to build your own license if it is not listed above (for example, if a library has their own custom license).
 
 ### Add notices from JSON

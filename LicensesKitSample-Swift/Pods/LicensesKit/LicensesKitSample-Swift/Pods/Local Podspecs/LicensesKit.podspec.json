@@ -26,8 +26,8 @@
     "LicensesKit/Model/Licenses"
   ],
   "resources": [
-    "LicensesKit/LicensesViewController.xib",
-    "LicensesKit/SupportingFiles/Licenses/*.txt"
+    "LicensesKit/Supporting Files/Licenses/*.txt",
+    "LicensesKit/LicensesViewController.xib"
   ],
   "frameworks": "UIKit",
   "dependencies": {

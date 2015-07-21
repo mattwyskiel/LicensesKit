@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import WebKit
 
-public class LicensesViewController: UIViewController, UIWebViewDelegate {
+public class LicensesViewController: UIViewController, UIWebViewDelegate, WKNavigationDelegate {
     
-    @IBOutlet public var webView: UIWebView!
+    private var webView: WKWebView!
+    
     public var navigationTitle: String?
     public var notices: [Notice] = []
     public var resolver = LicenseResolver()
@@ -40,7 +42,7 @@ public class LicensesViewController: UIViewController, UIWebViewDelegate {
     public func setNoticesFromJSONFile(filepath: String) {
         if let jsonData = NSData(contentsOfFile: filepath) {
             var errorMaybe: NSError?
-            let jsonArray = NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions(0), error: &errorMaybe) as [String: [[String: String]]]
+            let jsonArray = NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions(0), error: &errorMaybe) as! [String: [[String: String]]]
             if let error = errorMaybe {
                 // error
             } else {
@@ -61,6 +63,14 @@ public class LicensesViewController: UIViewController, UIWebViewDelegate {
         }
     }
 
+    override public func loadView() {
+        webView = WKWebView()
+        
+        webView?.navigationDelegate = self
+        
+        view = webView
+    }
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
 
@@ -69,20 +79,14 @@ public class LicensesViewController: UIViewController, UIWebViewDelegate {
         } else {
             navigationItem.title = "Licenses"
         }
-        
-        webView.delegate = self;
     }
     
     override public func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         htmlBuilder.addNotices(notices)
         
-        let path = htmlBuilder.build()
-        if let data = NSData(contentsOfFile: path) {
-            let dataString = NSString(data: data, encoding: NSUTF8StringEncoding)
-            webView.loadHTMLString(dataString, baseURL: nil)
-            NSLog("%@", dataString!)
-        }
+        let htmlString = htmlBuilder.build()
+        webView.loadHTMLString(htmlString, baseURL: nil)
     }
 
     override public func didReceiveMemoryWarning() {
@@ -90,21 +94,22 @@ public class LicensesViewController: UIViewController, UIWebViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    public override init() {
-        let bundle = NSBundle(forClass: Notice.self)
-        super.init(nibName: "LicensesViewController", bundle: bundle)
-    }
-
-    required public init(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     public func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         if navigationType == .LinkClicked {
             let url = request.URL
-            UIApplication.sharedApplication().openURL(url)
+            UIApplication.sharedApplication().openURL(url!)
         }
         return false
+    }
+    
+    public func webView(webView: WKWebView, decidePolicyForNavigationAction navigationAction: WKNavigationAction, decisionHandler: (WKNavigationActionPolicy) -> Void) {
+        if navigationAction.navigationType == .LinkActivated {
+            let url = navigationAction.request.URL
+            UIApplication.sharedApplication().openURL(url!)
+            decisionHandler(.Cancel)
+            return
+        }
+        decisionHandler(.Allow)
     }
 
 }
