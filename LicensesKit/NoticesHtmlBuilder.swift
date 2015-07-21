@@ -34,7 +34,7 @@ class NoticesHtmlBuilder {
             noticesHtmlBuilder.appendNoticeBlock(notice: notice, showFullLicenseText: showFullLicenseText)
         }
         noticesHtmlBuilder.appendNoticesContainerEnd()
-        return writeHTMLFilePath(noticesHtmlBuilder.toString())
+        return noticesHtmlBuilder.toString()
     }
     
     private func writeHTMLFilePath(html: String) -> String {
