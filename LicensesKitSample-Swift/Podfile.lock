@@ -12,7 +12,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   LicensesKit:
-    :commit: 25d3b97187e042ef9bcf3710354595c6c916be49
+    :commit: 3d86b69e87c5bc878de9c0c6ddf0b48d0a0e7202
     :git: https://github.com/mattwyskiel/LicensesKit.git
 
 SPEC CHECKSUMS:
