@@ -4,25 +4,28 @@
 If you've ever worked on an app that uses any third-party libraries (which is everyone), then you probably know that it's courteous (and sometomes mandatory, depending on the library) to add the library's license to an "acknowledgements" page in your app. And those pages are often tedious to put together and, especially, update. With LicensesKit, your troubles are over!
 
 ### LicensesKit is Flexible.
-A lot of the popular license-diaplaying libraries (namely [VTAcknowledgementsViewController](https://github.com/vtourraine/VTAcknowledgementsViewController) and [TRZSlideLicenseViewController](https://github.com/86/TRZSlideLicenseViewController)) only have support for if all of your libraries are in CocoaPods. While the automation of aggregating all the licenses is nice, it doesn't help if, say, you use [Google's API client](https://code.google.com/p/google-api-objectivec-client/), which if don't want an [outdated pod](https://github.com/CocoaPods/Specs/blob/master/Specs/Google-API-Client/0.1.1/Google-API-Client.podspec.json), you would just use the SVN from the project site. Also, some third-party libraries may be written in Swift (like this one), which is not supported by CocoaPods yet besides in a beta release.
+A lot of the popular license-diaplaying libraries (namely [VTAcknowledgementsViewController](https://github.com/vtourraine/VTAcknowledgementsViewController) and [TRZSlideLicenseViewController](https://github.com/86/TRZSlideLicenseViewController)) only have support for if all of your libraries are in CocoaPods. While the automation of aggregating all the licenses is nice, it doesn't help if, say, you use [Google's API client](https://code.google.com/p/google-api-objectivec-client/), which if don't want an [outdated pod](https://github.com/CocoaPods/Specs/blob/master/Specs/Google-API-Client/0.1.1/Google-API-Client.podspec.json), you would just use the SVN from the project site.
 
-With LicensesKit you can just aggregate your libraries in a JSON file you include in your app bundle (learn more about specifics below), or add them in code if you prefer. This abstracts and simplifies things for you as the developer because you do not need to worry about where the library is coming from, all you need is to just list it.
+With LicensesKit you can just aggregate basic information about the libraries you use in a JSON file that you include in your app bundle (learn more about specifics below), or add them in code if you prefer. This abstracts and simplifies things for you as the developer because you do not need to worry about where the library is coming from, all you need is to just list it.
+
+## LicensesKit in action
+![LicensesKit in action](./IMG_1869.PNG)
 
 ## Installation
-Use CocoaPods (0.36):
+Use CocoaPods (0.36+):
 
 ```ruby
 pod 'LicensesKit'
 ```
 
-If using Swift 1.2 and Xcode 6.3 beta:
+If using Swift 2.0 and Xcode 7 beta:
 
 ```ruby
-pod 'StringBuilder', :git => 'https://github.com/mattwyskiel/StringBuilder.git', :branch => 'swift-1.2'
-pod 'LicensesKit', :git => 'https://github.com/mattwyskiel/LicensesKit.git', :branch => 'swift-1.2'
+pod 'StringBuilder', :git => 'https://github.com/mattwyskiel/StringBuilder.git', :branch => 'swift-2.0'
+pod 'LicensesKit', :git => 'https://github.com/mattwyskiel/LicensesKit.git', :branch => 'swift-2.0'
 ```
 
-(This is because LicensesKit's dependency, StringBuilder, also has a Swift 1.2 branch)
+(This is because LicensesKit's dependency, [StringBuilder](https://github.com/mattwyskiel/StringBuilder), also has a Swift 2.0 branch)
 
 ## Usage
 Basic usage of this library involves creating a `LicensesViewController` object, adding the libraries included in your app, and pushing the view controller
@@ -74,7 +77,7 @@ To automate the process of aggregating the licenses together for all the librari
 The `license` field's value directly correlates to the **name** of a license defined either in the library or a custom license you define. In order for the library to be able to use a license you define yourself (either by subclassing `License` or making a `CustomLicense` instance), you need to *register* the license with the LicensesViewController instance's **licensesResolver** object, like so:
 
 **Swift**
-``` swift
+```swift
 licensesVC.resolver.registerLicense(customLicense)
 ```
 **Objective-C**
@@ -85,7 +88,7 @@ licensesVC.resolver.registerLicense(customLicense)
 As soon as you have your JSON file together and registered all the custom licenses you need, just use the `setNoticesFromJSONFile(filepath:)` method on your LicenseViewController instance:
 
 **Swift**
-``` swift
+```swift
 licensesVC.setNoticesFromJSONFile(filepathForJSONFile)
 ```
 **Objective-C**
@@ -98,17 +101,24 @@ licensesVC.setNoticesFromJSONFile(filepathForJSONFile)
 To add a notice in code, just make a `Notice` instance and then call `addNotice(notice:)` (or `addNotices(notices:` if you want to add an array of notices at once).
 
 **Swift**
-``` swift
+```swift
 let notice = Notice(name: "AFNetworking", url: "https://github.com/AFNetworking/AFNetworking", copyright: "Copyright (c) 2013-2014 AFNetworking (http://afnetworking.com/)", license: MITLicense())
 licensesVC.addNotice(notice)
 ```
 **Objective-C**
 ```objective-c
-Notice *notice = [[Notice alloc] initWithName:"AFNetworking" url:"https://github.com/AFNetworking/AFNetworking" copyright:"Copyright (c) 2013-2014 AFNetworking (http://afnetworking.com/)" license: [[MITLicense alloc] init]];
+Notice *notice = [[Notice alloc] initWithName:@"AFNetworking" url:@"https://github.com/AFNetworking/AFNetworking" copyright:@"Copyright (c) 2013-2014 AFNetworking (http://afnetworking.com/)" license: [[MITLicense alloc] init]];
 [licensesVC addNotice:notice];
 ```
+
+## Customization
+Of course, you can optionally customize what the licenses look like when they are displayed in the `LicensesViewController` instance.
+- Set the `cssStyle` property to a string of CSS code to override the style of the content shown in the `LicensesViewController`.
+- Set the `pageHeader` property to a string of HTML code to add content above the first license displayed.
+- Set the `pageFooter` property to a string of HTML code to add content below the last license displayed.
+
 ## Documentation
-This library is mostly documented inline (Quick-look any item for more information). Anything not currently documented inline will have been done in future commits.
+All public API in this library is documented inline (just quick-look any item for more info). Because of this, documentation is also available on [CocoaDocs](http://cocoadocs.org/docsets/LicensesKit/0.2.0/index.html)
 
 ## That's it!
 It's that simple! I hope you get much use out of this library as well as enjoy using it.
