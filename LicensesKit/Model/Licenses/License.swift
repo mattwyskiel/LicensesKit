@@ -50,7 +50,7 @@ import UIKit
 }
 
 extension License: Hashable {
-    // Hashable
+    /// Hashable conformance - the hash value for `License`
     public override var hashValue: Int {
         get {
             return name.hashValue
@@ -58,15 +58,25 @@ extension License: Hashable {
     }
 }
 
-// Equatable
+/// Equatable conformance - defining equivalence for `License`
 public func ==(lhs: License, rhs: License) -> Bool {
     return lhs.hashValue == rhs.hashValue
 }
 
+/// Fetches license content from disk
 @objc public class LicenseContentFetcher {
     private class var bundle: NSBundle {
         return NSBundle(forClass: Notice.self)
     }
+    
+    /**
+    Gets license content from a .txt file on disk.
+    
+    :param: filename The name of the .txt file containing license content, excluding extension
+    :param: bundle The bundle that this file is in.
+    
+    :returns: The content of the .txt file specified.
+    */
     public class func getContent(#filename: String, inBundle bundle: NSBundle = bundle) -> String! {
         if let path = bundle.pathForResource(filename, ofType: "txt") {
             var errorMaybe: NSError?

@@ -101,7 +101,10 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
             }
         }
     }
-
+    
+    /**
+    Loads the view; NOT meant to be called outside of this class.
+    */
     override public func loadView() {
         webView = WKWebView()
         
@@ -110,6 +113,9 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
         view = webView
     }
     
+    /**
+    Setup after loading the view; NOT meant to be called outside of this class.
+    */
     override public func viewDidLoad() {
         super.viewDidLoad()
 
@@ -120,6 +126,9 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
         }
     }
     
+    /**
+    Final setup after view has appeared; NOT meant to be called outside of this class.
+    */
     override public func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         htmlBuilder.addNotices(notices)
@@ -127,12 +136,18 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
         let htmlString = htmlBuilder.build()
         webView.loadHTMLString(htmlString, baseURL: nil)
     }
-
+    
+    /**
+    Handle memory warnings; NOT meant to be used outside of this class.
+    */
     override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    /**
+    Handles links clicked in the internal webView; NOT meant to be used outside of this class.
+    */
     public func webView(webView: WKWebView, decidePolicyForNavigationAction navigationAction: WKNavigationAction, decisionHandler: (WKNavigationActionPolicy) -> Void) {
         if navigationAction.navigationType == .LinkActivated {
             let url = navigationAction.request.URL

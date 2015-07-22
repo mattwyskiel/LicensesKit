@@ -10,30 +10,35 @@ import UIKit
 
 @objc public class BSD3ClauseLicense: License {
     
+    /// The name of the license
     override public var name: String {
         get {
             return "BSD 3-Clause License"
         }
     }
     
+    /// The license summary text
     override public var summaryText: String {
         get {
             return LicenseContentFetcher.getContent(filename: "bsd3_summary")
         }
     }
     
+    /// The license full text
     override public var fullText: String {
         get {
             return LicenseContentFetcher.getContent(filename: "bsd3_full")
         }
     }
     
+    /// The license version
     override public var version: String {
         get {
             return ""
         }
     }
     
+    /// The license URL
     override public var url: String {
         get {
             return "http://opensource.org/licenses/BSD-3-Clause"

@@ -10,30 +10,35 @@ import UIKit
 
 @objc public class ApacheSoftwareLicense20: License {
     
+    /// The name of the license
     override public var name: String {
         get {
             return "Apache Software License 2.0"
         }
     }
     
+    /// The license summary text
     override public var summaryText: String {
         get {
             return LicenseContentFetcher.getContent(filename: "asl_20_summary")
         }
     }
     
+    /// The license full text
     override public var fullText: String {
         get {
             return LicenseContentFetcher.getContent(filename: "asl_20_full")
         }
     }
     
+    /// The license version
     override public var version: String {
         get {
             return "2.0"
         }
     }
     
+    /// The license URL
     override public var url: String {
         get {
             return "http://www.apache.org/licenses/LICENSE-2.0.txt"

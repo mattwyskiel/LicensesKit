@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// Resolves the licenses by given name, used publicly to register custom licenses with the library so they could be resolved by name
 @objc public class LicenseResolver {
     
     var licenses: [String : License] = [:]
