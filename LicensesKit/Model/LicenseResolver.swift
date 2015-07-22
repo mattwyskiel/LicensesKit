@@ -24,6 +24,11 @@ import UIKit
         registerLicense(GnuGeneralPublicLicense20())
     }
     
+    /**
+    Registers a given license with the library, so that it can be automatically associated with a notice.
+    
+    :param: license A license to register with the library.
+    */
     public func registerLicense(license: License) {
         licenses.updateValue(license, forKey: license.name)
     }
