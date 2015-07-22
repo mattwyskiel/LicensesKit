@@ -1,6 +1,0 @@
-platform :ios, '8.0'
-use_frameworks!
-target 'LicensesKitSample-Swift' do
-	pod 'LicensesKit', :git => 'https://github.com/mattwyskiel/LicensesKit.git'
-end
-

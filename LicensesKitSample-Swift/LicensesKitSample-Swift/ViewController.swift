@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     @IBAction func showLicenses(sender: AnyObject) {
         let licensesViewController = LicensesViewController()
         licensesViewController.setNoticesFromJSONFile(NSBundle.mainBundle().pathForResource("Notices", ofType: "json")!)
+        licensesViewController.pageHeader = "<center><h2>Third Party Code Used in this Application </h2></center>"
         let navCont = UINavigationController(rootViewController: licensesViewController)
         licensesViewController.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Done, target: self, action: "closeViewController:")
         presentViewController(navCont, animated: true, completion: nil)
