@@ -54,7 +54,7 @@ extension StringBuilder {
     func appendNoticesContainerStart(#style: String) -> Self {
         append("<!DOCTYPE html><html><head>")
         append("<style type=\"text/css\">").append(style).append("</style>")
-        append("</head><body>")
+        append("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"></head><body>")
         return self
     }
     

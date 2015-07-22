@@ -12,11 +12,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   LicensesKit:
-    :commit: 066527f97d966b5d9d1f2502fa735a0291ccf95d
+    :commit: 5d6461a5d59cc37f9b1f1c8188b12691289b408a
     :git: https://github.com/mattwyskiel/LicensesKit.git
 
 SPEC CHECKSUMS:
-  LicensesKit: 43cb3e2bba73286abef989d37225e3d004a718d7
+  LicensesKit: b2c1585347c102808bf33a691e4810af27c90d07
   StringBuilder: fe9ae7bc9bb0d0ec927a0fb58dc2c3f564a957fb
 
 COCOAPODS: 0.36.0.beta.2

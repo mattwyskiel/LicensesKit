@@ -1,0 +1,6 @@
+framework module StringBuilder {
+  umbrella header "StringBuilder-umbrella.h"
+
+  export *
+  module * { export * }
+}

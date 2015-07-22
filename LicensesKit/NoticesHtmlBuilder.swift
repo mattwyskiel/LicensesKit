@@ -14,6 +14,8 @@ class NoticesHtmlBuilder {
     private var licenseTextCache: [License: String] = [:]
     var style: String = "p.license { background:grey;} body { font-family: sans-serif; overflow-wrap: break-word; } pre {background-color: #eeeeee; padding: 1em; white-space: pre-wrap; }"
     var notices: [Notice] = []
+    var pageHeader: String?
+    var pageFooter: String?
     
     func addNotice(notice: Notice) {
         notices.append(notice)
@@ -30,8 +32,14 @@ class NoticesHtmlBuilder {
     func build() -> String {
         let noticesHtmlBuilder = StringBuilder()
         noticesHtmlBuilder.appendNoticesContainerStart(style: style)
+        if let header = pageHeader {
+            noticesHtmlBuilder.append(header)
+        }
         for notice in notices {
             noticesHtmlBuilder.appendNoticeBlock(notice: notice, showFullLicenseText: showFullLicenseText)
+        }
+        if let footer = pageFooter {
+            noticesHtmlBuilder.append(footer)
         }
         noticesHtmlBuilder.appendNoticesContainerEnd()
         return noticesHtmlBuilder.toString()

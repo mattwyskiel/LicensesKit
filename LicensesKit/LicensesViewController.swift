@@ -26,8 +26,20 @@ public class LicensesViewController: UIViewController, UIWebViewDelegate, WKNavi
     }
     
     public var cssStyle: String? {
-        didSet {
-            htmlBuilder.style = self.cssStyle!;
+        didSet(newValue) {
+            htmlBuilder.style = newValue!;
+        }
+    }
+    
+    public var pageHeader: String? {
+        didSet(newValue) {
+            htmlBuilder.pageHeader = newValue;
+        }
+    }
+    
+    public var pageFooter: String? {
+        didSet(newValue) {
+            htmlBuilder.pageFooter = newValue;
         }
     }
     

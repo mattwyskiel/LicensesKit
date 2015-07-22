@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "LicensesKit"
-  s.version      = "0.0.5"
+  s.version      = "0.1.0"
   s.summary      = "A simple way to list third-party licenses in your iOS apps"
   s.description  = <<-DESC
                    ###Making giving credit where credit is due much easier than before.
@@ -21,7 +21,7 @@ With LicensesKit you can just aggregate your libraries in a JSON file you includ
   s.source_files  = "LicensesKit/LicensesViewController.swift", "LicensesKit/NoticesHtmlBuilder.swift", "LicensesKit/Model", "LicensesKit/Model/Licenses"
   s.resources = ["LicensesKit/Supporting Files/Licenses/*.txt", "LicensesKit/LicensesViewController.xib"]
   s.framework  = "UIKit"
-  s.dependency 'StringBuilder', '0.0.1.1'
+  s.dependency 'StringBuilder', '0.1.0'
   s.requires_arc = true
 
 end

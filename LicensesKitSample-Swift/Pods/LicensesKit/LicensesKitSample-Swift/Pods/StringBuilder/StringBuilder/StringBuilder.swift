@@ -28,7 +28,7 @@ public class StringBuilder {
     public func insertItem<T>(item: T, atIndex index: Int) -> Self {
         let mutableString = NSMutableString(string: self.string)
         mutableString.insertString("\(item)", atIndex: index)
-        self.string = mutableString
+        self.string = mutableString as String
         return self
     }
     
