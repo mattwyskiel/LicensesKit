@@ -118,7 +118,7 @@ Of course, you can optionally customize what the licenses look like when they ar
 - Set the `pageFooter` property to a string of HTML code to add content below the last license displayed.
 
 ## Documentation
-All public API in this library is documented inline (just quick-look any item for more info). Because of this, documentation is also available on [CocoaDocs](http://cocoadocs.org/docsets/LicensesKit/0.2.0/index.html)
+All public API in this library is documented inline (just quick-look any item for more info). Because of this, documentation is also available on [CocoaDocs](http://cocoadocs.org/docsets/LicensesKit/1.0.0/index.html)
 
 ## That's it!
 It's that simple! I hope you get much use out of this library as well as enjoy using it.
