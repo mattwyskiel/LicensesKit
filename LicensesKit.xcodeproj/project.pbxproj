@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		2EA6287BDE5752BA789FC3F8 /* Pods_LicensesKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68CEF09310867950D6F9EF3 /* Pods_LicensesKitTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A459639119DCD0C2001AC2CA /* LicensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A459639019DCD0C2001AC2CA /* LicensesViewController.swift */; };
+		A4A0081A1B619C8D002F11F4 /* mpl_20_full.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4A008191B619C8D002F11F4 /* mpl_20_full.txt */; };
+		A4A0081C1B619CA2002F11F4 /* mpl_20_summary.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4A0081B1B619CA2002F11F4 /* mpl_20_summary.txt */; };
+		A4A0081E1B619EB2002F11F4 /* MozillaPublicLicense20.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0081D1B619EB2002F11F4 /* MozillaPublicLicense20.swift */; };
 		A4A3AE5919E9830700FF5CBD /* LicenseResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3AE5819E9830700FF5CBD /* LicenseResolver.swift */; };
 		A4A3AE5B19E98B6D00FF5CBD /* CustomLicense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3AE5A19E98B6D00FF5CBD /* CustomLicense.swift */; };
 		A4A3AE5E19E98FD100FF5CBD /* Notices.json in Resources */ = {isa = PBXBuildFile; fileRef = A4A3AE5C19E98FD100FF5CBD /* Notices.json */; };
@@ -48,6 +51,9 @@
 		74E6F0E4187E283B5F0ECE95 /* Pods-LicensesKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LicensesKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-LicensesKit/Pods-LicensesKit.release.xcconfig"; sourceTree = "<group>"; };
 		A459639019DCD0C2001AC2CA /* LicensesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicensesViewController.swift; sourceTree = "<group>"; };
 		A49771DD19DB83A600A6590F /* LicensesKitPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LicensesKitPlayground.playground; sourceTree = "<group>"; };
+		A4A008191B619C8D002F11F4 /* mpl_20_full.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mpl_20_full.txt; sourceTree = "<group>"; };
+		A4A0081B1B619CA2002F11F4 /* mpl_20_summary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mpl_20_summary.txt; sourceTree = "<group>"; };
+		A4A0081D1B619EB2002F11F4 /* MozillaPublicLicense20.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MozillaPublicLicense20.swift; sourceTree = "<group>"; };
 		A4A3AE5819E9830700FF5CBD /* LicenseResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseResolver.swift; sourceTree = "<group>"; };
 		A4A3AE5A19E98B6D00FF5CBD /* CustomLicense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLicense.swift; sourceTree = "<group>"; };
 		A4A3AE5C19E98FD100FF5CBD /* Notices.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Notices.json; sourceTree = "<group>"; };
@@ -204,6 +210,7 @@
 		A4D0D27819DA2700004F028B /* Licenses */ = {
 			isa = PBXGroup;
 			children = (
+				A4A0081D1B619EB2002F11F4 /* MozillaPublicLicense20.swift */,
 				A4D0D27B19DA2882004F028B /* License.swift */,
 				A4D0D2C219DA32A4004F028B /* ApacheSoftwareLicense20.swift */,
 				A4D0D2C419DA348F004F028B /* BSD3ClauseLicense.swift */,
@@ -237,6 +244,8 @@
 				A4D0D2AD19DA2C76004F028B /* lgpl_21_summary.txt */,
 				A4D0D2AE19DA2C76004F028B /* mit_full.txt */,
 				A4D0D2AF19DA2C76004F028B /* mit_summary.txt */,
+				A4A008191B619C8D002F11F4 /* mpl_20_full.txt */,
+				A4A0081B1B619CA2002F11F4 /* mpl_20_summary.txt */,
 			);
 			path = Licenses;
 			sourceTree = "<group>";
@@ -337,10 +346,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4D0D2BF19DA2C76004F028B /* mit_full.txt in Resources */,
+				A4A0081C1B619CA2002F11F4 /* mpl_20_summary.txt in Resources */,
 				A4D0D2B919DA2C76004F028B /* gpl_30_full.txt in Resources */,
 				A4D0D2BE19DA2C76004F028B /* lgpl_21_summary.txt in Resources */,
 				A4D0D2BC19DA2C76004F028B /* isc_summary.txt in Resources */,
 				A4D0D2C019DA2C76004F028B /* mit_summary.txt in Resources */,
+				A4A0081A1B619C8D002F11F4 /* mpl_20_full.txt in Resources */,
 				A4D0D2BB19DA2C76004F028B /* isc_full.txt in Resources */,
 				A4D0D2B219DA2C76004F028B /* asl_20_summary.txt in Resources */,
 				A4D0D2B819DA2C76004F028B /* gpl_20_summary.txt in Resources */,
@@ -474,6 +485,7 @@
 				A4A3AE5B19E98B6D00FF5CBD /* CustomLicense.swift in Sources */,
 				A4D0D2D119DA3718004F028B /* MITLicense.swift in Sources */,
 				A4D0D2C319DA32A4004F028B /* ApacheSoftwareLicense20.swift in Sources */,
+				A4A0081E1B619EB2002F11F4 /* MozillaPublicLicense20.swift in Sources */,
 				A4D0D2C919DA357A004F028B /* GnuGeneralPublicLicense20.swift in Sources */,
 				A4D0D2C719DA350E004F028B /* CreativeCommonsAttributionNoDerivs30Unported.swift in Sources */,
 				A4D0D2D319DA39D8004F028B /* NoticesHtmlBuilder.swift in Sources */,

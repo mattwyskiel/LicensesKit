@@ -49,6 +49,7 @@ A **notice** is an object containing information about the library being used an
  - GNU Lesser General Public License 2.1
  - ISC License
  - MIT License
+ - Mozilla Public License, Version 2.0
 
  Of course, you can use the `CustomLicense` class to build your own license if it is not listed above (for example, if a library has their own custom license).
 
