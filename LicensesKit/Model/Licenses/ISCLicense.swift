@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// ISC License
 @objc public class ISCLicense: License {
     
     /// The name of the license

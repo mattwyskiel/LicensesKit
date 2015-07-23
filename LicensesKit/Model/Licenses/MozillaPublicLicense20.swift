@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// Mozilla Public License, Version 2.0
 @objc public class MozillaPublicLicense20: License {
     
     /// The name of the license

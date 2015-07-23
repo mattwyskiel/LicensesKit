@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// GNU Lesser General Public License 2.1
 @objc public class GnuLesserGeneralPublicLicense21: License {
     
     /// The name of the license

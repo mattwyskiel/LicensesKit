@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// Creative Commons Attribution-NoDerivs 3.0 Unported
 @objc public class CreativeCommonsAttributionNoDerivs30Unported: License {
     
     /// The name of the license

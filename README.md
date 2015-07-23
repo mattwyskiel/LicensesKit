@@ -83,7 +83,7 @@ licensesVC.resolver.registerLicense(customLicense)
 ```
 **Objective-C**
 ```objective-c
-[licensesVC.resolver registerLicence:customLicense];
+[licensesVC.resolver registerLicense:customLicense];
 ```
 
 As soon as you have your JSON file together and registered all the custom licenses you need, just use the `setNoticesFromJSONFile(filepath:)` method on your LicenseViewController instance:

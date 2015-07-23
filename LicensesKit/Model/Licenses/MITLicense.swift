@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// MIT License
 @objc public class MITLicense: License {
     
     /// The name of the license

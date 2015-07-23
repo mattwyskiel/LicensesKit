@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// BSD 3-Clause License
 @objc public class BSD3ClauseLicense: License {
     
     /// The name of the license

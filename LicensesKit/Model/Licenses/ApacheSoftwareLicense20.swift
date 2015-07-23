@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// Apache Software License, Version 2.0
 @objc public class ApacheSoftwareLicense20: License {
     
     /// The name of the license
