@@ -72,13 +72,13 @@ Describes a library's license that is not one of the default licenses included w
     /**
     The designated initializer for a CustomLicense object.
     
-    :param: name        The name of the license
-    :param: summaryText The license summary text
-    :param: fullText    The license full text
-    :param: version     The license version
-    :param: url         The license URL
+    - parameter name:        The name of the license
+    - parameter summaryText: The license summary text
+    - parameter fullText:    The license full text
+    - parameter version:     The license version
+    - parameter url:         The license URL
     
-    :returns: An instance of CustomLicense
+    - returns: An instance of CustomLicense
     */
     public init(name: String, summaryText: String, fullText: String, version: String, url: String) {
         super.init()

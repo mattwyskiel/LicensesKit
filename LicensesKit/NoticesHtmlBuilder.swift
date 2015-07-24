@@ -47,9 +47,12 @@ class NoticesHtmlBuilder {
     
     private func writeHTMLFilePath(html: String) -> String {
         let paths = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.CachesDirectory, NSSearchPathDomainMask.UserDomainMask, true)
-        let cachesDirectory = paths[0] as! String
+        let cachesDirectory = paths[0] as String
         let filePath = cachesDirectory.stringByAppendingPathComponent("licenses.html")
-        html.writeToFile(filePath, atomically: true, encoding: NSUTF8StringEncoding, error: nil)
+        do {
+            try html.writeToFile(filePath, atomically: true, encoding: NSUTF8StringEncoding)
+        } catch _ {
+        }
         return filePath
     }
     
@@ -59,14 +62,14 @@ class NoticesHtmlBuilder {
 
 extension StringBuilder {
     // MARK: Private methods
-    func appendNoticesContainerStart(#style: String) -> Self {
+    func appendNoticesContainerStart(style style: String) -> Self {
         append("<!DOCTYPE html><html><head>")
         append("<style type=\"text/css\">").append(style).append("</style>")
         append("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"></head><body>")
         return self
     }
     
-    func appendNoticeBlock(#notice: Notice, showFullLicenseText: Bool) -> Self {
+    func appendNoticeBlock(notice notice: Notice, showFullLicenseText: Bool) -> Self {
         append("<ul><li>").append(notice.name)
         let currentNoticeURL = notice.url
         if count(currentNoticeURL) > 0 {

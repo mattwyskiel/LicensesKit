@@ -72,15 +72,21 @@ public func ==(lhs: License, rhs: License) -> Bool {
     /**
     Gets license content from a .txt file on disk.
     
-    :param: filename The name of the .txt file containing license content, excluding extension
-    :param: bundle The bundle that this file is in.
+    - parameter filename: The name of the .txt file containing license content, excluding extension
+    - parameter bundle: The bundle that this file is in.
     
-    :returns: The content of the .txt file specified.
+    - returns: The content of the .txt file specified.
     */
-    public class func getContent(#filename: String, inBundle bundle: NSBundle = bundle) -> String! {
+    public class func getContent(filename filename: String, inBundle bundle: NSBundle = bundle) -> String! {
         if let path = bundle.pathForResource(filename, ofType: "txt") {
             var errorMaybe: NSError?
-            let string = NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding, error: &errorMaybe)
+            let string: NSString?
+            do {
+                string = try NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding)
+            } catch let error as NSError {
+                errorMaybe = error
+                string = nil
+            }
             if let error = errorMaybe {
                 return nil
             } else {
