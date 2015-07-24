@@ -10,57 +10,33 @@ import UIKit
 /**
   Describes a library's license
 */
-@objc public class License: NSObject, Hashable {
+public protocol License {
     
     /// The name of the license
-    public var name: String {
-        get {
-            return "Apache Software License 2.0"
-        }
+    var name: String {
+        get
     }
     
     /// The license summary text
-    public var summaryText: String {
-        get {
-            return LicenseContentFetcher.getContent(filename: "asl_20_summary")
-        }
+    var summaryText: String {
+        get
     }
     
     /// The license full text
-    public var fullText: String {
-        get {
-            return LicenseContentFetcher.getContent(filename: "asl_20_full")
-        }
+    var fullText: String {
+        get
     }
     
     /// The license version
-    public var version: String {
-        get {
-            return "2.0"
-        }
+    var version: String {
+        get
     }
     
     /// The license URL
-    public var url: String {
-        get {
-            return "http://www.apache.org/licenses/LICENSE-2.0.txt"
-        }
+    var url: String {
+        get
     }
    
-}
-
-extension License: Hashable {
-    /// Hashable conformance - the hash value for `License`
-    public override var hashValue: Int {
-        get {
-            return name.hashValue
-        }
-    }
-}
-
-/// Equatable conformance - defining equivalence for `License`
-public func ==(lhs: License, rhs: License) -> Bool {
-    return lhs.hashValue == rhs.hashValue
 }
 
 /// Fetches license content from disk
@@ -79,18 +55,12 @@ public func ==(lhs: License, rhs: License) -> Bool {
     */
     public class func getContent(filename filename: String, inBundle bundle: NSBundle = bundle) -> String! {
         if let path = bundle.pathForResource(filename, ofType: "txt") {
-            var errorMaybe: NSError?
             let string: NSString?
             do {
                 string = try NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding)
-            } catch let error as NSError {
-                errorMaybe = error
-                string = nil
-            }
-            if let error = errorMaybe {
-                return nil
-            } else {
                 return string as! String;
+            } catch {
+                return nil
             }
         } else {
             return nil

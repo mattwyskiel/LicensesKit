@@ -12,35 +12,35 @@ import UIKit
 @objc public class MozillaPublicLicense20: License {
     
     /// The name of the license
-    override public var name: String {
+    public var name: String {
         get {
             return "Mozilla Public License, Version 2.0"
         }
     }
     
     /// The license summary text
-    override public var summaryText: String {
+    public var summaryText: String {
         get {
             return LicenseContentFetcher.getContent(filename: "mpl_20_summary")
         }
     }
     
     /// The license full text
-    override public var fullText: String {
+    public var fullText: String {
         get {
             return LicenseContentFetcher.getContent(filename: "mpl_20_full")
         }
     }
     
     /// The license version
-    override public var version: String {
+    public var version: String {
         get {
             return "2.0"
         }
     }
     
     /// The license URL
-    override public var url: String {
+    public var url: String {
         get {
             return "https://www.mozilla.org/MPL/2.0/"
         }

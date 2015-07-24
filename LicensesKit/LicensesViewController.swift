@@ -80,11 +80,8 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
     */
     public func setNoticesFromJSONFile(filepath: String) {
         if let jsonData = NSData(contentsOfFile: filepath) {
-            var errorMaybe: NSError?
-            let jsonArray = NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions(rawValue: 0)) as! [String: [[String: String]]]
-            if let error = errorMaybe {
-                // error
-            } else {
+            do {
+                let jsonArray = try NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions(rawValue: 0)) as! [String: [[String: String]]]
                 notices = []
                 if let noticesArray = jsonArray["notices"] {
                     for noticeJson in noticesArray {
@@ -92,12 +89,14 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
                         let libURL = noticeJson["url"]!
                         let copyright = noticeJson["copyright"]!
                         let licenseOptional = self.resolver.licenseForName(noticeJson["license"]!)
-                    
+                        
                         if let license = licenseOptional {
                             notices.append(Notice(name: libName, url: libURL, copyright: copyright, license: license))
                         }
                     }
                 }
+            } catch {
+                
             }
         }
     }

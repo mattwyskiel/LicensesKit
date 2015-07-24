@@ -12,35 +12,35 @@ import UIKit
 @objc public class GnuGeneralPublicLicense30: License {
     
     /// The name of the license
-    override public var name: String {
+    public var name: String {
         get {
             return "GNU General Public License 3.0"
         }
     }
     
     /// The license summary text
-    override public var summaryText: String {
+    public var summaryText: String {
         get {
             return LicenseContentFetcher.getContent(filename: "gpl_30_summary")
         }
     }
     
     /// The license full text
-    override public var fullText: String {
+    public var fullText: String {
         get {
             return LicenseContentFetcher.getContent(filename: "gpl_30_full")
         }
     }
     
     /// The license version
-    override public var version: String {
+    public var version: String {
         get {
             return "3.0"
         }
     }
     
     /// The license URL
-    override public var url: String {
+    public var url: String {
         get {
             return "http://www.gnu.org/licenses/"
         }

@@ -11,7 +11,6 @@ import StringBuilder
 
 class NoticesHtmlBuilder {
     
-    private var licenseTextCache: [License: String] = [:]
     var style: String = "p.license { background:grey;} body { font-family: sans-serif; overflow-wrap: break-word; } pre {background-color: #eeeeee; padding: 1em; white-space: pre-wrap; }"
     var notices: [Notice] = []
     var pageHeader: String?
@@ -72,7 +71,7 @@ extension StringBuilder {
     func appendNoticeBlock(notice notice: Notice, showFullLicenseText: Bool) -> Self {
         append("<ul><li>").append(notice.name)
         let currentNoticeURL = notice.url
-        if count(currentNoticeURL) > 0 {
+        if currentNoticeURL.characters.count > 0 {
             append(" (<a href=\"").append(currentNoticeURL).append("\">").append(currentNoticeURL).append("</a>)")
         }
         append("</li></ul>")

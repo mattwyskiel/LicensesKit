@@ -11,12 +11,12 @@ import UIKit
 /**
 Describes a library's license that is not one of the default licenses included with this library.
 */
-@objc public class CustomLicense: License {
+@objc public class CustomLicense: License, Equatable {
     
     private var privateName: String = ""
 
     /// The name of the license
-    override public var name: String {
+    public var name: String {
         get {
             return self.privateName
         }
@@ -27,7 +27,7 @@ Describes a library's license that is not one of the default licenses included w
     
     private var privateSummaryText: String = ""
     /// The license summary text
-    override public var summaryText: String {
+    public var summaryText: String {
         get {
             return self.privateSummaryText
         }
@@ -38,7 +38,7 @@ Describes a library's license that is not one of the default licenses included w
     
     private var privateFullText: String = ""
     /// The license full text
-    override public var fullText: String {
+    public var fullText: String {
         get {
             return self.privateFullText
         }
@@ -49,7 +49,7 @@ Describes a library's license that is not one of the default licenses included w
     
     private var privateVersion: String = ""
     /// The license version
-    override public var version: String {
+    public var version: String {
         get {
             return self.privateVersion
         }
@@ -60,7 +60,7 @@ Describes a library's license that is not one of the default licenses included w
     
     private var privateURL: String = ""
     /// The license URL
-    override public var url: String {
+    public var url: String {
         get {
             return self.privateURL
         }
@@ -81,7 +81,6 @@ Describes a library's license that is not one of the default licenses included w
     - returns: An instance of CustomLicense
     */
     public init(name: String, summaryText: String, fullText: String, version: String, url: String) {
-        super.init()
         self.name = name
         self.summaryText = summaryText
         self.fullText = fullText
@@ -89,4 +88,9 @@ Describes a library's license that is not one of the default licenses included w
         self.url = url
     }
    
+}
+
+/// Equatable conformance - defining equivalence for `CustomLicense`
+public func ==(lhs: CustomLicense, rhs: CustomLicense) -> Bool {
+    return lhs.name == rhs.name
 }

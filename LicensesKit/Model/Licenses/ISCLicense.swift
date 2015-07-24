@@ -12,35 +12,35 @@ import UIKit
 @objc public class ISCLicense: License {
     
     /// The name of the license
-    override public var name: String {
+    public var name: String {
         get {
             return "ISC License"
         }
     }
     
     /// The license summary text
-    override public var summaryText: String {
+    public var summaryText: String {
         get {
             return LicenseContentFetcher.getContent(filename: "isc_summary")
         }
     }
     
     /// The license full text
-    override public var fullText: String {
+    public var fullText: String {
         get {
             return LicenseContentFetcher.getContent(filename: "isc_full")
         }
     }
     
     /// The license version
-    override public var version: String {
+    public var version: String {
         get {
             return ""
         }
     }
     
     /// The license URL
-    override public var url: String {
+    public var url: String {
         get {
             return "http://opensource.org/licenses/isc-license.txt"
         }
