@@ -9,7 +9,7 @@
 import UIKit
 
 /// Creative Commons Attribution-NoDerivs 3.0 Unported
-@objc public class CreativeCommonsAttributionNoDerivs30Unported: License {
+@objc public class CreativeCommonsAttributionNoDerivs30Unported: NSObject, License {
     
     /// The name of the license
     public var name: String {

@@ -11,7 +11,7 @@ import UIKit
 /**
 Describes a library's license that is not one of the default licenses included with this library.
 */
-@objc public class CustomLicense: License, Equatable {
+@objc public class CustomLicense: NSObject, License {
     
     private var privateName: String = ""
 
@@ -81,11 +81,16 @@ Describes a library's license that is not one of the default licenses included w
     - returns: An instance of CustomLicense
     */
     public init(name: String, summaryText: String, fullText: String, version: String, url: String) {
+        super.init()
         self.name = name
         self.summaryText = summaryText
         self.fullText = fullText
         self.version = version
         self.url = url
+    }
+    
+    private override init() {
+        
     }
    
 }

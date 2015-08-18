@@ -9,7 +9,7 @@
 import UIKit
 
 /// Apache Software License, Version 2.0
-@objc public class ApacheSoftwareLicense20: License {
+@objc public class ApacheSoftwareLicense20: NSObject, License {
     
     /// The name of the license
     public var name: String {

@@ -9,7 +9,7 @@
 import UIKit
 
 /// ISC License
-@objc public class ISCLicense: License {
+@objc public class ISCLicense: NSObject, License {
     
     /// The name of the license
     public var name: String {

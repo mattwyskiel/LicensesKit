@@ -9,7 +9,7 @@
 import UIKit
 
 /// Resolves the licenses by given name, used publicly to register custom licenses with the library so they could be resolved by name
-@objc public class LicenseResolver {
+@objc public class LicenseResolver: NSObject {
     
     var licenses: [String : License] = [:]
     
@@ -34,7 +34,8 @@ import UIKit
         licenses.updateValue(license, forKey: license.name)
     }
     
-    init() {
+    override init() {
+        super.init()
         registerDefaultLicenses()
     }
     

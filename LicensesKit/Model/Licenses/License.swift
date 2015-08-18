@@ -40,7 +40,7 @@ public protocol License {
 }
 
 /// Fetches license content from disk
-@objc public class LicenseContentFetcher {
+@objc public class LicenseContentFetcher: NSObject {
     private class var bundle: NSBundle {
         return NSBundle(forClass: Notice.self)
     }

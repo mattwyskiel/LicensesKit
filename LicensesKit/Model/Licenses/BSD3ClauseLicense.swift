@@ -9,7 +9,7 @@
 import UIKit
 
 /// BSD 3-Clause License
-@objc public class BSD3ClauseLicense: License {
+@objc public class BSD3ClauseLicense: NSObject, License {
     
     /// The name of the license
     public var name: String {

@@ -46,7 +46,7 @@ class NoticesHtmlBuilder {
     
     private func writeHTMLFilePath(html: String) -> String {
         let paths = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.CachesDirectory, NSSearchPathDomainMask.UserDomainMask, true)
-        let cachesDirectory = paths[0] as String
+        let cachesDirectory = paths[0] as NSString
         let filePath = cachesDirectory.stringByAppendingPathComponent("licenses.html")
         do {
             try html.writeToFile(filePath, atomically: true, encoding: NSUTF8StringEncoding)

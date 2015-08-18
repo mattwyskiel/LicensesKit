@@ -9,7 +9,7 @@
 import UIKit
 
 /// GNU Lesser General Public License 2.1
-@objc public class GnuLesserGeneralPublicLicense21: License {
+@objc public class GnuLesserGeneralPublicLicense21: NSObject, License {
     
     /// The name of the license
     public var name: String {

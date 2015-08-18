@@ -9,7 +9,7 @@
 import UIKit
 
 /// MIT License
-@objc public class MITLicense: License {
+@objc public class MITLicense: NSObject, License {
     
     /// The name of the license
     public var name: String {

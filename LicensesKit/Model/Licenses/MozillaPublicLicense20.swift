@@ -9,7 +9,7 @@
 import UIKit
 
 /// Mozilla Public License, Version 2.0
-@objc public class MozillaPublicLicense20: License {
+@objc public class MozillaPublicLicense20: NSObject, License {
     
     /// The name of the license
     public var name: String {

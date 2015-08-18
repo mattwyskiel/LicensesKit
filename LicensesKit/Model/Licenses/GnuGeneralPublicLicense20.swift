@@ -9,7 +9,7 @@
 import UIKit
 
 /// GNU General Public License 2.0
-@objc public class GnuGeneralPublicLicense20: License {
+@objc public class GnuGeneralPublicLicense20: NSObject, License {
     
     /// The name of the license
     public var name: String {
