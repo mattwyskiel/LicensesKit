@@ -10,61 +10,37 @@ import UIKit
 /**
   Describes a library's license
 */
-@objc public class License: NSObject, Hashable {
+public protocol License {
     
     /// The name of the license
-    public var name: String {
-        get {
-            return "Apache Software License 2.0"
-        }
+    var name: String {
+        get
     }
     
     /// The license summary text
-    public var summaryText: String {
-        get {
-            return LicenseContentFetcher.getContent(filename: "asl_20_summary")
-        }
+    var summaryText: String {
+        get
     }
     
     /// The license full text
-    public var fullText: String {
-        get {
-            return LicenseContentFetcher.getContent(filename: "asl_20_full")
-        }
+    var fullText: String {
+        get
     }
     
     /// The license version
-    public var version: String {
-        get {
-            return "2.0"
-        }
+    var version: String {
+        get
     }
     
     /// The license URL
-    public var url: String {
-        get {
-            return "http://www.apache.org/licenses/LICENSE-2.0.txt"
-        }
+    var url: String {
+        get
     }
    
 }
 
-extension License: Hashable {
-    /// Hashable conformance - the hash value for `License`
-    public override var hashValue: Int {
-        get {
-            return name.hashValue
-        }
-    }
-}
-
-/// Equatable conformance - defining equivalence for `License`
-public func ==(lhs: License, rhs: License) -> Bool {
-    return lhs.hashValue == rhs.hashValue
-}
-
 /// Fetches license content from disk
-@objc public class LicenseContentFetcher {
+@objc public class LicenseContentFetcher: NSObject {
     private class var bundle: NSBundle {
         return NSBundle(forClass: Notice.self)
     }
@@ -72,19 +48,19 @@ public func ==(lhs: License, rhs: License) -> Bool {
     /**
     Gets license content from a .txt file on disk.
     
-    :param: filename The name of the .txt file containing license content, excluding extension
-    :param: bundle The bundle that this file is in.
+    - parameter filename: The name of the .txt file containing license content, excluding extension
+    - parameter bundle: The bundle that this file is in.
     
-    :returns: The content of the .txt file specified.
+    - returns: The content of the .txt file specified.
     */
-    public class func getContent(#filename: String, inBundle bundle: NSBundle = bundle) -> String! {
+    public class func getContent(filename filename: String, inBundle bundle: NSBundle = bundle) -> String! {
         if let path = bundle.pathForResource(filename, ofType: "txt") {
-            var errorMaybe: NSError?
-            let string = NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding, error: &errorMaybe)
-            if let error = errorMaybe {
-                return nil
-            } else {
+            let string: NSString?
+            do {
+                string = try NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding)
                 return string as! String;
+            } catch {
+                return nil
             }
         } else {
             return nil

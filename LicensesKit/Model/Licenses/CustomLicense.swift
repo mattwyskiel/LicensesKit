@@ -11,12 +11,12 @@ import UIKit
 /**
 Describes a library's license that is not one of the default licenses included with this library.
 */
-@objc public class CustomLicense: License {
+@objc public class CustomLicense: NSObject, License {
     
     private var privateName: String = ""
 
     /// The name of the license
-    override public var name: String {
+    public var name: String {
         get {
             return self.privateName
         }
@@ -27,7 +27,7 @@ Describes a library's license that is not one of the default licenses included w
     
     private var privateSummaryText: String = ""
     /// The license summary text
-    override public var summaryText: String {
+    public var summaryText: String {
         get {
             return self.privateSummaryText
         }
@@ -38,7 +38,7 @@ Describes a library's license that is not one of the default licenses included w
     
     private var privateFullText: String = ""
     /// The license full text
-    override public var fullText: String {
+    public var fullText: String {
         get {
             return self.privateFullText
         }
@@ -49,7 +49,7 @@ Describes a library's license that is not one of the default licenses included w
     
     private var privateVersion: String = ""
     /// The license version
-    override public var version: String {
+    public var version: String {
         get {
             return self.privateVersion
         }
@@ -60,7 +60,7 @@ Describes a library's license that is not one of the default licenses included w
     
     private var privateURL: String = ""
     /// The license URL
-    override public var url: String {
+    public var url: String {
         get {
             return self.privateURL
         }
@@ -72,13 +72,13 @@ Describes a library's license that is not one of the default licenses included w
     /**
     The designated initializer for a CustomLicense object.
     
-    :param: name        The name of the license
-    :param: summaryText The license summary text
-    :param: fullText    The license full text
-    :param: version     The license version
-    :param: url         The license URL
+    - parameter name:        The name of the license
+    - parameter summaryText: The license summary text
+    - parameter fullText:    The license full text
+    - parameter version:     The license version
+    - parameter url:         The license URL
     
-    :returns: An instance of CustomLicense
+    - returns: An instance of CustomLicense
     */
     public init(name: String, summaryText: String, fullText: String, version: String, url: String) {
         super.init()
@@ -88,5 +88,14 @@ Describes a library's license that is not one of the default licenses included w
         self.version = version
         self.url = url
     }
+    
+    private override init() {
+        
+    }
    
+}
+
+/// Equatable conformance - defining equivalence for `CustomLicense`
+public func ==(lhs: CustomLicense, rhs: CustomLicense) -> Bool {
+    return lhs.name == rhs.name
 }

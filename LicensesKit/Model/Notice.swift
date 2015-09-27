@@ -25,12 +25,12 @@ import UIKit
     /**
     The designated initializer for the Notice object
     
-    :param: name      The name of the library
-    :param: url       The library url
-    :param: copyright The copyright info for the library. (See the "copyright" property
-    :param: license   The license of the library. Either use a standard license or create a CustomLicense instance
+    - parameter name:      The name of the library
+    - parameter url:       The library url
+    - parameter copyright: The copyright info for the library. (See the "copyright" property
+    - parameter license:   The license of the library. Either use a standard license or create a CustomLicense instance
     
-    :returns: An instance of the Notice object
+    - returns: An instance of the Notice object
     */
     public init(name: String, url: String, copyright: String, license: License) {
         self.name = name

@@ -56,7 +56,7 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
     /**
     Add a `Notice` of a third party library for display in this view controller.
     
-    :param: notice A `Notice` to use for display.
+    - parameter notice: A `Notice` to use for display.
     */
     public func addNotice(notice: Notice) {
         notices.append(notice)
@@ -65,7 +65,7 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
     /**
     Add multiple notices of third party libraries for display in this view controller.
     
-    :param: notice An array of notices to use for display.
+    - parameter notice: An array of notices to use for display.
     */
     public func addNotices(notices: [Notice]) {
         self.notices += notices
@@ -76,15 +76,12 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
     
     NOTE: Calling this method **replaces** the array of notices with the data found in the JSON file. Add any notices in code after adding the notices from JSON.
     
-    :param: filepath The file path to the JSON file containing the notices. Use `NSBundle.mainBundle().pathForResource(_:, ofType:)` to programmatically get the path to your file.
+    - parameter filepath: The file path to the JSON file containing the notices. Use `NSBundle.mainBundle().pathForResource(_:, ofType:)` to programmatically get the path to your file.
     */
     public func setNoticesFromJSONFile(filepath: String) {
         if let jsonData = NSData(contentsOfFile: filepath) {
-            var errorMaybe: NSError?
-            let jsonArray = NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions(0), error: &errorMaybe) as! [String: [[String: String]]]
-            if let error = errorMaybe {
-                // error
-            } else {
+            do {
+                let jsonArray = try NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions(rawValue: 0)) as! [String: [[String: String]]]
                 notices = []
                 if let noticesArray = jsonArray["notices"] {
                     for noticeJson in noticesArray {
@@ -92,12 +89,14 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
                         let libURL = noticeJson["url"]!
                         let copyright = noticeJson["copyright"]!
                         let licenseOptional = self.resolver.licenseForName(noticeJson["license"]!)
-                    
+                        
                         if let license = licenseOptional {
                             notices.append(Notice(name: libName, url: libURL, copyright: copyright, license: license))
                         }
                     }
                 }
+            } catch {
+                
             }
         }
     }
