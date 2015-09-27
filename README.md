@@ -1,5 +1,5 @@
-#LicensesKit
-###Making giving credit where credit is due much easier than before.
+# LicensesKit
+### Making giving credit where credit is due much easier than before.
 
 If you've ever worked on an app that uses any third-party libraries (which is everyone), then you probably know that it's courteous (and sometomes mandatory, depending on the library) to add the library's license to an "acknowledgements" page in your app. And those pages are often tedious to put together and, especially, update. With LicensesKit, your troubles are over!
 
@@ -18,17 +18,8 @@ Use CocoaPods (0.36+):
 pod 'LicensesKit'
 ```
 
-If using Swift 2.0 and Xcode 7 beta:
-
-```ruby
-pod 'StringBuilder', :git => 'https://github.com/mattwyskiel/StringBuilder.git', :branch => 'swift-2.0'
-pod 'LicensesKit', :git => 'https://github.com/mattwyskiel/LicensesKit.git', :branch => 'swift-2.0'
-```
-
-(This is because LicensesKit's dependency, [StringBuilder](https://github.com/mattwyskiel/StringBuilder), also has a Swift 2.0 branch)
-
 ## Usage
-Basic usage of this library involves creating a `LicensesViewController` object, adding the libraries included in your app, and pushing the view controller
+Basic usage of this library involves creating a `LicensesViewController` object, adding the libraries included in your app, and pushing the view controller onscreen.
 ### Adding 'Notices'
 A **notice** is an object containing information about the library being used and its license. Namely:
 
@@ -119,7 +110,7 @@ Of course, you can optionally customize what the licenses look like when they ar
 - Set the `pageFooter` property to a string of HTML code to add content below the last license displayed.
 
 ## Documentation
-All public API in this library is documented inline (just quick-look any item for more info). Because of this, documentation is also available on [CocoaDocs](http://cocoadocs.org/docsets/LicensesKit/1.0.0/index.html)
+All public API in this library is documented inline (just quick-look any item for more info). Because of this, documentation is also available on [CocoaDocs](http://cocoadocs.org/docsets/LicensesKit/1.0.0/index.html).
 
 ## That's it!
 It's that simple! I hope you get much use out of this library as well as enjoy using it.
