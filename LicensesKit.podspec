@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "LicensesKit"
-  s.version      = "1.2.0"
+  s.version      = "1.2.1"
   s.summary      = "A simple way to list third-party licenses in your iOS apps"
   s.homepage     = "https://github.com/mattwyskiel/LicensesKit"
   s.license      = { :type => "Apache License, Version 2.0", :file => "LICENSE" }
