@@ -18,6 +18,8 @@ DerivedData
 *.xcuserstate
 *.xcuserstate
 
+Carthage
+
 Pods
 
 LicensesKit.xcodeproj/project.xcworkspace/xcuserdata/matthewwyskiel.xcuserdatad/UserInterfaceState.xcuserstate
