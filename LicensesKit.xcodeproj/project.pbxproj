@@ -44,6 +44,41 @@
 		A4D0D2CF19DA36AD004F028B /* ISCLicense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D0D2CE19DA36AD004F028B /* ISCLicense.swift */; };
 		A4D0D2D119DA3718004F028B /* MITLicense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D0D2D019DA3718004F028B /* MITLicense.swift */; };
 		A4D0D2D319DA39D8004F028B /* NoticesHtmlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D0D2D219DA39D8004F028B /* NoticesHtmlBuilder.swift */; };
+		BC9FBD471CD2259D0079383A /* Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D0D27919DA27DD004F028B /* Notice.swift */; };
+		BC9FBD481CD2259D0079383A /* MozillaPublicLicense20.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0081D1B619EB2002F11F4 /* MozillaPublicLicense20.swift */; };
+		BC9FBD491CD2259D0079383A /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D0D27B19DA2882004F028B /* License.swift */; };
+		BC9FBD4A1CD2259D0079383A /* ApacheSoftwareLicense20.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D0D2C219DA32A4004F028B /* ApacheSoftwareLicense20.swift */; };
+		BC9FBD4B1CD2259D0079383A /* BSD3ClauseLicense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D0D2C419DA348F004F028B /* BSD3ClauseLicense.swift */; };
+		BC9FBD4C1CD2259D0079383A /* CreativeCommonsAttributionNoDerivs30Unported.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D0D2C619DA350E004F028B /* CreativeCommonsAttributionNoDerivs30Unported.swift */; };
+		BC9FBD4D1CD2259D0079383A /* GnuGeneralPublicLicense20.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D0D2C819DA357A004F028B /* GnuGeneralPublicLicense20.swift */; };
+		BC9FBD4E1CD2259D0079383A /* GnuGeneralPublicLicense30.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D0D2CA19DA35DB004F028B /* GnuGeneralPublicLicense30.swift */; };
+		BC9FBD4F1CD2259D0079383A /* GnuLesserGeneralPublicLicense21.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D0D2CC19DA362F004F028B /* GnuLesserGeneralPublicLicense21.swift */; };
+		BC9FBD501CD2259D0079383A /* ISCLicense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D0D2CE19DA36AD004F028B /* ISCLicense.swift */; };
+		BC9FBD511CD2259D0079383A /* MITLicense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D0D2D019DA3718004F028B /* MITLicense.swift */; };
+		BC9FBD521CD2259D0079383A /* CustomLicense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3AE5A19E98B6D00FF5CBD /* CustomLicense.swift */; };
+		BC9FBD531CD2259D0079383A /* LicenseResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3AE5819E9830700FF5CBD /* LicenseResolver.swift */; };
+		BC9FBD541CD225BC0079383A /* NoticesHtmlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D0D2D219DA39D8004F028B /* NoticesHtmlBuilder.swift */; };
+		BC9FBD551CD225BC0079383A /* LicensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A459639019DCD0C2001AC2CA /* LicensesViewController.swift */; };
+		BC9FBD561CD225C90079383A /* asl_20_full.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4D0D2A019DA2C76004F028B /* asl_20_full.txt */; };
+		BC9FBD571CD225C90079383A /* asl_20_summary.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4D0D2A119DA2C76004F028B /* asl_20_summary.txt */; };
+		BC9FBD581CD225C90079383A /* bsd3_full.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4D0D2A219DA2C76004F028B /* bsd3_full.txt */; };
+		BC9FBD591CD225C90079383A /* bsd3_summary.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4D0D2A319DA2C76004F028B /* bsd3_summary.txt */; };
+		BC9FBD5A1CD225C90079383A /* ccand_30_full.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4D0D2A419DA2C76004F028B /* ccand_30_full.txt */; };
+		BC9FBD5B1CD225C90079383A /* ccand_30_summary.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4D0D2A519DA2C76004F028B /* ccand_30_summary.txt */; };
+		BC9FBD5C1CD225C90079383A /* gpl_20_full.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4D0D2A619DA2C76004F028B /* gpl_20_full.txt */; };
+		BC9FBD5D1CD225C90079383A /* gpl_20_summary.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4D0D2A719DA2C76004F028B /* gpl_20_summary.txt */; };
+		BC9FBD5E1CD225C90079383A /* gpl_30_full.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4D0D2A819DA2C76004F028B /* gpl_30_full.txt */; };
+		BC9FBD5F1CD225C90079383A /* gpl_30_summary.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4D0D2A919DA2C76004F028B /* gpl_30_summary.txt */; };
+		BC9FBD601CD225C90079383A /* isc_full.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4D0D2AA19DA2C76004F028B /* isc_full.txt */; };
+		BC9FBD611CD225C90079383A /* isc_summary.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4D0D2AB19DA2C76004F028B /* isc_summary.txt */; };
+		BC9FBD621CD225C90079383A /* lgpl_21_full.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4D0D2AC19DA2C76004F028B /* lgpl_21_full.txt */; };
+		BC9FBD631CD225C90079383A /* lgpl_21_summary.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4D0D2AD19DA2C76004F028B /* lgpl_21_summary.txt */; };
+		BC9FBD641CD225C90079383A /* mit_full.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4D0D2AE19DA2C76004F028B /* mit_full.txt */; };
+		BC9FBD651CD225C90079383A /* mit_summary.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4D0D2AF19DA2C76004F028B /* mit_summary.txt */; };
+		BC9FBD661CD225C90079383A /* mpl_20_full.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4A008191B619C8D002F11F4 /* mpl_20_full.txt */; };
+		BC9FBD671CD225C90079383A /* mpl_20_summary.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4A0081B1B619CA2002F11F4 /* mpl_20_summary.txt */; };
+		BC9FBD6A1CD226340079383A /* Notices.json in Resources */ = {isa = PBXBuildFile; fileRef = A4A3AE5C19E98FD100FF5CBD /* Notices.json */; };
+		BC9FBD6C1CD226550079383A /* StringBuilder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9FBD6B1CD226550079383A /* StringBuilder.framework */; };
 		D73FEF247DBBCC83776937B2 /* Pods_LicensesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DECC27D8E858DB6A28FF72 /* Pods_LicensesKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -92,6 +127,9 @@
 		A4D0D2D219DA39D8004F028B /* NoticesHtmlBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticesHtmlBuilder.swift; sourceTree = "<group>"; };
 		A522874FADB7F38BE083BF24 /* Pods-LicensesKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LicensesKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LicensesKitTests/Pods-LicensesKitTests.release.xcconfig"; sourceTree = "<group>"; };
 		A68CEF09310867950D6F9EF3 /* Pods_LicensesKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LicensesKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC9FBD3F1CD225400079383A /* LicensesKitFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LicensesKitFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC9FBD431CD225400079383A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC9FBD6B1CD226550079383A /* StringBuilder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StringBuilder.framework; path = Carthage/Build/iOS/StringBuilder.framework; sourceTree = SOURCE_ROOT; };
 		C2DECC27D8E858DB6A28FF72 /* Pods_LicensesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LicensesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF755B553CC4AF53B967EB37 /* Pods-LicensesKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LicensesKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LicensesKit/Pods-LicensesKit.debug.xcconfig"; sourceTree = "<group>"; };
 		FAC92E50149C81AC3D68C038 /* Pods-LicensesKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LicensesKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LicensesKitTests/Pods-LicensesKitTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +149,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EA6287BDE5752BA789FC3F8 /* Pods_LicensesKitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC9FBD3B1CD225400079383A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC9FBD6C1CD226550079383A /* StringBuilder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +188,7 @@
 			children = (
 				A4D0D26019DA22AC004F028B /* LicensesKit */,
 				A4D0D26A19DA22AC004F028B /* LicensesKitTests */,
+				BC9FBD401CD225400079383A /* LicensesKitFramework */,
 				A4D0D25F19DA22AC004F028B /* Products */,
 				69646FCF14308B94023051E0 /* Pods */,
 				9CA2E7FBC334D020A13FC2F3 /* Frameworks */,
@@ -153,6 +200,7 @@
 			children = (
 				A4D0D25E19DA22AC004F028B /* LicensesKit.framework */,
 				A4D0D26919DA22AC004F028B /* LicensesKitTests.xctest */,
+				BC9FBD3F1CD225400079383A /* LicensesKitFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -250,6 +298,23 @@
 			path = Licenses;
 			sourceTree = "<group>";
 		};
+		BC9FBD401CD225400079383A /* LicensesKitFramework */ = {
+			isa = PBXGroup;
+			children = (
+				BC9FBD691CD2261C0079383A /* Dependencies */,
+				BC9FBD431CD225400079383A /* Info.plist */,
+			);
+			path = LicensesKitFramework;
+			sourceTree = "<group>";
+		};
+		BC9FBD691CD2261C0079383A /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				BC9FBD6B1CD226550079383A /* StringBuilder.framework */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -258,6 +323,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4D0D26419DA22AC004F028B /* LicensesKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC9FBD3C1CD225400079383A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +377,24 @@
 			productReference = A4D0D26919DA22AC004F028B /* LicensesKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BC9FBD3E1CD225400079383A /* LicensesKitFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC9FBD461CD225400079383A /* Build configuration list for PBXNativeTarget "LicensesKitFramework" */;
+			buildPhases = (
+				BC9FBD3A1CD225400079383A /* Sources */,
+				BC9FBD3B1CD225400079383A /* Frameworks */,
+				BC9FBD3C1CD225400079383A /* Headers */,
+				BC9FBD3D1CD225400079383A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LicensesKitFramework;
+			productName = LicensesKitFramework;
+			productReference = BC9FBD3F1CD225400079383A /* LicensesKitFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -322,6 +412,9 @@
 					A4D0D26819DA22AC004F028B = {
 						CreatedOnToolsVersion = 6.0.1;
 					};
+					BC9FBD3E1CD225400079383A = {
+						CreatedOnToolsVersion = 7.3;
+					};
 				};
 			};
 			buildConfigurationList = A4D0D25819DA22AC004F028B /* Build configuration list for PBXProject "LicensesKit" */;
@@ -338,6 +431,7 @@
 			targets = (
 				A4D0D25D19DA22AC004F028B /* LicensesKit */,
 				A4D0D26819DA22AC004F028B /* LicensesKitTests */,
+				BC9FBD3E1CD225400079383A /* LicensesKitFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -373,6 +467,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC9FBD3D1CD225400079383A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC9FBD6A1CD226340079383A /* Notices.json in Resources */,
+				BC9FBD561CD225C90079383A /* asl_20_full.txt in Resources */,
+				BC9FBD571CD225C90079383A /* asl_20_summary.txt in Resources */,
+				BC9FBD581CD225C90079383A /* bsd3_full.txt in Resources */,
+				BC9FBD591CD225C90079383A /* bsd3_summary.txt in Resources */,
+				BC9FBD5A1CD225C90079383A /* ccand_30_full.txt in Resources */,
+				BC9FBD5B1CD225C90079383A /* ccand_30_summary.txt in Resources */,
+				BC9FBD5C1CD225C90079383A /* gpl_20_full.txt in Resources */,
+				BC9FBD5D1CD225C90079383A /* gpl_20_summary.txt in Resources */,
+				BC9FBD5E1CD225C90079383A /* gpl_30_full.txt in Resources */,
+				BC9FBD5F1CD225C90079383A /* gpl_30_summary.txt in Resources */,
+				BC9FBD601CD225C90079383A /* isc_full.txt in Resources */,
+				BC9FBD611CD225C90079383A /* isc_summary.txt in Resources */,
+				BC9FBD621CD225C90079383A /* lgpl_21_full.txt in Resources */,
+				BC9FBD631CD225C90079383A /* lgpl_21_summary.txt in Resources */,
+				BC9FBD641CD225C90079383A /* mit_full.txt in Resources */,
+				BC9FBD651CD225C90079383A /* mit_summary.txt in Resources */,
+				BC9FBD661CD225C90079383A /* mpl_20_full.txt in Resources */,
+				BC9FBD671CD225C90079383A /* mpl_20_summary.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +619,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4D0D26E19DA22AC004F028B /* LicensesKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC9FBD3A1CD225400079383A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC9FBD541CD225BC0079383A /* NoticesHtmlBuilder.swift in Sources */,
+				BC9FBD551CD225BC0079383A /* LicensesViewController.swift in Sources */,
+				BC9FBD471CD2259D0079383A /* Notice.swift in Sources */,
+				BC9FBD481CD2259D0079383A /* MozillaPublicLicense20.swift in Sources */,
+				BC9FBD491CD2259D0079383A /* License.swift in Sources */,
+				BC9FBD4A1CD2259D0079383A /* ApacheSoftwareLicense20.swift in Sources */,
+				BC9FBD4B1CD2259D0079383A /* BSD3ClauseLicense.swift in Sources */,
+				BC9FBD4C1CD2259D0079383A /* CreativeCommonsAttributionNoDerivs30Unported.swift in Sources */,
+				BC9FBD4D1CD2259D0079383A /* GnuGeneralPublicLicense20.swift in Sources */,
+				BC9FBD4E1CD2259D0079383A /* GnuGeneralPublicLicense30.swift in Sources */,
+				BC9FBD4F1CD2259D0079383A /* GnuLesserGeneralPublicLicense21.swift in Sources */,
+				BC9FBD501CD2259D0079383A /* ISCLicense.swift in Sources */,
+				BC9FBD511CD2259D0079383A /* MITLicense.swift in Sources */,
+				BC9FBD521CD2259D0079383A /* CustomLicense.swift in Sources */,
+				BC9FBD531CD2259D0079383A /* LicenseResolver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,6 +804,55 @@
 			};
 			name = Release;
 		};
+		BC9FBD441CD225400079383A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = LicensesKitFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattwyskiel.LicensesKitFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BC9FBD451CD225400079383A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = LicensesKitFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattwyskiel.LicensesKitFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -691,6 +882,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		BC9FBD461CD225400079383A /* Build configuration list for PBXNativeTarget "LicensesKitFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC9FBD441CD225400079383A /* Debug */,
+				BC9FBD451CD225400079383A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

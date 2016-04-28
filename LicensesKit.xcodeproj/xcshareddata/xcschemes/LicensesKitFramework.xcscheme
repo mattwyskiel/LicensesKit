@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BCB0FC4F1CC8F4E40041596E"
+               BlueprintIdentifier = "BC9FBD3E1CD225400079383A"
                BuildableName = "LicensesKitFramework.framework"
                BlueprintName = "LicensesKitFramework"
-               ReferencedContainer = "container:LicensesKitFramework.xcodeproj">
+               ReferencedContainer = "container:LicensesKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BCB0FC4F1CC8F4E40041596E"
+            BlueprintIdentifier = "BC9FBD3E1CD225400079383A"
             BuildableName = "LicensesKitFramework.framework"
             BlueprintName = "LicensesKitFramework"
-            ReferencedContainer = "container:LicensesKitFramework.xcodeproj">
+            ReferencedContainer = "container:LicensesKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BCB0FC4F1CC8F4E40041596E"
+            BlueprintIdentifier = "BC9FBD3E1CD225400079383A"
             BuildableName = "LicensesKitFramework.framework"
             BlueprintName = "LicensesKitFramework"
-            ReferencedContainer = "container:LicensesKitFramework.xcodeproj">
+            ReferencedContainer = "container:LicensesKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
