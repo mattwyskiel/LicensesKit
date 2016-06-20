@@ -30,7 +30,7 @@ import UIKit
     
     - parameter license: A license to register with the library.
     */
-    public func registerLicense(license: License) {
+    public func registerLicense(_ license: License) {
         licenses.updateValue(license, forKey: license.name)
     }
     
@@ -39,7 +39,7 @@ import UIKit
         registerDefaultLicenses()
     }
     
-    func licenseForName(name: String) -> License? {
+    func licenseForName(_ name: String) -> License? {
         return licenses[name]
     }
    

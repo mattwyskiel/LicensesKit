@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2EA6287BDE5752BA789FC3F8 /* Pods_LicensesKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68CEF09310867950D6F9EF3 /* Pods_LicensesKitTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9942E901D008509055E66A05 /* Pods_LicensesKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBF24A8F29462BF1F81FB68 /* Pods_LicensesKitTests.framework */; };
 		A459639119DCD0C2001AC2CA /* LicensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A459639019DCD0C2001AC2CA /* LicensesViewController.swift */; };
 		A4A0081A1B619C8D002F11F4 /* mpl_20_full.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4A008191B619C8D002F11F4 /* mpl_20_full.txt */; };
 		A4A0081C1B619CA2002F11F4 /* mpl_20_summary.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4A0081B1B619CA2002F11F4 /* mpl_20_summary.txt */; };
@@ -44,11 +44,13 @@
 		A4D0D2CF19DA36AD004F028B /* ISCLicense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D0D2CE19DA36AD004F028B /* ISCLicense.swift */; };
 		A4D0D2D119DA3718004F028B /* MITLicense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D0D2D019DA3718004F028B /* MITLicense.swift */; };
 		A4D0D2D319DA39D8004F028B /* NoticesHtmlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D0D2D219DA39D8004F028B /* NoticesHtmlBuilder.swift */; };
-		D73FEF247DBBCC83776937B2 /* Pods_LicensesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DECC27D8E858DB6A28FF72 /* Pods_LicensesKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D88819581F31B6B0C9F87DAA /* Pods_LicensesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62174EE9B4B8ABCD80E5E6AF /* Pods_LicensesKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		74E6F0E4187E283B5F0ECE95 /* Pods-LicensesKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LicensesKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-LicensesKit/Pods-LicensesKit.release.xcconfig"; sourceTree = "<group>"; };
+		46481B04B521AA899FD7E0C9 /* Pods-LicensesKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LicensesKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-LicensesKit/Pods-LicensesKit.release.xcconfig"; sourceTree = "<group>"; };
+		62174EE9B4B8ABCD80E5E6AF /* Pods_LicensesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LicensesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EF0C619269312F10DBB7EDA /* Pods-LicensesKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LicensesKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LicensesKit/Pods-LicensesKit.debug.xcconfig"; sourceTree = "<group>"; };
 		A459639019DCD0C2001AC2CA /* LicensesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicensesViewController.swift; sourceTree = "<group>"; };
 		A49771DD19DB83A600A6590F /* LicensesKitPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LicensesKitPlayground.playground; sourceTree = "<group>"; };
 		A4A008191B619C8D002F11F4 /* mpl_20_full.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mpl_20_full.txt; sourceTree = "<group>"; };
@@ -90,11 +92,9 @@
 		A4D0D2CE19DA36AD004F028B /* ISCLicense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISCLicense.swift; sourceTree = "<group>"; };
 		A4D0D2D019DA3718004F028B /* MITLicense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MITLicense.swift; sourceTree = "<group>"; };
 		A4D0D2D219DA39D8004F028B /* NoticesHtmlBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticesHtmlBuilder.swift; sourceTree = "<group>"; };
-		A522874FADB7F38BE083BF24 /* Pods-LicensesKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LicensesKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LicensesKitTests/Pods-LicensesKitTests.release.xcconfig"; sourceTree = "<group>"; };
-		A68CEF09310867950D6F9EF3 /* Pods_LicensesKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LicensesKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2DECC27D8E858DB6A28FF72 /* Pods_LicensesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LicensesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF755B553CC4AF53B967EB37 /* Pods-LicensesKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LicensesKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LicensesKit/Pods-LicensesKit.debug.xcconfig"; sourceTree = "<group>"; };
-		FAC92E50149C81AC3D68C038 /* Pods-LicensesKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LicensesKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LicensesKitTests/Pods-LicensesKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AEBF24A8F29462BF1F81FB68 /* Pods_LicensesKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LicensesKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2354E8E0F1BA1DEB65FE096 /* Pods-LicensesKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LicensesKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LicensesKitTests/Pods-LicensesKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		D430D1CA47E025CBF0201CB3 /* Pods-LicensesKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LicensesKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LicensesKitTests/Pods-LicensesKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D73FEF247DBBCC83776937B2 /* Pods_LicensesKit.framework in Frameworks */,
+				D88819581F31B6B0C9F87DAA /* Pods_LicensesKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,41 +110,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EA6287BDE5752BA789FC3F8 /* Pods_LicensesKitTests.framework in Frameworks */,
+				9942E901D008509055E66A05 /* Pods_LicensesKitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		69646FCF14308B94023051E0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EF755B553CC4AF53B967EB37 /* Pods-LicensesKit.debug.xcconfig */,
-				74E6F0E4187E283B5F0ECE95 /* Pods-LicensesKit.release.xcconfig */,
-				FAC92E50149C81AC3D68C038 /* Pods-LicensesKitTests.debug.xcconfig */,
-				A522874FADB7F38BE083BF24 /* Pods-LicensesKitTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		9CA2E7FBC334D020A13FC2F3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C2DECC27D8E858DB6A28FF72 /* Pods_LicensesKit.framework */,
-				A68CEF09310867950D6F9EF3 /* Pods_LicensesKitTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		A4D0D25419DA22AC004F028B = {
 			isa = PBXGroup;
 			children = (
 				A4D0D26019DA22AC004F028B /* LicensesKit */,
 				A4D0D26A19DA22AC004F028B /* LicensesKitTests */,
 				A4D0D25F19DA22AC004F028B /* Products */,
-				69646FCF14308B94023051E0 /* Pods */,
-				9CA2E7FBC334D020A13FC2F3 /* Frameworks */,
+				E29CB99B7FFD26C5AA4C62F5 /* Pods */,
+				B768EE77F45BA7D6CB0A5110 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -250,6 +230,26 @@
 			path = Licenses;
 			sourceTree = "<group>";
 		};
+		B768EE77F45BA7D6CB0A5110 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62174EE9B4B8ABCD80E5E6AF /* Pods_LicensesKit.framework */,
+				AEBF24A8F29462BF1F81FB68 /* Pods_LicensesKitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E29CB99B7FFD26C5AA4C62F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7EF0C619269312F10DBB7EDA /* Pods-LicensesKit.debug.xcconfig */,
+				46481B04B521AA899FD7E0C9 /* Pods-LicensesKit.release.xcconfig */,
+				D430D1CA47E025CBF0201CB3 /* Pods-LicensesKitTests.debug.xcconfig */,
+				D2354E8E0F1BA1DEB65FE096 /* Pods-LicensesKitTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -268,13 +268,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4D0D27119DA22AC004F028B /* Build configuration list for PBXNativeTarget "LicensesKit" */;
 			buildPhases = (
-				226A40DC4A63D387929E37F6 /* Check Pods Manifest.lock */,
+				5665D2C8B4986557AA3CF0A2 /* 📦 Check Pods Manifest.lock */,
 				A4D0D25919DA22AC004F028B /* Sources */,
 				A4D0D25A19DA22AC004F028B /* Frameworks */,
 				A4D0D25B19DA22AC004F028B /* Headers */,
 				A4D0D25C19DA22AC004F028B /* Resources */,
-				0A3A790A522614C40AEE6739 /* Embed Pods Frameworks */,
-				EBC754DB9AC4D136ABD35358 /* Copy Pods Resources */,
+				2F2EFA2AEE3909280429D45D /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -289,12 +288,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4D0D27419DA22AC004F028B /* Build configuration list for PBXNativeTarget "LicensesKitTests" */;
 			buildPhases = (
-				C198E9B8BF08F9C76AD73247 /* Check Pods Manifest.lock */,
+				D9B659DE67792969F28AC953 /* 📦 Check Pods Manifest.lock */,
 				A4D0D26519DA22AC004F028B /* Sources */,
 				A4D0D26619DA22AC004F028B /* Frameworks */,
 				A4D0D26719DA22AC004F028B /* Resources */,
-				D0A59E1F0AC1912519E6F09A /* Embed Pods Frameworks */,
-				E1340C6C05AE7CFFC0C30192 /* Copy Pods Resources */,
+				305B5693C5AC98279C62B4D4 /* 📦 Embed Pods Frameworks */,
+				42F682918879C47846673E0F /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -313,11 +312,12 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Matthew Wyskiel";
 				TargetAttributes = {
 					A4D0D25D19DA22AC004F028B = {
 						CreatedOnToolsVersion = 6.0.1;
+						LastSwiftMigration = 0800;
 					};
 					A4D0D26819DA22AC004F028B = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -379,59 +379,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A3A790A522614C40AEE6739 /* Embed Pods Frameworks */ = {
+		2F2EFA2AEE3909280429D45D /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LicensesKit/Pods-LicensesKit-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LicensesKit/Pods-LicensesKit-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		226A40DC4A63D387929E37F6 /* Check Pods Manifest.lock */ = {
+		305B5693C5AC98279C62B4D4 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		C198E9B8BF08F9C76AD73247 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		D0A59E1F0AC1912519E6F09A /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,14 +409,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LicensesKitTests/Pods-LicensesKitTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E1340C6C05AE7CFFC0C30192 /* Copy Pods Resources */ = {
+		42F682918879C47846673E0F /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,19 +424,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LicensesKitTests/Pods-LicensesKitTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EBC754DB9AC4D136ABD35358 /* Copy Pods Resources */ = {
+		5665D2C8B4986557AA3CF0A2 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LicensesKit/Pods-LicensesKit-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D9B659DE67792969F28AC953 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -529,6 +514,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -575,6 +561,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -593,8 +580,9 @@
 		};
 		A4D0D27219DA22AC004F028B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF755B553CC4AF53B967EB37 /* Pods-LicensesKit.debug.xcconfig */;
+			baseConfigurationReference = 7EF0C619269312F10DBB7EDA /* Pods-LicensesKit.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -607,13 +595,15 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		A4D0D27319DA22AC004F028B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74E6F0E4187E283B5F0ECE95 /* Pods-LicensesKit.release.xcconfig */;
+			baseConfigurationReference = 46481B04B521AA899FD7E0C9 /* Pods-LicensesKit.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -625,13 +615,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewwyskiel.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		A4D0D27519DA22AC004F028B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAC92E50149C81AC3D68C038 /* Pods-LicensesKitTests.debug.xcconfig */;
+			baseConfigurationReference = D430D1CA47E025CBF0201CB3 /* Pods-LicensesKitTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -649,8 +642,9 @@
 		};
 		A4D0D27619DA22AC004F028B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A522874FADB7F38BE083BF24 /* Pods-LicensesKitTests.release.xcconfig */;
+			baseConfigurationReference = D2354E8E0F1BA1DEB65FE096 /* Pods-LicensesKitTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -659,6 +653,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewwyskiel.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};

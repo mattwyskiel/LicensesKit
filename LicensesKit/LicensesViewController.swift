@@ -58,7 +58,7 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
     
     - parameter notice: A `Notice` to use for display.
     */
-    public func addNotice(notice: Notice) {
+    public func addNotice(_ notice: Notice) {
         notices.append(notice)
     }
     
@@ -67,7 +67,7 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
     
     - parameter notice: An array of notices to use for display.
     */
-    public func addNotices(notices: [Notice]) {
+    public func addNotices(_ notices: [Notice]) {
         self.notices += notices
     }
     
@@ -78,10 +78,10 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
     
     - parameter filepath: The file path to the JSON file containing the notices. Use `NSBundle.mainBundle().pathForResource(_:, ofType:)` to programmatically get the path to your file.
     */
-    public func setNoticesFromJSONFile(filepath: String) {
-        if let jsonData = NSData(contentsOfFile: filepath) {
+    public func setNoticesFromJSONFile(at filepath: String) {
+        if let jsonData = try? Data(contentsOf: URL(fileURLWithPath: filepath)) {
             do {
-                let jsonArray = try NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions(rawValue: 0)) as! [String: [[String: String]]]
+                let jsonArray = try JSONSerialization.jsonObject(with: jsonData, options: JSONSerialization.ReadingOptions(rawValue: 0)) as! [String: [[String: String]]]
                 notices = []
                 if let noticesArray = jsonArray["notices"] {
                     for noticeJson in noticesArray {
@@ -128,7 +128,7 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
     /**
     Final setup after view has appeared; NOT meant to be called outside of this class.
     */
-    override public func viewDidAppear(animated: Bool) {
+    override public func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         htmlBuilder.addNotices(notices)
         
@@ -147,14 +147,14 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
     /**
     Handles links clicked in the internal webView; NOT meant to be used outside of this class.
     */
-    public func webView(webView: WKWebView, decidePolicyForNavigationAction navigationAction: WKNavigationAction, decisionHandler: (WKNavigationActionPolicy) -> Void) {
-        if navigationAction.navigationType == .LinkActivated {
-            let url = navigationAction.request.URL
-            UIApplication.sharedApplication().openURL(url!)
-            decisionHandler(.Cancel)
+    public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: (WKNavigationActionPolicy) -> Void) {
+        if navigationAction.navigationType == .linkActivated {
+            let url = navigationAction.request.url
+            UIApplication.shared().openURL(url!)
+            decisionHandler(.cancel)
             return
         }
-        decisionHandler(.Allow)
+        decisionHandler(.allow)
     }
 
 }

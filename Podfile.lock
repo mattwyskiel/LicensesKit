@@ -1,10 +1,22 @@
 PODS:
-  - StringBuilder (0.1.0)
+  - StringBuilder (0.1.1)
 
 DEPENDENCIES:
-  - StringBuilder
+  - StringBuilder (from `https://github.com/mattwyskiel/StringBuilder`, branch `swift-3.0`)
+
+EXTERNAL SOURCES:
+  StringBuilder:
+    :branch: swift-3.0
+    :git: https://github.com/mattwyskiel/StringBuilder
+
+CHECKOUT OPTIONS:
+  StringBuilder:
+    :commit: 5d8d88d422ff06e92353d54f48448a80b548e261
+    :git: https://github.com/mattwyskiel/StringBuilder
 
 SPEC CHECKSUMS:
-  StringBuilder: e47be1c725272a39ee54f9225e081f3d752403a5
+  StringBuilder: 73676556a0defec4b7ef6c06413d247ba92015f2
 
-COCOAPODS: 0.36.3
+PODFILE CHECKSUM: 60b076bdbb034cb8fec3b2a96ed8e8fdf3924a99
+
+COCOAPODS: 1.0.0
