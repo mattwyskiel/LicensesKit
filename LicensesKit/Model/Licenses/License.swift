@@ -41,8 +41,8 @@ public protocol License {
 
 /// Fetches license content from disk
 @objc public class LicenseContentFetcher: NSObject {
-    private class var bundle: NSBundle {
-        return NSBundle(forClass: Notice.self)
+    private class var bundle: Bundle {
+        return Bundle(for: Notice.self)
     }
     
     /**
@@ -53,11 +53,11 @@ public protocol License {
     
     - returns: The content of the .txt file specified.
     */
-    public class func getContent(filename filename: String, inBundle bundle: NSBundle = bundle) -> String! {
-        if let path = bundle.pathForResource(filename, ofType: "txt") {
+    public class func getContent(filename: String, inBundle bundle: Bundle = bundle) -> String! {
+        if let path = bundle.path(forResource: filename, ofType: "txt") {
             let string: NSString?
             do {
-                string = try NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding)
+                string = try NSString(contentsOfFile: path, encoding: String.Encoding.utf8.rawValue)
                 return string as! String;
             } catch {
                 return nil

@@ -81,14 +81,14 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
     public func setNoticesFromJSONFile(filepath: String) {
         if let jsonData = NSData(contentsOfFile: filepath) {
             do {
-                let jsonArray = try NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions(rawValue: 0)) as! [String: [[String: String]]]
+                let jsonArray = try JSONSerialization.jsonObject(with: jsonData as Data, options: JSONSerialization.ReadingOptions(rawValue: 0)) as! [String: [[String: String]]]
                 notices = []
                 if let noticesArray = jsonArray["notices"] {
                     for noticeJson in noticesArray {
                         let libName = noticeJson["name"]!
                         let libURL = noticeJson["url"]!
                         let copyright = noticeJson["copyright"]!
-                        let licenseOptional = self.resolver.licenseForName(noticeJson["license"]!)
+                        let licenseOptional = self.resolver.licenseForName(name: noticeJson["license"]!)
                         
                         if let license = licenseOptional {
                             notices.append(Notice(name: libName, url: libURL, copyright: copyright, license: license))
@@ -128,10 +128,10 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
     /**
     Final setup after view has appeared; NOT meant to be called outside of this class.
     */
-    override public func viewDidAppear(animated: Bool) {
+    override public func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        htmlBuilder.addNotices(notices)
-        
+        htmlBuilder.notices = notices
+		
         let htmlString = htmlBuilder.build()
         webView.loadHTMLString(htmlString, baseURL: nil)
     }
@@ -147,14 +147,14 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
     /**
     Handles links clicked in the internal webView; NOT meant to be used outside of this class.
     */
-    public func webView(webView: WKWebView, decidePolicyForNavigationAction navigationAction: WKNavigationAction, decisionHandler: (WKNavigationActionPolicy) -> Void) {
-        if navigationAction.navigationType == .LinkActivated {
-            let url = navigationAction.request.URL
-            UIApplication.sharedApplication().openURL(url!)
-            decisionHandler(.Cancel)
+    public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        if navigationAction.navigationType == .linkActivated {
+            let url = navigationAction.request.url
+            UIApplication.shared.openURL(url!)
+            decisionHandler(.cancel)
             return
         }
-        decisionHandler(.Allow)
+        decisionHandler(.allow)
     }
 
 }

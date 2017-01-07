@@ -16,40 +16,30 @@ class NoticesHtmlBuilder {
     var pageHeader: String?
     var pageFooter: String?
     
-    func addNotice(notice: Notice) {
-        notices.append(notice)
-    }
-    
-    func addNotices(notices: [Notice]) {
-        for notice in notices {
-            self.notices.append(notice)
-        }
-    }
-    
     var showFullLicenseText: Bool = false
     
     func build() -> String {
         let noticesHtmlBuilder = StringBuilder()
-        noticesHtmlBuilder.appendNoticesContainerStart(style: style)
+        _ = noticesHtmlBuilder.appendNoticesContainerStart(style: style)
         if let header = pageHeader {
-            noticesHtmlBuilder.append(header)
+            _ = noticesHtmlBuilder.append(itemToAppend: header)
         }
         for notice in notices {
-            noticesHtmlBuilder.appendNoticeBlock(notice: notice, showFullLicenseText: showFullLicenseText)
+            _ = noticesHtmlBuilder.appendNoticeBlock(notice: notice, showFullLicenseText: showFullLicenseText)
         }
         if let footer = pageFooter {
-            noticesHtmlBuilder.append(footer)
+            _ = noticesHtmlBuilder.append(itemToAppend: footer)
         }
-        noticesHtmlBuilder.appendNoticesContainerEnd()
+        _ = noticesHtmlBuilder.appendNoticesContainerEnd()
         return noticesHtmlBuilder.toString()
     }
     
     private func writeHTMLFilePath(html: String) -> String {
-        let paths = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.CachesDirectory, NSSearchPathDomainMask.UserDomainMask, true)
+        let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.cachesDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
         let cachesDirectory = paths[0] as NSString
-        let filePath = cachesDirectory.stringByAppendingPathComponent("licenses.html")
+        let filePath = cachesDirectory.appendingPathComponent("licenses.html")
         do {
-            try html.writeToFile(filePath, atomically: true, encoding: NSUTF8StringEncoding)
+            try html.write(toFile: filePath, atomically: true, encoding: String.Encoding.utf8)
         } catch _ {
         }
         return filePath
@@ -61,28 +51,28 @@ class NoticesHtmlBuilder {
 
 extension StringBuilder {
     // MARK: Private methods
-    func appendNoticesContainerStart(style style: String) -> Self {
-        append("<!DOCTYPE html><html><head>")
-        append("<style type=\"text/css\">").append(style).append("</style>")
-        append("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"></head><body>")
+    func appendNoticesContainerStart(style: String) -> Self {
+        _ = append(itemToAppend: "<!DOCTYPE html><html><head>")
+        _ = append(itemToAppend: "<style type=\"text/css\">").append(itemToAppend: style).append(itemToAppend: "</style>")
+        _ = append(itemToAppend: "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"></head><body>")
         return self
     }
     
-    func appendNoticeBlock(notice notice: Notice, showFullLicenseText: Bool) -> Self {
-        append("<ul><li>").append(notice.name)
+    func appendNoticeBlock(notice: Notice, showFullLicenseText: Bool) -> Self {
+        _ = append(itemToAppend: "<ul><li>").append(itemToAppend: notice.name)
         let currentNoticeURL = notice.url
         if currentNoticeURL.characters.count > 0 {
-            append(" (<a href=\"").append(currentNoticeURL).append("\">").append(currentNoticeURL).append("</a>)")
+            _ = append(itemToAppend: " (<a href=\"").append(itemToAppend: currentNoticeURL).append(itemToAppend: "\">").append(itemToAppend: currentNoticeURL).append(itemToAppend: "</a>)")
         }
-        append("</li></ul>")
-        append("<pre>")
-        append(notice.copyright).append("<br/><br/>")
-        append(getLicenseText(notice.license, showFullLicenseText: showFullLicenseText)).append("</pre>")
+        _ = append(itemToAppend: "</li></ul>")
+        _ = append(itemToAppend: "<pre>")
+        _ = append(itemToAppend: notice.copyright).append(itemToAppend: "<br/><br/>")
+        _ = append(itemToAppend: getLicenseText(license: notice.license, showFullLicenseText: showFullLicenseText)).append(itemToAppend: "</pre>")
         return self
     }
     
     func appendNoticesContainerEnd() -> StringBuilder {
-        append("</body></html>")
+        _ = append(itemToAppend: "</body></html>")
         return self
     }
     

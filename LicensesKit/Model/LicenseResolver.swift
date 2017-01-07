@@ -15,14 +15,14 @@ import UIKit
     
     func registerDefaultLicenses() {
         licenses = [:]
-        registerLicense(ApacheSoftwareLicense20())
-        registerLicense(BSD3ClauseLicense())
-        registerLicense(ISCLicense())
-        registerLicense(MITLicense())
-        registerLicense(GnuLesserGeneralPublicLicense21())
-        registerLicense(CreativeCommonsAttributionNoDerivs30Unported())
-        registerLicense(GnuGeneralPublicLicense30())
-        registerLicense(GnuGeneralPublicLicense20())
+        registerLicense(license: ApacheSoftwareLicense20())
+        registerLicense(license: BSD3ClauseLicense())
+        registerLicense(license: ISCLicense())
+        registerLicense(license: MITLicense())
+        registerLicense(license: GnuLesserGeneralPublicLicense21())
+        registerLicense(license: CreativeCommonsAttributionNoDerivs30Unported())
+        registerLicense(license: GnuGeneralPublicLicense30())
+        registerLicense(license: GnuGeneralPublicLicense20())
     }
     
     /**
