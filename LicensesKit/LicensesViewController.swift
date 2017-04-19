@@ -147,10 +147,10 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
     /**
     Handles links clicked in the internal webView; NOT meant to be used outside of this class.
     */
-    public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: (WKNavigationActionPolicy) -> Void) {
+    public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         if navigationAction.navigationType == .linkActivated {
             let url = navigationAction.request.url
-            UIApplication.shared().openURL(url!)
+            UIApplication.shared.openURL(url!)
             decisionHandler(.cancel)
             return
         }
