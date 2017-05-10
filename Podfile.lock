@@ -1,10 +1,12 @@
 PODS:
-  - StringBuilder (0.1.0)
+  - StringBuilder (1.1.2)
 
 DEPENDENCIES:
   - StringBuilder
 
 SPEC CHECKSUMS:
-  StringBuilder: e47be1c725272a39ee54f9225e081f3d752403a5
+  StringBuilder: 15abc8106929431ff7149dd94b47062699e962b7
 
-COCOAPODS: 0.36.3
+PODFILE CHECKSUM: 5e5728a5d6587e5b2510d378930cb2d8ed75f4a0
+
+COCOAPODS: 1.2.1

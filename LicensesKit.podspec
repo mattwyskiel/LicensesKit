@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "LicensesKit"
-  s.version      = "1.2.1"
+  s.version      = "1.2.2"
   s.summary      = "A simple way to list third-party licenses in your iOS apps"
   s.homepage     = "https://github.com/mattwyskiel/LicensesKit"
   s.license      = { :type => "Apache License, Version 2.0", :file => "LICENSE" }
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.source_files  = "LicensesKit/LicensesViewController.swift", "LicensesKit/NoticesHtmlBuilder.swift", "LicensesKit/Model", "LicensesKit/Model/Licenses"
   s.resources = ["LicensesKit/Supporting Files/Licenses/*.txt"]
   s.framework  = "UIKit", "WebKit"
-  s.dependency 'StringBuilder', '0.1.1'
+  s.dependency 'StringBuilder', '1.1.2'
   s.requires_arc = true
 
 end

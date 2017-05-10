@@ -58,7 +58,7 @@ public protocol License {
             let string: NSString?
             do {
                 string = try NSString(contentsOfFile: path, encoding: String.Encoding.utf8.rawValue)
-                return string as! String;
+                return string! as String;
             } catch {
                 return nil
             }

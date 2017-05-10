@@ -22,13 +22,13 @@ class NoticesHtmlBuilder {
         let noticesHtmlBuilder = StringBuilder()
         _ = noticesHtmlBuilder.appendNoticesContainerStart(style: style)
         if let header = pageHeader {
-            _ = noticesHtmlBuilder.append(itemToAppend: header)
+            _ = noticesHtmlBuilder.append(header)
         }
         for notice in notices {
             _ = noticesHtmlBuilder.appendNoticeBlock(notice: notice, showFullLicenseText: showFullLicenseText)
         }
         if let footer = pageFooter {
-            _ = noticesHtmlBuilder.append(itemToAppend: footer)
+            _ = noticesHtmlBuilder.append(footer)
         }
         _ = noticesHtmlBuilder.appendNoticesContainerEnd()
         return noticesHtmlBuilder.toString()
@@ -52,27 +52,27 @@ class NoticesHtmlBuilder {
 extension StringBuilder {
     // MARK: Private methods
     func appendNoticesContainerStart(style: String) -> Self {
-        _ = append(itemToAppend: "<!DOCTYPE html><html><head>")
-        _ = append(itemToAppend: "<style type=\"text/css\">").append(itemToAppend: style).append(itemToAppend: "</style>")
-        _ = append(itemToAppend: "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"></head><body>")
+        _ = append("<!DOCTYPE html><html><head>")
+        _ = append("<style type=\"text/css\">").append(style).append("</style>")
+        _ = append("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"></head><body>")
         return self
     }
     
     func appendNoticeBlock(notice: Notice, showFullLicenseText: Bool) -> Self {
-        _ = append(itemToAppend: "<ul><li>").append(itemToAppend: notice.name)
+        _ = append("<ul><li>").append(notice.name)
         let currentNoticeURL = notice.url
         if currentNoticeURL.characters.count > 0 {
-            _ = append(itemToAppend: " (<a href=\"").append(itemToAppend: currentNoticeURL).append(itemToAppend: "\">").append(itemToAppend: currentNoticeURL).append(itemToAppend: "</a>)")
+            _ = append(" (<a href=\"").append(currentNoticeURL).append("\">").append(currentNoticeURL).append("</a>)")
         }
-        _ = append(itemToAppend: "</li></ul>")
-        _ = append(itemToAppend: "<pre>")
-        _ = append(itemToAppend: notice.copyright).append(itemToAppend: "<br/><br/>")
-        _ = append(itemToAppend: getLicenseText(license: notice.license, showFullLicenseText: showFullLicenseText)).append(itemToAppend: "</pre>")
+        _ = append("</li></ul>")
+        _ = append("<pre>")
+        _ = append(notice.copyright).append("<br/><br/>")
+        _ = append(getLicenseText(license: notice.license, showFullLicenseText: showFullLicenseText)).append("</pre>")
         return self
     }
     
     func appendNoticesContainerEnd() -> StringBuilder {
-        _ = append(itemToAppend: "</body></html>")
+        _ = append("</body></html>")
         return self
     }
     
