@@ -61,7 +61,7 @@ extension StringBuilder {
     func appendNoticeBlock(notice: Notice, showFullLicenseText: Bool) -> Self {
         _ = append("<ul><li>").append(notice.name)
         let currentNoticeURL = notice.url
-        if currentNoticeURL.characters.count > 0 {
+        if currentNoticeURL.count > 0 {
             _ = append(" (<a href=\"").append(currentNoticeURL).append("\">").append(currentNoticeURL).append("</a>)")
         }
         _ = append("</li></ul>")
