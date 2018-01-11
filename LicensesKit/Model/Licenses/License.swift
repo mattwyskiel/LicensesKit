@@ -54,7 +54,7 @@ public protocol License {
     - returns: The content of the .txt file specified.
     */
     public class func getContent(filename: String, inBundle bundle: Bundle = bundle) -> String! {
-        if let path = bundle.pathForResource(filename, ofType: "txt") {
+        if let path = bundle.path(forResource: filename, ofType: "txt") {
             let string: NSString?
             do {
                 string = try NSString(contentsOfFile: path, encoding: String.Encoding.utf8.rawValue)

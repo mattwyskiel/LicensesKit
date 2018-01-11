@@ -10,7 +10,7 @@ import UIKit
 import WebKit
 
 /// The view controller that displays acknowledgements for an app, with provided `notices` or a `notices.json` file.
-public class LicensesViewController: UIViewController, WKNavigationDelegate {
+open class LicensesViewController: UIViewController, WKNavigationDelegate {
     
     private var webView: WKWebView!
     
@@ -104,7 +104,7 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
     /**
     Loads the view; NOT meant to be called outside of this class.
     */
-    override public func loadView() {
+    override open func loadView() {
         webView = WKWebView()
         
         webView?.navigationDelegate = self
@@ -115,7 +115,7 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
     /**
     Setup after loading the view; NOT meant to be called outside of this class.
     */
-    override public func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
 
         if let title = navigationTitle {
@@ -128,7 +128,7 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
     /**
     Final setup after view has appeared; NOT meant to be called outside of this class.
     */
-    override public func viewDidAppear(_ animated: Bool) {
+    override open func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         htmlBuilder.addNotices(notices)
         
@@ -139,7 +139,7 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
     /**
     Handle memory warnings; NOT meant to be used outside of this class.
     */
-    override public func didReceiveMemoryWarning() {
+    override open func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -147,10 +147,10 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
     /**
     Handles links clicked in the internal webView; NOT meant to be used outside of this class.
     */
-    public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: (WKNavigationActionPolicy) -> Void) {
+    public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         if navigationAction.navigationType == .linkActivated {
             let url = navigationAction.request.url
-            UIApplication.shared().openURL(url!)
+            UIApplication.shared.openURL(url!)
             decisionHandler(.cancel)
             return
         }
