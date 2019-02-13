@@ -345,6 +345,7 @@
 				A4D0D25A19DA22AC004F028B /* Frameworks */,
 				A4D0D25B19DA22AC004F028B /* Headers */,
 				A4D0D25C19DA22AC004F028B /* Resources */,
+				3AE8C80F221419CD007B1E6B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -514,6 +515,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LicensesKitTests/Pods-LicensesKitTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		3AE8C80F221419CD007B1E6B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ditto ${BUILT_PRODUCTS_DIR}/LicensesKit.framework ${SRCROOT}/../../ONECore/ONECore/Frameworks/${PLATFORM_NAME}/LicensesKit.framework\n\n";
 		};
 		9566CC5B930A138503B2F431 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
