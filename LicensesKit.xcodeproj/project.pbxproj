@@ -531,7 +531,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "ditto ${BUILT_PRODUCTS_DIR}/LicensesKit.framework ${SRCROOT}/../../ONECore/ONECore/Frameworks/${PLATFORM_NAME}/LicensesKit.framework\n\n";
+			shellScript = "ditto ${BUILT_PRODUCTS_DIR}/LicensesKit.framework ${SRCROOT}/../../ONECore/ONECore/Frameworks/${PLATFORM_NAME}/LicensesKit.framework\nditto ${BUILT_PRODUCTS_DIR}/StringBuilder/StringBuilder.framework ${SRCROOT}/../../ONECore/ONECore/Frameworks/${PLATFORM_NAME}/StringBuilder.framework\n\n\n\n";
 		};
 		9566CC5B930A138503B2F431 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
