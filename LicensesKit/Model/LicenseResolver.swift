@@ -43,4 +43,19 @@ import UIKit
         return licenses[name]
     }
    
+    public func setLicensesFromJSONFile(filepath: String) {
+        if let jsonData = NSData(contentsOfFile: filepath) {
+            do {
+                let jsonArray = try JSONSerialization.jsonObject(with: jsonData as Data, options: JSONSerialization.ReadingOptions(rawValue: 0)) as! [String: [[String: String]]]
+                if let licensesArray = jsonArray["licenses"] {
+                    for licenseJson in licensesArray {
+                        let license = CustomLicense(name: licenseJson["name"] ?? "", summaryText: licenseJson["summary"] ?? "", fullText: licenseJson["full"] ?? "", version: licenseJson["version"] ?? "", url: licenseJson["url"] ?? "")
+                        licenses[license.name] = license
+                    }
+                }
+            } catch {
+                
+            }
+        }
+    }
 }

@@ -4,9 +4,13 @@ PODS:
 DEPENDENCIES:
   - StringBuilder
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - StringBuilder
+
 SPEC CHECKSUMS:
   StringBuilder: 15abc8106929431ff7149dd94b47062699e962b7
 
 PODFILE CHECKSUM: 5e5728a5d6587e5b2510d378930cb2d8ed75f4a0
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.5.3
