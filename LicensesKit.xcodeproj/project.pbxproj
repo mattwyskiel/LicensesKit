@@ -504,7 +504,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LicensesKitTests/Pods-LicensesKitTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-LicensesKitTests/Pods-LicensesKitTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/StringBuilder/StringBuilder.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -513,7 +513,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LicensesKitTests/Pods-LicensesKitTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LicensesKitTests/Pods-LicensesKitTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3AE8C80F221419CD007B1E6B /* ShellScript */ = {
@@ -756,6 +756,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -776,6 +777,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
