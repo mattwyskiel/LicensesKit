@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		05EE407AEBB13DED91FE6CA2 /* Pods_LicensesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04D238F30AD8B87C1094D2C /* Pods_LicensesKit.framework */; };
 		29F5ADDD27EC8F0EEFF33CDD /* Pods_LicensesKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F43063BADF022223A1E8FB9 /* Pods_LicensesKitTests.framework */; };
+		9767264322575EEE00451D1D /* StringBuilder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9767264222575EEE00451D1D /* StringBuilder.framework */; };
 		A459639119DCD0C2001AC2CA /* LicensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A459639019DCD0C2001AC2CA /* LicensesViewController.swift */; };
 		A4A0081A1B619C8D002F11F4 /* mpl_20_full.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4A008191B619C8D002F11F4 /* mpl_20_full.txt */; };
 		A4A0081C1B619CA2002F11F4 /* mpl_20_summary.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4A0081B1B619CA2002F11F4 /* mpl_20_summary.txt */; };
@@ -79,13 +80,13 @@
 		BC9FBD661CD225C90079383A /* mpl_20_full.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4A008191B619C8D002F11F4 /* mpl_20_full.txt */; };
 		BC9FBD671CD225C90079383A /* mpl_20_summary.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4A0081B1B619CA2002F11F4 /* mpl_20_summary.txt */; };
 		BC9FBD6A1CD226340079383A /* Notices.json in Resources */ = {isa = PBXBuildFile; fileRef = A4A3AE5C19E98FD100FF5CBD /* Notices.json */; };
-		BC9FBD6C1CD226550079383A /* StringBuilder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9FBD6B1CD226550079383A /* StringBuilder.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F43063BADF022223A1E8FB9 /* Pods_LicensesKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LicensesKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58CCE8793247264428674B71 /* Pods-LicensesKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LicensesKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-LicensesKit/Pods-LicensesKit.release.xcconfig"; sourceTree = "<group>"; };
 		9224F676698CEE39BDBC4931 /* Pods-LicensesKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LicensesKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LicensesKitTests/Pods-LicensesKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		9767264222575EEE00451D1D /* StringBuilder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StringBuilder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		981CAF181E136DFA868C060F /* Pods-LicensesKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LicensesKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LicensesKitTests/Pods-LicensesKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A04D238F30AD8B87C1094D2C /* Pods_LicensesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LicensesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A459639019DCD0C2001AC2CA /* LicensesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicensesViewController.swift; sourceTree = "<group>"; };
@@ -156,7 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC9FBD6C1CD226550079383A /* StringBuilder.framework in Frameworks */,
+				9767264322575EEE00451D1D /* StringBuilder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +310,7 @@
 		D25DAD83F7B7DCF5C10F9E23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9767264222575EEE00451D1D /* StringBuilder.framework */,
 				A04D238F30AD8B87C1094D2C /* Pods_LicensesKit.framework */,
 				3F43063BADF022223A1E8FB9 /* Pods_LicensesKitTests.framework */,
 			);
@@ -401,7 +403,7 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Matthew Wyskiel";
 				TargetAttributes = {
 					A4D0D25D19DA22AC004F028B = {
@@ -421,6 +423,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = A4D0D25419DA22AC004F028B;
@@ -631,6 +634,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -690,6 +694,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -798,6 +803,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewwyskiel.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -814,6 +820,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewwyskiel.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -836,7 +843,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattwyskiel.LicensesKitFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -860,7 +867,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattwyskiel.LicensesKitFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

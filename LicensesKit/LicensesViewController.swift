@@ -10,44 +10,44 @@ import UIKit
 import WebKit
 
 /// The view controller that displays acknowledgements for an app, with provided `notices` or a `notices.json` file.
-public class LicensesViewController: UIViewController, WKNavigationDelegate {
+open class LicensesViewController: UIViewController, WKNavigationDelegate {
     
     private var webView: WKWebView!
     
     /// The title for the navigation bar, if this view controller is inside a navigation controller.
-    public var navigationTitle: String?
+    open var navigationTitle: String?
     
     /// An array of `Notice` objects that describe third-party libraries used in an app, to be displayed in this view controller.
-    public var notices: [Notice] = []
+    open var notices: [Notice] = []
     
     /// The object used to resolve licenses. Use this instance of the resolver to add custom licenses (`CustomLicense`) to the library's internal license list.
-    public private(set) var resolver = LicenseResolver()
+    open private(set) var resolver = LicenseResolver()
     
     private var htmlBuilder = NoticesHtmlBuilder()
     
     /// Set whether the full text of licenses should be shown, or just the summary.
-    public var showsFullLicenseText: Bool = false {
+    open var showsFullLicenseText: Bool = false {
         didSet {
             htmlBuilder.showFullLicenseText = self.showsFullLicenseText
         }
     }
     
     /// A string of CSS code to customize the styling of the display of the third-party licenses.
-    public var cssStyle: String? {
+    open var cssStyle: String? {
         didSet {
             htmlBuilder.style = self.cssStyle!;
         }
     }
     
     /// A string of HTML that serves as a "header" for the display of the third-party licenses, shown above the first third-party library info.
-    public var pageHeader: String? {
+    open var pageHeader: String? {
         didSet {
             htmlBuilder.pageHeader = self.pageHeader;
         }
     }
     
     /// A string of HTML that serves as a "footer" for the display of the third-party licenses, shown below the last third-party library info.
-    public var pageFooter: String? {
+    open var pageFooter: String? {
         didSet {
             htmlBuilder.pageFooter = self.pageFooter;
         }
@@ -58,7 +58,7 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
     
     - parameter notice: A `Notice` to use for display.
     */
-    public func addNotice(notice: Notice) {
+    open func addNotice(notice: Notice) {
         notices.append(notice)
     }
     
@@ -67,7 +67,7 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
     
     - parameter notice: An array of notices to use for display.
     */
-    public func addNotices(notices: [Notice]) {
+    open func addNotices(notices: [Notice]) {
         self.notices += notices
     }
     
@@ -78,7 +78,7 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
     
     - parameter filepath: The file path to the JSON file containing the notices. Use `NSBundle.mainBundle().pathForResource(_:, ofType:)` to programmatically get the path to your file.
     */
-    public func setNoticesFromJSONFile(filepath: String) {
+    open func setNoticesFromJSONFile(filepath: String) {
         if let jsonData = NSData(contentsOfFile: filepath) {
             do {
                 let jsonArray = try JSONSerialization.jsonObject(with: jsonData as Data, options: JSONSerialization.ReadingOptions(rawValue: 0)) as! [String: [[String: String]]]
@@ -104,7 +104,7 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
     /**
     Loads the view; NOT meant to be called outside of this class.
     */
-    override public func loadView() {
+    override open func loadView() {
         webView = WKWebView()
         
         webView?.navigationDelegate = self
@@ -115,7 +115,7 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
     /**
     Setup after loading the view; NOT meant to be called outside of this class.
     */
-    override public func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
 
         if let title = navigationTitle {
@@ -128,7 +128,7 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
     /**
     Final setup after view has appeared; NOT meant to be called outside of this class.
     */
-    override public func viewDidAppear(_ animated: Bool) {
+    override open func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         htmlBuilder.notices = notices
 		
@@ -139,7 +139,7 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
     /**
     Handle memory warnings; NOT meant to be used outside of this class.
     */
-    override public func didReceiveMemoryWarning() {
+    override open func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -147,7 +147,7 @@ public class LicensesViewController: UIViewController, WKNavigationDelegate {
     /**
     Handles links clicked in the internal webView; NOT meant to be used outside of this class.
     */
-    public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+    open func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         if navigationAction.navigationType == .linkActivated {
             let url = navigationAction.request.url
             UIApplication.shared.openURL(url!)
