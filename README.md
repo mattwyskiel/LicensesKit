@@ -1,6 +1,6 @@
 # LicensesKit
 ### Making giving credit where credit is due much easier than before.
-
+# Updated to Swift 4.2
 If you've ever worked on an app that uses any third-party libraries (which is everyone), then you probably know that it's courteous (and sometimes mandatory, depending on the library) to add the library's license to an "acknowledgements" page in your app. And those pages are often tedious to put together and, especially, update. With LicensesKit, your troubles are over!
 
 ### LicensesKit is Flexible.
