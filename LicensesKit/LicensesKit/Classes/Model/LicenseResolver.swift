@@ -15,14 +15,14 @@ public class LicenseResolver {
     
     func registerDefaultLicenses() {
         licenses = [:]
-        registerLicense(ApacheSoftwareLicense20())
-        registerLicense(BSD3ClauseLicense())
-        registerLicense(ISCLicense())
-        registerLicense(MITLicense())
-        registerLicense(GnuLesserGeneralPublicLicense21())
-        registerLicense(CreativeCommonsAttributionNoDerivs30Unported())
-        registerLicense(GnuGeneralPublicLicense30())
-        registerLicense(GnuGeneralPublicLicense20())
+        register(ApacheSoftwareLicense20)
+        register(BSD3ClauseLicense)
+        register(ISCLicense)
+        register(MITLicense)
+        register(GNULesserGeneralPublicLicense21)
+        register(CreativeCommonsAttributionNoDerivs30Unported)
+        register(GNUGeneralPublicLicense30)
+        register(GNUGeneralPublicLicense20)
     }
     
     /**
@@ -30,7 +30,7 @@ public class LicenseResolver {
     
     - parameter license: A license to register with the library.
     */
-    public func registerLicense(_ license: License) {
+    public func register(_ license: License) {
         licenses.updateValue(license, forKey: license.name)
     }
     

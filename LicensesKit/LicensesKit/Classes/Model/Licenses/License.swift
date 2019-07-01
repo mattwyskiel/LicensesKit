@@ -10,38 +10,28 @@ import UIKit
 /**
   Describes a library's license
 */
-public protocol License {
+public struct License: Decodable {
     
     /// The name of the license
-    var name: String {
-        get
-    }
+    public var name: String
     
     /// The license summary text
-    var summaryText: String {
-        get
-    }
+    public var summaryText: String?
     
     /// The license full text
-    var fullText: String {
-        get
-    }
+    public var fullText: String
     
     /// The license version
-    var version: String {
-        get
-    }
+    public var version: String?
     
     /// The license URL
-    var url: String {
-        get
-    }
+    public var url: URL
    
 }
 
 /// Fetches license content from disk
 public class LicenseContentFetcher {
-    private class var bundle: Bundle {
+    public class var bundle: Bundle {
         return Bundle(for: LicenseContentFetcher.self)
     }
     

@@ -8,24 +8,22 @@
 
 import UIKit
 
-public class LicensesViewController: UIViewController {
+public class LicensesViewController: UICollectionViewController {
     
     var notices: [Notice] = []
     
-    var noticeViews: [NoticeView] {
-        return NoticeViewBuilder(notices: notices).render()
-    }
+    let flowLayout = UICollectionViewFlowLayout()
     
     public init(notices: [Notice]) {
         self.notices = notices
-        super.init(nibName: nil, bundle: nil)
+        super.init(collectionViewLayout: flowLayout)
     }
     
     public init(noticesFrom jsonData: Data) {
-        if let json = try? JSONSerialization.jsonObject(with: jsonData) as? [[String: String]] {
-            self.notices = NoticeViewBuilder.notices(from: json!)
+        if let notices = try? JSONDecoder().decode([Notice].self, from: jsonData) {
+            self.notices = notices
         }
-        super.init(nibName: nil, bundle: nil)
+        super.init(collectionViewLayout: flowLayout)
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -34,35 +32,33 @@ public class LicensesViewController: UIViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-        configureView()
+        collectionView?.backgroundColor = .white
         view.backgroundColor = .white
+        
+        collectionView!.register(NoticeView.self, forCellWithReuseIdentifier: "NoticeView")
+        flowLayout.estimatedItemSize = CGSize(width: self.collectionView!.frame.width, height: 500)
     }
     
     var showFullLicenseText = false
     
-    func configureView() {
-        let stackView = UIStackView(arrangedSubviews: noticeViews)
-        stackView.axis = .vertical
-        stackView.spacing = 30
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(stackView)
-        stackView.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -10).isActive = true
-        
-        let scrollView = UIScrollView(frame: .zero)
-        scrollView.addSubview(stackView)
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(scrollView)
-        
-        if navigationController?.navigationBar != nil {
-            scrollView.topAnchor.constraint(equalTo: view.topAnchor, constant: navigationController!.navigationBar.bounds.height).isActive = true
-        } else {
-            scrollView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        }
-        
-        scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        
-        scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+}
+
+extension LicensesViewController { // collection view data source
+    public override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return notices.count
     }
     
+    public override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let notice = notices[indexPath.item]
+        print("notice")
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NoticeView", for: indexPath)
+        print("base cell")
+        let noticeView = cell as! NoticeView
+        print("cell")
+        noticeView.notice = notice
+        print("set notice")
+        noticeView.width = collectionView.frame.width - 10
+        print("set width")
+        return noticeView
+    }
 }

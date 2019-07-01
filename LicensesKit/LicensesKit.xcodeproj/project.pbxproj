@@ -29,27 +29,19 @@
 		A464B84D1EDA1F99009667D0 /* mit_summary.txt in Resources */ = {isa = PBXBuildFile; fileRef = A464B8391EDA1F99009667D0 /* mit_summary.txt */; };
 		A464B84E1EDA1F99009667D0 /* mpl_20_full.txt in Resources */ = {isa = PBXBuildFile; fileRef = A464B83A1EDA1F99009667D0 /* mpl_20_full.txt */; };
 		A464B84F1EDA1F99009667D0 /* mpl_20_summary.txt in Resources */ = {isa = PBXBuildFile; fileRef = A464B83B1EDA1F99009667D0 /* mpl_20_summary.txt */; };
-		A464B8501EDA1F99009667D0 /* Notices.json in Resources */ = {isa = PBXBuildFile; fileRef = A464B83C1EDA1F99009667D0 /* Notices.json */; };
 		A464B8661EDA2005009667D0 /* LicensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A464B8531EDA2005009667D0 /* LicensesViewController.swift */; };
 		A464B8671EDA2005009667D0 /* LicenseResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A464B8551EDA2005009667D0 /* LicenseResolver.swift */; };
-		A464B8681EDA2005009667D0 /* ApacheSoftwareLicense20.swift in Sources */ = {isa = PBXBuildFile; fileRef = A464B8571EDA2005009667D0 /* ApacheSoftwareLicense20.swift */; };
-		A464B8691EDA2005009667D0 /* BSD3ClauseLicense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A464B8581EDA2005009667D0 /* BSD3ClauseLicense.swift */; };
-		A464B86A1EDA2005009667D0 /* CreativeCommonsAttributionNoDerivs30Unported.swift in Sources */ = {isa = PBXBuildFile; fileRef = A464B8591EDA2005009667D0 /* CreativeCommonsAttributionNoDerivs30Unported.swift */; };
-		A464B86B1EDA2005009667D0 /* CustomLicense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A464B85A1EDA2005009667D0 /* CustomLicense.swift */; };
-		A464B86C1EDA2005009667D0 /* GnuGeneralPublicLicense20.swift in Sources */ = {isa = PBXBuildFile; fileRef = A464B85B1EDA2005009667D0 /* GnuGeneralPublicLicense20.swift */; };
-		A464B86D1EDA2005009667D0 /* GnuGeneralPublicLicense30.swift in Sources */ = {isa = PBXBuildFile; fileRef = A464B85C1EDA2005009667D0 /* GnuGeneralPublicLicense30.swift */; };
-		A464B86E1EDA2005009667D0 /* GnuLesserGeneralPublicLicense21.swift in Sources */ = {isa = PBXBuildFile; fileRef = A464B85D1EDA2005009667D0 /* GnuLesserGeneralPublicLicense21.swift */; };
-		A464B86F1EDA2005009667D0 /* ISCLicense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A464B85E1EDA2005009667D0 /* ISCLicense.swift */; };
 		A464B8701EDA2005009667D0 /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = A464B85F1EDA2005009667D0 /* License.swift */; };
-		A464B8711EDA2005009667D0 /* MITLicense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A464B8601EDA2005009667D0 /* MITLicense.swift */; };
-		A464B8721EDA2005009667D0 /* MozillaPublicLicense20.swift in Sources */ = {isa = PBXBuildFile; fileRef = A464B8611EDA2005009667D0 /* MozillaPublicLicense20.swift */; };
 		A464B8731EDA2005009667D0 /* Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A464B8621EDA2005009667D0 /* Notice.swift */; };
 		A464B8741EDA2005009667D0 /* NoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A464B8631EDA2005009667D0 /* NoticeView.swift */; };
-		A464B8751EDA2005009667D0 /* NoticeViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A464B8641EDA2005009667D0 /* NoticeViewBuilder.swift */; };
 		A464B87B1EDA23F9009667D0 /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A464B8771EDA23F9009667D0 /* FBSnapshotTestCase.framework */; };
 		A464B87C1EDA23F9009667D0 /* Nimble_Snapshots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A464B8781EDA23F9009667D0 /* Nimble_Snapshots.framework */; };
 		A464B87D1EDA23F9009667D0 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A464B8791EDA23F9009667D0 /* Nimble.framework */; };
 		A464B87E1EDA23F9009667D0 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A464B87A1EDA23F9009667D0 /* Quick.framework */; };
+		A4C22F7A20D07CB200A47194 /* IncludedLicenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C22F7920D07CB200A47194 /* IncludedLicenses.swift */; };
+		A4C22F7C20D084F700A47194 /* bsd2_full.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4C22F7B20D084F700A47194 /* bsd2_full.txt */; };
+		A4C22F7E20D0852200A47194 /* bsd2_summary.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4C22F7D20D0852200A47194 /* bsd2_summary.txt */; };
+		A4C22F8420D2CF7800A47194 /* Notices.json in Resources */ = {isa = PBXBuildFile; fileRef = A4C22F8320D2CF7800A47194 /* Notices.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,28 +80,20 @@
 		A464B8391EDA1F99009667D0 /* mit_summary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mit_summary.txt; sourceTree = "<group>"; };
 		A464B83A1EDA1F99009667D0 /* mpl_20_full.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mpl_20_full.txt; sourceTree = "<group>"; };
 		A464B83B1EDA1F99009667D0 /* mpl_20_summary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mpl_20_summary.txt; sourceTree = "<group>"; };
-		A464B83C1EDA1F99009667D0 /* Notices.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Notices.json; sourceTree = "<group>"; };
 		A464B8531EDA2005009667D0 /* LicensesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicensesViewController.swift; sourceTree = "<group>"; };
 		A464B8551EDA2005009667D0 /* LicenseResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseResolver.swift; sourceTree = "<group>"; };
-		A464B8571EDA2005009667D0 /* ApacheSoftwareLicense20.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApacheSoftwareLicense20.swift; sourceTree = "<group>"; };
-		A464B8581EDA2005009667D0 /* BSD3ClauseLicense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSD3ClauseLicense.swift; sourceTree = "<group>"; };
-		A464B8591EDA2005009667D0 /* CreativeCommonsAttributionNoDerivs30Unported.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreativeCommonsAttributionNoDerivs30Unported.swift; sourceTree = "<group>"; };
-		A464B85A1EDA2005009667D0 /* CustomLicense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLicense.swift; sourceTree = "<group>"; };
-		A464B85B1EDA2005009667D0 /* GnuGeneralPublicLicense20.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GnuGeneralPublicLicense20.swift; sourceTree = "<group>"; };
-		A464B85C1EDA2005009667D0 /* GnuGeneralPublicLicense30.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GnuGeneralPublicLicense30.swift; sourceTree = "<group>"; };
-		A464B85D1EDA2005009667D0 /* GnuLesserGeneralPublicLicense21.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GnuLesserGeneralPublicLicense21.swift; sourceTree = "<group>"; };
-		A464B85E1EDA2005009667D0 /* ISCLicense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISCLicense.swift; sourceTree = "<group>"; };
 		A464B85F1EDA2005009667D0 /* License.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
-		A464B8601EDA2005009667D0 /* MITLicense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MITLicense.swift; sourceTree = "<group>"; };
-		A464B8611EDA2005009667D0 /* MozillaPublicLicense20.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MozillaPublicLicense20.swift; sourceTree = "<group>"; };
 		A464B8621EDA2005009667D0 /* Notice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notice.swift; sourceTree = "<group>"; };
 		A464B8631EDA2005009667D0 /* NoticeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeView.swift; sourceTree = "<group>"; };
-		A464B8641EDA2005009667D0 /* NoticeViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeViewBuilder.swift; sourceTree = "<group>"; };
 		A464B8771EDA23F9009667D0 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = ../Carthage/Build/iOS/FBSnapshotTestCase.framework; sourceTree = "<group>"; };
 		A464B8781EDA23F9009667D0 /* Nimble_Snapshots.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble_Snapshots.framework; path = ../Carthage/Build/iOS/Nimble_Snapshots.framework; sourceTree = "<group>"; };
 		A464B8791EDA23F9009667D0 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		A464B87A1EDA23F9009667D0 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = ../Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
-		A464B87F1EDA2463009667D0 /* LicensesKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LicensesKit.playground; sourceTree = "<group>"; };
+		A464B87F1EDA2463009667D0 /* LicensesKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LicensesKit.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A4C22F7920D07CB200A47194 /* IncludedLicenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncludedLicenses.swift; sourceTree = "<group>"; };
+		A4C22F7B20D084F700A47194 /* bsd2_full.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = bsd2_full.txt; sourceTree = "<group>"; };
+		A4C22F7D20D0852200A47194 /* bsd2_summary.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = bsd2_summary.txt; sourceTree = "<group>"; };
+		A4C22F8320D2CF7800A47194 /* Notices.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Notices.json; path = LicensesKit.playground/Resources/Notices.json; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,8 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				A464B8281EDA1F99009667D0 /* .gitkeep */,
+				A4C22F8320D2CF7800A47194 /* Notices.json */,
 				A464B8291EDA1F99009667D0 /* Licenses */,
-				A464B83C1EDA1F99009667D0 /* Notices.json */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -192,6 +176,8 @@
 				A464B82B1EDA1F99009667D0 /* asl_20_summary.txt */,
 				A464B82C1EDA1F99009667D0 /* bsd3_full.txt */,
 				A464B82D1EDA1F99009667D0 /* bsd3_summary.txt */,
+				A4C22F7B20D084F700A47194 /* bsd2_full.txt */,
+				A4C22F7D20D0852200A47194 /* bsd2_summary.txt */,
 				A464B82E1EDA1F99009667D0 /* ccand_30_full.txt */,
 				A464B82F1EDA1F99009667D0 /* ccand_30_summary.txt */,
 				A464B8301EDA1F99009667D0 /* gpl_20_full.txt */,
@@ -216,7 +202,6 @@
 				A464B8531EDA2005009667D0 /* LicensesViewController.swift */,
 				A464B8541EDA2005009667D0 /* Model */,
 				A464B8631EDA2005009667D0 /* NoticeView.swift */,
-				A464B8641EDA2005009667D0 /* NoticeViewBuilder.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -234,17 +219,8 @@
 		A464B8561EDA2005009667D0 /* Licenses */ = {
 			isa = PBXGroup;
 			children = (
-				A464B8571EDA2005009667D0 /* ApacheSoftwareLicense20.swift */,
-				A464B8581EDA2005009667D0 /* BSD3ClauseLicense.swift */,
-				A464B8591EDA2005009667D0 /* CreativeCommonsAttributionNoDerivs30Unported.swift */,
-				A464B85A1EDA2005009667D0 /* CustomLicense.swift */,
-				A464B85B1EDA2005009667D0 /* GnuGeneralPublicLicense20.swift */,
-				A464B85C1EDA2005009667D0 /* GnuGeneralPublicLicense30.swift */,
-				A464B85D1EDA2005009667D0 /* GnuLesserGeneralPublicLicense21.swift */,
-				A464B85E1EDA2005009667D0 /* ISCLicense.swift */,
 				A464B85F1EDA2005009667D0 /* License.swift */,
-				A464B8601EDA2005009667D0 /* MITLicense.swift */,
-				A464B8611EDA2005009667D0 /* MozillaPublicLicense20.swift */,
+				A4C22F7920D07CB200A47194 /* IncludedLicenses.swift */,
 			);
 			path = Licenses;
 			sourceTree = "<group>";
@@ -317,17 +293,19 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Matthew Wyskiel";
 				TargetAttributes = {
 					A464B80C1EDA1D82009667D0 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 5XPCB5TC44;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
 					};
 					A464B8151EDA1D82009667D0 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 5XPCB5TC44;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -355,16 +333,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4C22F7C20D084F700A47194 /* bsd2_full.txt in Resources */,
 				A464B8421EDA1F99009667D0 /* ccand_30_full.txt in Resources */,
-				A464B8501EDA1F99009667D0 /* Notices.json in Resources */,
 				A464B84F1EDA1F99009667D0 /* mpl_20_summary.txt in Resources */,
 				A464B83F1EDA1F99009667D0 /* asl_20_summary.txt in Resources */,
 				A464B8471EDA1F99009667D0 /* gpl_30_summary.txt in Resources */,
 				A464B8461EDA1F99009667D0 /* gpl_30_full.txt in Resources */,
 				A464B8401EDA1F99009667D0 /* bsd3_full.txt in Resources */,
+				A4C22F7E20D0852200A47194 /* bsd2_summary.txt in Resources */,
 				A464B84E1EDA1F99009667D0 /* mpl_20_full.txt in Resources */,
 				A464B8451EDA1F99009667D0 /* gpl_20_summary.txt in Resources */,
 				A464B84C1EDA1F99009667D0 /* mit_full.txt in Resources */,
+				A4C22F8420D2CF7800A47194 /* Notices.json in Resources */,
 				A464B8441EDA1F99009667D0 /* gpl_20_full.txt in Resources */,
 				A464B8491EDA1F99009667D0 /* isc_summary.txt in Resources */,
 				A464B8411EDA1F99009667D0 /* bsd3_summary.txt in Resources */,
@@ -392,22 +372,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A464B8711EDA2005009667D0 /* MITLicense.swift in Sources */,
-				A464B86B1EDA2005009667D0 /* CustomLicense.swift in Sources */,
-				A464B86F1EDA2005009667D0 /* ISCLicense.swift in Sources */,
 				A464B8741EDA2005009667D0 /* NoticeView.swift in Sources */,
+				A4C22F7A20D07CB200A47194 /* IncludedLicenses.swift in Sources */,
 				A464B8731EDA2005009667D0 /* Notice.swift in Sources */,
-				A464B8721EDA2005009667D0 /* MozillaPublicLicense20.swift in Sources */,
-				A464B8751EDA2005009667D0 /* NoticeViewBuilder.swift in Sources */,
 				A464B8661EDA2005009667D0 /* LicensesViewController.swift in Sources */,
 				A464B8671EDA2005009667D0 /* LicenseResolver.swift in Sources */,
-				A464B8691EDA2005009667D0 /* BSD3ClauseLicense.swift in Sources */,
-				A464B86C1EDA2005009667D0 /* GnuGeneralPublicLicense20.swift in Sources */,
-				A464B8681EDA2005009667D0 /* ApacheSoftwareLicense20.swift in Sources */,
-				A464B86E1EDA2005009667D0 /* GnuLesserGeneralPublicLicense21.swift in Sources */,
-				A464B86A1EDA2005009667D0 /* CreativeCommonsAttributionNoDerivs30Unported.swift in Sources */,
 				A464B8701EDA2005009667D0 /* License.swift in Sources */,
-				A464B86D1EDA2005009667D0 /* GnuGeneralPublicLicense30.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,15 +410,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -494,15 +472,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -546,7 +532,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.matthewwyskiel.LicensesKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -565,7 +552,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.matthewwyskiel.LicensesKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -578,7 +566,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matthewwyskiel.LicensesKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -591,7 +580,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matthewwyskiel.LicensesKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -614,6 +604,7 @@
 				A464B8231EDA1D82009667D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A464B8241EDA1D82009667D0 /* Build configuration list for PBXNativeTarget "LicensesKitTests" */ = {
 			isa = XCConfigurationList;
@@ -622,6 +613,7 @@
 				A464B8261EDA1D82009667D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
