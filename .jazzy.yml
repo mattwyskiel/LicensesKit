@@ -1,0 +1,8 @@
+author: Matthew Wyskiel
+author_url: https://twitter.com/mattwyskiel
+github_url: https://github.com/MattWyskiel/LicensesKit
+root_url: https://MattWyskiel.github.io/LicensesKit/
+module: LicensesKit
+output: docs
+theme: fullwidth
+xcodebuild_arguments: [-workspace, 'LicensesKit.xcworkspace', -scheme, 'LicensesKit-iOS']

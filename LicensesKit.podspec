@@ -1,40 +1,20 @@
-#
-# Be sure to run `pod lib lint LicensesKit.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
-  s.name             = 'LicensesKit'
-  s.version          = '2.0.0'
-  s.summary          = 'A short description of LicensesKit.'
+  s.name = 'LicensesKit'
+  s.version = '2.0.0'
+  s.license = { :type => "MIT", :file => "LICENSE" }
+  s.summary = 'Making giving credit where credit is due easier than ever before'
+  s.homepage = 'https://mattwyskiel.com'
+  s.social_media_url = 'https://twitter.com/mattwyskiel'
+  s.authors = { "Matthew Wyskiel" => "mwwyskiel@gmail.com" }
+  s.source = { :git => "https://github.com/MattWyskiel/LicensesKit.git", :tag  => "v"+s.version.to_s }
+  s.platforms = { :ios => "9.0", :osx => "10.10", :tvos => "9.0", :watchos => "2.0" }
+  s.requires_arc = true
+  s.swift_version = '5.0'
+  s.cocoapods_version = '>= 1.4.0'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/mattwyskiel/LicensesKit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'mattwyskiel' => 'mwyskiel@optonline.net' }
-  s.source           = { :git => 'https://github.com/mattwyskiel/LicensesKit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '9.0'
-
-  s.source_files = 'LicensesKit/Classes/**/*'
-  
-  s.resources = ['LicensesKit/Assets/**/*']
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.default_subspec = "Core"
+  s.subspec "Core" do |ss|
+    ss.source_files  = "Sources/**/*.swift"
+    ss.framework  = "Foundation"
+ end
 end
